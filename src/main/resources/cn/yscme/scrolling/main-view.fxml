@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="600.0" prefWidth="1000.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cn.yscme.scrolling.controller.MainController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <HBox  prefHeight="100.0" prefWidth="200.0">
+      <children>
+          <Button onAction="#onHelloButtonClick" text="开始" />
+          <Label fx:id="timerLabel" alignment="CENTER"/>
+      </children>
+   </HBox>
+   <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+      <children>
+         <Label fx:id="peopleLabel"/>
+      </children>
+   </HBox>
+   <HBox alignment="CENTER" prefHeight="324.0" prefWidth="1000.0">
+      <children>
+         <TextArea fx:id="chatTextArea" prefHeight="323.0" prefWidth="320.0" />
+         <TextArea fx:id="giftTextArea" prefHeight="323.0" prefWidth="320.0" />
+         <TextArea fx:id="otherTextArea" prefHeight="323.0" prefWidth="320.0" />
+      </children>
+   </HBox>
+</VBox>
