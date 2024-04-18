@@ -8,15 +8,16 @@
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
-   <HBox  prefHeight="100.0" prefWidth="200.0">
+   <HBox prefHeight="100.0" prefWidth="200.0">
       <children>
+         <TextField promptText="直播间id" fx:id="roomidTextFieid" />
           <Button onAction="#onHelloButtonClick" text="开始" />
-          <Label fx:id="timerLabel" alignment="CENTER"/>
+          <Label fx:id="timerLabel" alignment="CENTER" />
       </children>
    </HBox>
    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
       <children>
-         <Label fx:id="peopleLabel"/>
+         <Label fx:id="peopleLabel" />
       </children>
    </HBox>
    <HBox alignment="CENTER" prefHeight="324.0" prefWidth="1000.0">

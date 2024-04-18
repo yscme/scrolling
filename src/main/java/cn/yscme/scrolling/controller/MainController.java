@@ -9,11 +9,13 @@ import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
-import javafx.util.Duration;
+import javafx.scene.control.TextField;
 
 public class MainController {
     @FXML
     private Label timerLabel,peopleLabel;
+    @FXML
+    private TextField roomidTextFieid;
     @FXML
     private TextArea chatTextArea,giftTextArea,otherTextArea;
     @FXML
@@ -27,7 +29,7 @@ public class MainController {
                 Platform.runLater(()->{
                     timerLabel.setText("0秒");
                 });
-                douyinUtil.start(623513091128l,timerLabel,peopleLabel,chatTextArea,giftTextArea,otherTextArea);
+                douyinUtil.start(Long.parseLong(roomidTextFieid.getText()),timerLabel,peopleLabel,chatTextArea,giftTextArea,otherTextArea);
                 return null;
             }
         };
