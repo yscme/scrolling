@@ -1,15 +1,11 @@
 package cn.yscme.scrolling.controller;
 import cn.yscme.scrolling.auto.DouyinUtil;
-import javafx.animation.KeyFrame;
-import javafx.animation.Timeline;
 import javafx.application.Platform;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.concurrent.Task;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.fxml.FXML;
-import javafx.scene.control.Label;
-import javafx.scene.control.TextArea;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 
 public class MainController {
     @FXML
@@ -17,9 +13,19 @@ public class MainController {
     @FXML
     private TextField roomidTextFieid;
     @FXML
-    private TextArea chatTextArea,giftTextArea,otherTextArea;
+    private ListView<String> chatListView,giftListView,otherListView;
+
+    private ObservableList<String> chatMessages = FXCollections.observableArrayList();
+    private ObservableList<String> giftMessages = FXCollections.observableArrayList();
+    private ObservableList<String> otherMessages = FXCollections.observableArrayList();
+
+
     @FXML
     protected void onHelloButtonClick() {
+        chatListView.setItems(chatMessages);
+        giftListView.setItems(giftMessages);
+        otherListView.setItems(otherMessages);
+
         // 创建一个耗时任务
         Task<Void> task = new Task<>() {
             @Override
@@ -29,7 +35,7 @@ public class MainController {
                 Platform.runLater(()->{
                     timerLabel.setText("0秒");
                 });
-                douyinUtil.start(Long.parseLong(roomidTextFieid.getText()),timerLabel,peopleLabel,chatTextArea,giftTextArea,otherTextArea);
+                douyinUtil.start(Long.parseLong(roomidTextFieid.getText()),timerLabel,peopleLabel,chatMessages,giftMessages,otherMessages, chatListView,giftListView,otherListView);
                 return null;
             }
         };

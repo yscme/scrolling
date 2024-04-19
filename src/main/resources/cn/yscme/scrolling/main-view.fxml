@@ -8,23 +8,30 @@
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
-   <HBox prefHeight="100.0" prefWidth="200.0">
+   <HBox alignment="CENTER" prefHeight="55.0" prefWidth="960.0">
       <children>
-         <TextField promptText="直播间id" fx:id="roomidTextFieid" />
+         <Label text="直播间id:" />
+         <TextField fx:id="roomidTextFieid" promptText="直播间id" />
           <Button onAction="#onHelloButtonClick" text="开始" />
-          <Label fx:id="timerLabel" alignment="CENTER" />
+          <Label fx:id="timerLabel" alignment="CENTER">
+            <opaqueInsets>
+               <Insets />
+            </opaqueInsets>
+            <HBox.margin>
+               <Insets left="100.0" />
+            </HBox.margin></Label>
       </children>
    </HBox>
-   <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+   <HBox alignment="CENTER" prefHeight="48.0" prefWidth="960.0">
       <children>
          <Label fx:id="peopleLabel" />
       </children>
    </HBox>
-   <HBox alignment="CENTER" prefHeight="324.0" prefWidth="1000.0">
+   <HBox alignment="CENTER" prefHeight="442.0" prefWidth="960.0">
       <children>
-         <TextArea fx:id="chatTextArea" prefHeight="323.0" prefWidth="320.0" />
-         <TextArea fx:id="giftTextArea" prefHeight="323.0" prefWidth="320.0" />
-         <TextArea fx:id="otherTextArea" prefHeight="323.0" prefWidth="320.0" />
+         <ListView prefHeight="200.0" prefWidth="400.0" fx:id="chatListView" VBox.vgrow="ALWAYS"/>
+         <ListView prefHeight="200.0" prefWidth="260.0" fx:id="giftListView" VBox.vgrow="ALWAYS"/>
+         <ListView prefHeight="200.0" prefWidth="260.0" fx:id="otherListView" VBox.vgrow="ALWAYS"/>
       </children>
    </HBox>
 </VBox>
