@@ -22,7 +22,7 @@ import javafx.util.Duration;
 
 public class DouyinUtil {
     private boolean status=true;
-    public void start(long room_id, Label timerLabel, Label peopleLabel, ObservableList<String> chatMessages, ObservableList<String> giftMessages, ObservableList<String> otherMessages,
+    public void start(long room_id, Label peopleLabel, ObservableList<String> chatMessages, ObservableList<String> giftMessages, ObservableList<String> otherMessages,
                       ListView<String> chatListView, ListView<String> giftListView, ListView<String> otherListView) {
         try (Playwright playwright = Playwright.create()) {
             Browser browser = playwright.firefox().launch(new BrowserType.LaunchOptions().setHeadless(true));
@@ -35,22 +35,6 @@ public class DouyinUtil {
             page.onWebSocket(webSocket -> {
                 System.err.println(webSocket.url());
                 // 创建一个 Timeline 对象，指定时间间隔为 1 秒
-                Timeline timeline = new Timeline(new KeyFrame(Duration.seconds(1), new EventHandler<ActionEvent>() {
-                    int timeSeconds = 0;
-                    @Override
-                    public void handle(ActionEvent event) {
-                        // 每次时间间隔执行的任务
-                        timeSeconds++;
-                        Platform.runLater(() -> {
-                            timerLabel.setText(timeSeconds + "秒");
-                        });
-                    }
-                }));
-
-                // 设置 Timeline 为循环执行
-                timeline.setCycleCount(Timeline.INDEFINITE);
-                // 启动 Timeline，开始计时
-                timeline.play();
 
                 webSocket.onFrameReceived(webSocketFrame -> {
                     System.err.println(webSocketFrame.hashCode());
@@ -65,7 +49,7 @@ public class DouyinUtil {
             while (status) {
                 try {
                     page.content();
-                    Thread.sleep(1000);
+                    Thread.sleep(200);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
@@ -206,7 +190,6 @@ public class DouyinUtil {
             otherMessages.add("【" + user_name + "】 关注了主播");
             otherListView.scrollTo(otherMessages.size());
         });
-
     }
 
     //直播间统计
@@ -227,7 +210,6 @@ public class DouyinUtil {
             otherMessages.add("【粉丝团】" + content);
             otherListView.scrollTo(otherMessages.size());
         });
-
     }
 
     //表情包消息
@@ -241,7 +223,6 @@ public class DouyinUtil {
             chatMessages.add("【表情包】" + emoji_id + ",【" + user_name + "】,common:" + common + ",default_content:" + default_content);
             chatListView.scrollTo(chatMessages.size());
         });
-
     }
 
     //直播间消息
@@ -253,8 +234,6 @@ public class DouyinUtil {
             otherMessages.add("【直播间id】:" + room_id);
             otherListView.scrollTo(otherMessages.size());
         });
-
-
     }
 
     //直播间消息统计
@@ -265,7 +244,6 @@ public class DouyinUtil {
             otherMessages.add("【直播间统计】:" + display_long);
             otherListView.scrollTo(otherMessages.size());
         });
-
     }
 
     public void parseRankMsg(ByteString byteString) throws InvalidProtocolBufferException {
