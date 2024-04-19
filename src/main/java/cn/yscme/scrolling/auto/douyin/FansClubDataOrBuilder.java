@@ -5,68 +5,83 @@
 package cn.yscme.scrolling.auto.douyin;
 
 public interface FansClubDataOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:cn.yscme.scrolling.auto.douyin.FansClubData)
-    com.google.protobuf.MessageOrBuilder {
+        // @@protoc_insertion_point(interface_extends:cn.yscme.scrolling.auto.douyin.FansClubData)
+        com.google.protobuf.MessageOrBuilder {
 
-  /**
-   * <code>string clubName = 1;</code>
-   * @return The clubName.
-   */
-  java.lang.String getClubName();
-  /**
-   * <code>string clubName = 1;</code>
-   * @return The bytes for clubName.
-   */
-  com.google.protobuf.ByteString
-      getClubNameBytes();
+    /**
+     * <code>string clubName = 1;</code>
+     *
+     * @return The clubName.
+     */
+    java.lang.String getClubName();
 
-  /**
-   * <code>int32 level = 2;</code>
-   * @return The level.
-   */
-  int getLevel();
+    /**
+     * <code>string clubName = 1;</code>
+     *
+     * @return The bytes for clubName.
+     */
+    com.google.protobuf.ByteString
+    getClubNameBytes();
 
-  /**
-   * <code>int32 userFansClubStatus = 3;</code>
-   * @return The userFansClubStatus.
-   */
-  int getUserFansClubStatus();
+    /**
+     * <code>int32 level = 2;</code>
+     *
+     * @return The level.
+     */
+    int getLevel();
 
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.UserBadge badge = 4;</code>
-   * @return Whether the badge field is set.
-   */
-  boolean hasBadge();
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.UserBadge badge = 4;</code>
-   * @return The badge.
-   */
-  cn.yscme.scrolling.auto.douyin.UserBadge getBadge();
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.UserBadge badge = 4;</code>
-   */
-  cn.yscme.scrolling.auto.douyin.UserBadgeOrBuilder getBadgeOrBuilder();
+    /**
+     * <code>int32 userFansClubStatus = 3;</code>
+     *
+     * @return The userFansClubStatus.
+     */
+    int getUserFansClubStatus();
 
-  /**
-   * <code>repeated int64 availableGiftIds = 5;</code>
-   * @return A list containing the availableGiftIds.
-   */
-  java.util.List<java.lang.Long> getAvailableGiftIdsList();
-  /**
-   * <code>repeated int64 availableGiftIds = 5;</code>
-   * @return The count of availableGiftIds.
-   */
-  int getAvailableGiftIdsCount();
-  /**
-   * <code>repeated int64 availableGiftIds = 5;</code>
-   * @param index The index of the element to return.
-   * @return The availableGiftIds at the given index.
-   */
-  long getAvailableGiftIds(int index);
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.UserBadge badge = 4;</code>
+     *
+     * @return Whether the badge field is set.
+     */
+    boolean hasBadge();
 
-  /**
-   * <code>int64 anchorId = 6;</code>
-   * @return The anchorId.
-   */
-  long getAnchorId();
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.UserBadge badge = 4;</code>
+     *
+     * @return The badge.
+     */
+    cn.yscme.scrolling.auto.douyin.UserBadge getBadge();
+
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.UserBadge badge = 4;</code>
+     */
+    cn.yscme.scrolling.auto.douyin.UserBadgeOrBuilder getBadgeOrBuilder();
+
+    /**
+     * <code>repeated int64 availableGiftIds = 5;</code>
+     *
+     * @return A list containing the availableGiftIds.
+     */
+    java.util.List<java.lang.Long> getAvailableGiftIdsList();
+
+    /**
+     * <code>repeated int64 availableGiftIds = 5;</code>
+     *
+     * @return The count of availableGiftIds.
+     */
+    int getAvailableGiftIdsCount();
+
+    /**
+     * <code>repeated int64 availableGiftIds = 5;</code>
+     *
+     * @param index The index of the element to return.
+     * @return The availableGiftIds at the given index.
+     */
+    long getAvailableGiftIds(int index);
+
+    /**
+     * <code>int64 anchorId = 6;</code>
+     *
+     * @return The anchorId.
+     */
+    long getAnchorId();
 }

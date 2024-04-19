@@ -5,136 +5,168 @@
 package cn.yscme.scrolling.auto.douyin;
 
 public interface ImageOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:cn.yscme.scrolling.auto.douyin.Image)
-    com.google.protobuf.MessageOrBuilder {
+        // @@protoc_insertion_point(interface_extends:cn.yscme.scrolling.auto.douyin.Image)
+        com.google.protobuf.MessageOrBuilder {
 
-  /**
-   * <code>repeated string urlListList = 1;</code>
-   * @return A list containing the urlListList.
-   */
-  java.util.List<java.lang.String>
-      getUrlListListList();
-  /**
-   * <code>repeated string urlListList = 1;</code>
-   * @return The count of urlListList.
-   */
-  int getUrlListListCount();
-  /**
-   * <code>repeated string urlListList = 1;</code>
-   * @param index The index of the element to return.
-   * @return The urlListList at the given index.
-   */
-  java.lang.String getUrlListList(int index);
-  /**
-   * <code>repeated string urlListList = 1;</code>
-   * @param index The index of the value to return.
-   * @return The bytes of the urlListList at the given index.
-   */
-  com.google.protobuf.ByteString
-      getUrlListListBytes(int index);
+    /**
+     * <code>repeated string urlListList = 1;</code>
+     *
+     * @return A list containing the urlListList.
+     */
+    java.util.List<java.lang.String>
+    getUrlListListList();
 
-  /**
-   * <code>string uri = 2;</code>
-   * @return The uri.
-   */
-  java.lang.String getUri();
-  /**
-   * <code>string uri = 2;</code>
-   * @return The bytes for uri.
-   */
-  com.google.protobuf.ByteString
-      getUriBytes();
+    /**
+     * <code>repeated string urlListList = 1;</code>
+     *
+     * @return The count of urlListList.
+     */
+    int getUrlListListCount();
 
-  /**
-   * <code>uint64 height = 3;</code>
-   * @return The height.
-   */
-  long getHeight();
+    /**
+     * <code>repeated string urlListList = 1;</code>
+     *
+     * @param index The index of the element to return.
+     * @return The urlListList at the given index.
+     */
+    java.lang.String getUrlListList(int index);
 
-  /**
-   * <code>uint64 width = 4;</code>
-   * @return The width.
-   */
-  long getWidth();
+    /**
+     * <code>repeated string urlListList = 1;</code>
+     *
+     * @param index The index of the value to return.
+     * @return The bytes of the urlListList at the given index.
+     */
+    com.google.protobuf.ByteString
+    getUrlListListBytes(int index);
 
-  /**
-   * <code>string avgColor = 5;</code>
-   * @return The avgColor.
-   */
-  java.lang.String getAvgColor();
-  /**
-   * <code>string avgColor = 5;</code>
-   * @return The bytes for avgColor.
-   */
-  com.google.protobuf.ByteString
-      getAvgColorBytes();
+    /**
+     * <code>string uri = 2;</code>
+     *
+     * @return The uri.
+     */
+    java.lang.String getUri();
 
-  /**
-   * <code>uint32 imageType = 6;</code>
-   * @return The imageType.
-   */
-  int getImageType();
+    /**
+     * <code>string uri = 2;</code>
+     *
+     * @return The bytes for uri.
+     */
+    com.google.protobuf.ByteString
+    getUriBytes();
 
-  /**
-   * <code>string openWebUrl = 7;</code>
-   * @return The openWebUrl.
-   */
-  java.lang.String getOpenWebUrl();
-  /**
-   * <code>string openWebUrl = 7;</code>
-   * @return The bytes for openWebUrl.
-   */
-  com.google.protobuf.ByteString
-      getOpenWebUrlBytes();
+    /**
+     * <code>uint64 height = 3;</code>
+     *
+     * @return The height.
+     */
+    long getHeight();
 
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.ImageContent content = 8;</code>
-   * @return Whether the content field is set.
-   */
-  boolean hasContent();
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.ImageContent content = 8;</code>
-   * @return The content.
-   */
-  cn.yscme.scrolling.auto.douyin.ImageContent getContent();
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.ImageContent content = 8;</code>
-   */
-  cn.yscme.scrolling.auto.douyin.ImageContentOrBuilder getContentOrBuilder();
+    /**
+     * <code>uint64 width = 4;</code>
+     *
+     * @return The width.
+     */
+    long getWidth();
 
-  /**
-   * <code>bool isAnimated = 9;</code>
-   * @return The isAnimated.
-   */
-  boolean getIsAnimated();
+    /**
+     * <code>string avgColor = 5;</code>
+     *
+     * @return The avgColor.
+     */
+    java.lang.String getAvgColor();
 
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.NinePatchSetting FlexSettingList = 10;</code>
-   * @return Whether the flexSettingList field is set.
-   */
-  boolean hasFlexSettingList();
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.NinePatchSetting FlexSettingList = 10;</code>
-   * @return The flexSettingList.
-   */
-  cn.yscme.scrolling.auto.douyin.NinePatchSetting getFlexSettingList();
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.NinePatchSetting FlexSettingList = 10;</code>
-   */
-  cn.yscme.scrolling.auto.douyin.NinePatchSettingOrBuilder getFlexSettingListOrBuilder();
+    /**
+     * <code>string avgColor = 5;</code>
+     *
+     * @return The bytes for avgColor.
+     */
+    com.google.protobuf.ByteString
+    getAvgColorBytes();
 
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.NinePatchSetting TextSettingList = 11;</code>
-   * @return Whether the textSettingList field is set.
-   */
-  boolean hasTextSettingList();
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.NinePatchSetting TextSettingList = 11;</code>
-   * @return The textSettingList.
-   */
-  cn.yscme.scrolling.auto.douyin.NinePatchSetting getTextSettingList();
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.NinePatchSetting TextSettingList = 11;</code>
-   */
-  cn.yscme.scrolling.auto.douyin.NinePatchSettingOrBuilder getTextSettingListOrBuilder();
+    /**
+     * <code>uint32 imageType = 6;</code>
+     *
+     * @return The imageType.
+     */
+    int getImageType();
+
+    /**
+     * <code>string openWebUrl = 7;</code>
+     *
+     * @return The openWebUrl.
+     */
+    java.lang.String getOpenWebUrl();
+
+    /**
+     * <code>string openWebUrl = 7;</code>
+     *
+     * @return The bytes for openWebUrl.
+     */
+    com.google.protobuf.ByteString
+    getOpenWebUrlBytes();
+
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.ImageContent content = 8;</code>
+     *
+     * @return Whether the content field is set.
+     */
+    boolean hasContent();
+
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.ImageContent content = 8;</code>
+     *
+     * @return The content.
+     */
+    cn.yscme.scrolling.auto.douyin.ImageContent getContent();
+
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.ImageContent content = 8;</code>
+     */
+    cn.yscme.scrolling.auto.douyin.ImageContentOrBuilder getContentOrBuilder();
+
+    /**
+     * <code>bool isAnimated = 9;</code>
+     *
+     * @return The isAnimated.
+     */
+    boolean getIsAnimated();
+
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.NinePatchSetting FlexSettingList = 10;</code>
+     *
+     * @return Whether the flexSettingList field is set.
+     */
+    boolean hasFlexSettingList();
+
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.NinePatchSetting FlexSettingList = 10;</code>
+     *
+     * @return The flexSettingList.
+     */
+    cn.yscme.scrolling.auto.douyin.NinePatchSetting getFlexSettingList();
+
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.NinePatchSetting FlexSettingList = 10;</code>
+     */
+    cn.yscme.scrolling.auto.douyin.NinePatchSettingOrBuilder getFlexSettingListOrBuilder();
+
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.NinePatchSetting TextSettingList = 11;</code>
+     *
+     * @return Whether the textSettingList field is set.
+     */
+    boolean hasTextSettingList();
+
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.NinePatchSetting TextSettingList = 11;</code>
+     *
+     * @return The textSettingList.
+     */
+    cn.yscme.scrolling.auto.douyin.NinePatchSetting getTextSettingList();
+
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.NinePatchSetting TextSettingList = 11;</code>
+     */
+    cn.yscme.scrolling.auto.douyin.NinePatchSettingOrBuilder getTextSettingListOrBuilder();
 }

@@ -5,93 +5,110 @@
 package cn.yscme.scrolling.auto.douyin;
 
 public interface ProductChangeMessageOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:cn.yscme.scrolling.auto.douyin.ProductChangeMessage)
-    com.google.protobuf.MessageOrBuilder {
+        // @@protoc_insertion_point(interface_extends:cn.yscme.scrolling.auto.douyin.ProductChangeMessage)
+        com.google.protobuf.MessageOrBuilder {
 
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.Common common = 1;</code>
-   * @return Whether the common field is set.
-   */
-  boolean hasCommon();
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.Common common = 1;</code>
-   * @return The common.
-   */
-  cn.yscme.scrolling.auto.douyin.Common getCommon();
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.Common common = 1;</code>
-   */
-  cn.yscme.scrolling.auto.douyin.CommonOrBuilder getCommonOrBuilder();
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.Common common = 1;</code>
+     *
+     * @return Whether the common field is set.
+     */
+    boolean hasCommon();
 
-  /**
-   * <code>int64 updateTimestamp = 2;</code>
-   * @return The updateTimestamp.
-   */
-  long getUpdateTimestamp();
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.Common common = 1;</code>
+     *
+     * @return The common.
+     */
+    cn.yscme.scrolling.auto.douyin.Common getCommon();
 
-  /**
-   * <code>string updateToast = 3;</code>
-   * @return The updateToast.
-   */
-  java.lang.String getUpdateToast();
-  /**
-   * <code>string updateToast = 3;</code>
-   * @return The bytes for updateToast.
-   */
-  com.google.protobuf.ByteString
-      getUpdateToastBytes();
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.Common common = 1;</code>
+     */
+    cn.yscme.scrolling.auto.douyin.CommonOrBuilder getCommonOrBuilder();
 
-  /**
-   * <code>repeated .cn.yscme.scrolling.auto.douyin.ProductInfo updateProductInfoList = 4;</code>
-   */
-  java.util.List<cn.yscme.scrolling.auto.douyin.ProductInfo> 
-      getUpdateProductInfoListList();
-  /**
-   * <code>repeated .cn.yscme.scrolling.auto.douyin.ProductInfo updateProductInfoList = 4;</code>
-   */
-  cn.yscme.scrolling.auto.douyin.ProductInfo getUpdateProductInfoList(int index);
-  /**
-   * <code>repeated .cn.yscme.scrolling.auto.douyin.ProductInfo updateProductInfoList = 4;</code>
-   */
-  int getUpdateProductInfoListCount();
-  /**
-   * <code>repeated .cn.yscme.scrolling.auto.douyin.ProductInfo updateProductInfoList = 4;</code>
-   */
-  java.util.List<? extends cn.yscme.scrolling.auto.douyin.ProductInfoOrBuilder> 
-      getUpdateProductInfoListOrBuilderList();
-  /**
-   * <code>repeated .cn.yscme.scrolling.auto.douyin.ProductInfo updateProductInfoList = 4;</code>
-   */
-  cn.yscme.scrolling.auto.douyin.ProductInfoOrBuilder getUpdateProductInfoListOrBuilder(
-      int index);
+    /**
+     * <code>int64 updateTimestamp = 2;</code>
+     *
+     * @return The updateTimestamp.
+     */
+    long getUpdateTimestamp();
 
-  /**
-   * <code>int64 total = 5;</code>
-   * @return The total.
-   */
-  long getTotal();
+    /**
+     * <code>string updateToast = 3;</code>
+     *
+     * @return The updateToast.
+     */
+    java.lang.String getUpdateToast();
 
-  /**
-   * <code>repeated .cn.yscme.scrolling.auto.douyin.CategoryInfo updateCategoryInfoList = 8;</code>
-   */
-  java.util.List<cn.yscme.scrolling.auto.douyin.CategoryInfo> 
-      getUpdateCategoryInfoListList();
-  /**
-   * <code>repeated .cn.yscme.scrolling.auto.douyin.CategoryInfo updateCategoryInfoList = 8;</code>
-   */
-  cn.yscme.scrolling.auto.douyin.CategoryInfo getUpdateCategoryInfoList(int index);
-  /**
-   * <code>repeated .cn.yscme.scrolling.auto.douyin.CategoryInfo updateCategoryInfoList = 8;</code>
-   */
-  int getUpdateCategoryInfoListCount();
-  /**
-   * <code>repeated .cn.yscme.scrolling.auto.douyin.CategoryInfo updateCategoryInfoList = 8;</code>
-   */
-  java.util.List<? extends cn.yscme.scrolling.auto.douyin.CategoryInfoOrBuilder> 
-      getUpdateCategoryInfoListOrBuilderList();
-  /**
-   * <code>repeated .cn.yscme.scrolling.auto.douyin.CategoryInfo updateCategoryInfoList = 8;</code>
-   */
-  cn.yscme.scrolling.auto.douyin.CategoryInfoOrBuilder getUpdateCategoryInfoListOrBuilder(
-      int index);
+    /**
+     * <code>string updateToast = 3;</code>
+     *
+     * @return The bytes for updateToast.
+     */
+    com.google.protobuf.ByteString
+    getUpdateToastBytes();
+
+    /**
+     * <code>repeated .cn.yscme.scrolling.auto.douyin.ProductInfo updateProductInfoList = 4;</code>
+     */
+    java.util.List<cn.yscme.scrolling.auto.douyin.ProductInfo>
+    getUpdateProductInfoListList();
+
+    /**
+     * <code>repeated .cn.yscme.scrolling.auto.douyin.ProductInfo updateProductInfoList = 4;</code>
+     */
+    cn.yscme.scrolling.auto.douyin.ProductInfo getUpdateProductInfoList(int index);
+
+    /**
+     * <code>repeated .cn.yscme.scrolling.auto.douyin.ProductInfo updateProductInfoList = 4;</code>
+     */
+    int getUpdateProductInfoListCount();
+
+    /**
+     * <code>repeated .cn.yscme.scrolling.auto.douyin.ProductInfo updateProductInfoList = 4;</code>
+     */
+    java.util.List<? extends cn.yscme.scrolling.auto.douyin.ProductInfoOrBuilder>
+    getUpdateProductInfoListOrBuilderList();
+
+    /**
+     * <code>repeated .cn.yscme.scrolling.auto.douyin.ProductInfo updateProductInfoList = 4;</code>
+     */
+    cn.yscme.scrolling.auto.douyin.ProductInfoOrBuilder getUpdateProductInfoListOrBuilder(
+            int index);
+
+    /**
+     * <code>int64 total = 5;</code>
+     *
+     * @return The total.
+     */
+    long getTotal();
+
+    /**
+     * <code>repeated .cn.yscme.scrolling.auto.douyin.CategoryInfo updateCategoryInfoList = 8;</code>
+     */
+    java.util.List<cn.yscme.scrolling.auto.douyin.CategoryInfo>
+    getUpdateCategoryInfoListList();
+
+    /**
+     * <code>repeated .cn.yscme.scrolling.auto.douyin.CategoryInfo updateCategoryInfoList = 8;</code>
+     */
+    cn.yscme.scrolling.auto.douyin.CategoryInfo getUpdateCategoryInfoList(int index);
+
+    /**
+     * <code>repeated .cn.yscme.scrolling.auto.douyin.CategoryInfo updateCategoryInfoList = 8;</code>
+     */
+    int getUpdateCategoryInfoListCount();
+
+    /**
+     * <code>repeated .cn.yscme.scrolling.auto.douyin.CategoryInfo updateCategoryInfoList = 8;</code>
+     */
+    java.util.List<? extends cn.yscme.scrolling.auto.douyin.CategoryInfoOrBuilder>
+    getUpdateCategoryInfoListOrBuilderList();
+
+    /**
+     * <code>repeated .cn.yscme.scrolling.auto.douyin.CategoryInfo updateCategoryInfoList = 8;</code>
+     */
+    cn.yscme.scrolling.auto.douyin.CategoryInfoOrBuilder getUpdateCategoryInfoListOrBuilder(
+            int index);
 }

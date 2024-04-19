@@ -5,48 +5,59 @@
 package cn.yscme.scrolling.auto.douyin;
 
 public interface CommonTextMessageOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:cn.yscme.scrolling.auto.douyin.CommonTextMessage)
-    com.google.protobuf.MessageOrBuilder {
+        // @@protoc_insertion_point(interface_extends:cn.yscme.scrolling.auto.douyin.CommonTextMessage)
+        com.google.protobuf.MessageOrBuilder {
 
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.Common common = 1;</code>
-   * @return Whether the common field is set.
-   */
-  boolean hasCommon();
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.Common common = 1;</code>
-   * @return The common.
-   */
-  cn.yscme.scrolling.auto.douyin.Common getCommon();
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.Common common = 1;</code>
-   */
-  cn.yscme.scrolling.auto.douyin.CommonOrBuilder getCommonOrBuilder();
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.Common common = 1;</code>
+     *
+     * @return Whether the common field is set.
+     */
+    boolean hasCommon();
 
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.User user = 2;</code>
-   * @return Whether the user field is set.
-   */
-  boolean hasUser();
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.User user = 2;</code>
-   * @return The user.
-   */
-  cn.yscme.scrolling.auto.douyin.User getUser();
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.User user = 2;</code>
-   */
-  cn.yscme.scrolling.auto.douyin.UserOrBuilder getUserOrBuilder();
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.Common common = 1;</code>
+     *
+     * @return The common.
+     */
+    cn.yscme.scrolling.auto.douyin.Common getCommon();
 
-  /**
-   * <code>string scene = 3;</code>
-   * @return The scene.
-   */
-  java.lang.String getScene();
-  /**
-   * <code>string scene = 3;</code>
-   * @return The bytes for scene.
-   */
-  com.google.protobuf.ByteString
-      getSceneBytes();
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.Common common = 1;</code>
+     */
+    cn.yscme.scrolling.auto.douyin.CommonOrBuilder getCommonOrBuilder();
+
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.User user = 2;</code>
+     *
+     * @return Whether the user field is set.
+     */
+    boolean hasUser();
+
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.User user = 2;</code>
+     *
+     * @return The user.
+     */
+    cn.yscme.scrolling.auto.douyin.User getUser();
+
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.User user = 2;</code>
+     */
+    cn.yscme.scrolling.auto.douyin.UserOrBuilder getUserOrBuilder();
+
+    /**
+     * <code>string scene = 3;</code>
+     *
+     * @return The scene.
+     */
+    java.lang.String getScene();
+
+    /**
+     * <code>string scene = 3;</code>
+     *
+     * @return The bytes for scene.
+     */
+    com.google.protobuf.ByteString
+    getSceneBytes();
 }

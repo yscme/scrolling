@@ -5,27 +5,32 @@
 package cn.yscme.scrolling.auto.douyin;
 
 public interface TextPieceUserOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:cn.yscme.scrolling.auto.douyin.TextPieceUser)
-    com.google.protobuf.MessageOrBuilder {
+        // @@protoc_insertion_point(interface_extends:cn.yscme.scrolling.auto.douyin.TextPieceUser)
+        com.google.protobuf.MessageOrBuilder {
 
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.User user = 1;</code>
-   * @return Whether the user field is set.
-   */
-  boolean hasUser();
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.User user = 1;</code>
-   * @return The user.
-   */
-  cn.yscme.scrolling.auto.douyin.User getUser();
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.User user = 1;</code>
-   */
-  cn.yscme.scrolling.auto.douyin.UserOrBuilder getUserOrBuilder();
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.User user = 1;</code>
+     *
+     * @return Whether the user field is set.
+     */
+    boolean hasUser();
 
-  /**
-   * <code>bool withColon = 2;</code>
-   * @return The withColon.
-   */
-  boolean getWithColon();
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.User user = 1;</code>
+     *
+     * @return The user.
+     */
+    cn.yscme.scrolling.auto.douyin.User getUser();
+
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.User user = 1;</code>
+     */
+    cn.yscme.scrolling.auto.douyin.UserOrBuilder getUserOrBuilder();
+
+    /**
+     * <code>bool withColon = 2;</code>
+     *
+     * @return The withColon.
+     */
+    boolean getWithColon();
 }

@@ -5,45 +5,54 @@
 package cn.yscme.scrolling.auto.douyin;
 
 public interface GradeIconOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:cn.yscme.scrolling.auto.douyin.GradeIcon)
-    com.google.protobuf.MessageOrBuilder {
+        // @@protoc_insertion_point(interface_extends:cn.yscme.scrolling.auto.douyin.GradeIcon)
+        com.google.protobuf.MessageOrBuilder {
 
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.Image icon = 1;</code>
-   * @return Whether the icon field is set.
-   */
-  boolean hasIcon();
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.Image icon = 1;</code>
-   * @return The icon.
-   */
-  cn.yscme.scrolling.auto.douyin.Image getIcon();
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.Image icon = 1;</code>
-   */
-  cn.yscme.scrolling.auto.douyin.ImageOrBuilder getIconOrBuilder();
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.Image icon = 1;</code>
+     *
+     * @return Whether the icon field is set.
+     */
+    boolean hasIcon();
 
-  /**
-   * <code>int64 iconDiamond = 2;</code>
-   * @return The iconDiamond.
-   */
-  long getIconDiamond();
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.Image icon = 1;</code>
+     *
+     * @return The icon.
+     */
+    cn.yscme.scrolling.auto.douyin.Image getIcon();
 
-  /**
-   * <code>int64 level = 3;</code>
-   * @return The level.
-   */
-  long getLevel();
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.Image icon = 1;</code>
+     */
+    cn.yscme.scrolling.auto.douyin.ImageOrBuilder getIconOrBuilder();
 
-  /**
-   * <code>string levelStr = 4;</code>
-   * @return The levelStr.
-   */
-  java.lang.String getLevelStr();
-  /**
-   * <code>string levelStr = 4;</code>
-   * @return The bytes for levelStr.
-   */
-  com.google.protobuf.ByteString
-      getLevelStrBytes();
+    /**
+     * <code>int64 iconDiamond = 2;</code>
+     *
+     * @return The iconDiamond.
+     */
+    long getIconDiamond();
+
+    /**
+     * <code>int64 level = 3;</code>
+     *
+     * @return The level.
+     */
+    long getLevel();
+
+    /**
+     * <code>string levelStr = 4;</code>
+     *
+     * @return The levelStr.
+     */
+    java.lang.String getLevelStr();
+
+    /**
+     * <code>string levelStr = 4;</code>
+     *
+     * @return The bytes for levelStr.
+     */
+    com.google.protobuf.ByteString
+    getLevelStrBytes();
 }

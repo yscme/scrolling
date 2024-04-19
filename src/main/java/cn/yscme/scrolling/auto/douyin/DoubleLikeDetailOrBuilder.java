@@ -5,30 +5,34 @@
 package cn.yscme.scrolling.auto.douyin;
 
 public interface DoubleLikeDetailOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:cn.yscme.scrolling.auto.douyin.DoubleLikeDetail)
-    com.google.protobuf.MessageOrBuilder {
+        // @@protoc_insertion_point(interface_extends:cn.yscme.scrolling.auto.douyin.DoubleLikeDetail)
+        com.google.protobuf.MessageOrBuilder {
 
-  /**
-   * <code>bool doubleFlag = 1;</code>
-   * @return The doubleFlag.
-   */
-  boolean getDoubleFlag();
+    /**
+     * <code>bool doubleFlag = 1;</code>
+     *
+     * @return The doubleFlag.
+     */
+    boolean getDoubleFlag();
 
-  /**
-   * <code>uint32 seqId = 2;</code>
-   * @return The seqId.
-   */
-  int getSeqId();
+    /**
+     * <code>uint32 seqId = 2;</code>
+     *
+     * @return The seqId.
+     */
+    int getSeqId();
 
-  /**
-   * <code>uint32 renewalsNum = 3;</code>
-   * @return The renewalsNum.
-   */
-  int getRenewalsNum();
+    /**
+     * <code>uint32 renewalsNum = 3;</code>
+     *
+     * @return The renewalsNum.
+     */
+    int getRenewalsNum();
 
-  /**
-   * <code>uint32 triggersNum = 4;</code>
-   * @return The triggersNum.
-   */
-  int getTriggersNum();
+    /**
+     * <code>uint32 triggersNum = 4;</code>
+     *
+     * @return The triggersNum.
+     */
+    int getTriggersNum();
 }

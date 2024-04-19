@@ -1,4 +1,5 @@
 package cn.yscme.scrolling.controller;
+
 import cn.yscme.scrolling.auto.DouyinUtil;
 import javafx.application.Platform;
 import javafx.collections.FXCollections;
@@ -9,11 +10,11 @@ import javafx.scene.control.*;
 
 public class MainController {
     @FXML
-    private Label timerLabel,peopleLabel;
+    private Label timerLabel, peopleLabel;
     @FXML
     private TextField roomidTextFieid;
     @FXML
-    private ListView<String> chatListView,giftListView,otherListView;
+    private ListView<String> chatListView, giftListView, otherListView;
 
     private ObservableList<String> chatMessages = FXCollections.observableArrayList();
     private ObservableList<String> giftMessages = FXCollections.observableArrayList();
@@ -32,10 +33,10 @@ public class MainController {
             protected Void call() {
                 // 在这里执行耗时任务，比如模拟一个耗时操作
                 DouyinUtil douyinUtil = new DouyinUtil();
-                Platform.runLater(()->{
+                Platform.runLater(() -> {
                     timerLabel.setText("0秒");
                 });
-                douyinUtil.start(Long.parseLong(roomidTextFieid.getText()),timerLabel,peopleLabel,chatMessages,giftMessages,otherMessages, chatListView,giftListView,otherListView);
+                douyinUtil.start(Long.parseLong(roomidTextFieid.getText()), timerLabel, peopleLabel, chatMessages, giftMessages, otherMessages, chatListView, giftListView, otherListView);
                 return null;
             }
         };

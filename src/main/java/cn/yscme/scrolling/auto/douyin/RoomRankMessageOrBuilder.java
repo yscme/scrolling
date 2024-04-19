@@ -5,45 +5,53 @@
 package cn.yscme.scrolling.auto.douyin;
 
 public interface RoomRankMessageOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:cn.yscme.scrolling.auto.douyin.RoomRankMessage)
-    com.google.protobuf.MessageOrBuilder {
+        // @@protoc_insertion_point(interface_extends:cn.yscme.scrolling.auto.douyin.RoomRankMessage)
+        com.google.protobuf.MessageOrBuilder {
 
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.Common common = 1;</code>
-   * @return Whether the common field is set.
-   */
-  boolean hasCommon();
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.Common common = 1;</code>
-   * @return The common.
-   */
-  cn.yscme.scrolling.auto.douyin.Common getCommon();
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.Common common = 1;</code>
-   */
-  cn.yscme.scrolling.auto.douyin.CommonOrBuilder getCommonOrBuilder();
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.Common common = 1;</code>
+     *
+     * @return Whether the common field is set.
+     */
+    boolean hasCommon();
 
-  /**
-   * <code>repeated .cn.yscme.scrolling.auto.douyin.RoomRankMessage.RoomRank ranksList = 2;</code>
-   */
-  java.util.List<cn.yscme.scrolling.auto.douyin.RoomRankMessage.RoomRank> 
-      getRanksListList();
-  /**
-   * <code>repeated .cn.yscme.scrolling.auto.douyin.RoomRankMessage.RoomRank ranksList = 2;</code>
-   */
-  cn.yscme.scrolling.auto.douyin.RoomRankMessage.RoomRank getRanksList(int index);
-  /**
-   * <code>repeated .cn.yscme.scrolling.auto.douyin.RoomRankMessage.RoomRank ranksList = 2;</code>
-   */
-  int getRanksListCount();
-  /**
-   * <code>repeated .cn.yscme.scrolling.auto.douyin.RoomRankMessage.RoomRank ranksList = 2;</code>
-   */
-  java.util.List<? extends cn.yscme.scrolling.auto.douyin.RoomRankMessage.RoomRankOrBuilder> 
-      getRanksListOrBuilderList();
-  /**
-   * <code>repeated .cn.yscme.scrolling.auto.douyin.RoomRankMessage.RoomRank ranksList = 2;</code>
-   */
-  cn.yscme.scrolling.auto.douyin.RoomRankMessage.RoomRankOrBuilder getRanksListOrBuilder(
-      int index);
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.Common common = 1;</code>
+     *
+     * @return The common.
+     */
+    cn.yscme.scrolling.auto.douyin.Common getCommon();
+
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.Common common = 1;</code>
+     */
+    cn.yscme.scrolling.auto.douyin.CommonOrBuilder getCommonOrBuilder();
+
+    /**
+     * <code>repeated .cn.yscme.scrolling.auto.douyin.RoomRankMessage.RoomRank ranksList = 2;</code>
+     */
+    java.util.List<cn.yscme.scrolling.auto.douyin.RoomRankMessage.RoomRank>
+    getRanksListList();
+
+    /**
+     * <code>repeated .cn.yscme.scrolling.auto.douyin.RoomRankMessage.RoomRank ranksList = 2;</code>
+     */
+    cn.yscme.scrolling.auto.douyin.RoomRankMessage.RoomRank getRanksList(int index);
+
+    /**
+     * <code>repeated .cn.yscme.scrolling.auto.douyin.RoomRankMessage.RoomRank ranksList = 2;</code>
+     */
+    int getRanksListCount();
+
+    /**
+     * <code>repeated .cn.yscme.scrolling.auto.douyin.RoomRankMessage.RoomRank ranksList = 2;</code>
+     */
+    java.util.List<? extends cn.yscme.scrolling.auto.douyin.RoomRankMessage.RoomRankOrBuilder>
+    getRanksListOrBuilderList();
+
+    /**
+     * <code>repeated .cn.yscme.scrolling.auto.douyin.RoomRankMessage.RoomRank ranksList = 2;</code>
+     */
+    cn.yscme.scrolling.auto.douyin.RoomRankMessage.RoomRankOrBuilder getRanksListOrBuilder(
+            int index);
 }

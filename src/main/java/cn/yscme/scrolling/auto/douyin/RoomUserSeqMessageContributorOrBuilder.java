@@ -5,69 +5,83 @@
 package cn.yscme.scrolling.auto.douyin;
 
 public interface RoomUserSeqMessageContributorOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:cn.yscme.scrolling.auto.douyin.RoomUserSeqMessageContributor)
-    com.google.protobuf.MessageOrBuilder {
+        // @@protoc_insertion_point(interface_extends:cn.yscme.scrolling.auto.douyin.RoomUserSeqMessageContributor)
+        com.google.protobuf.MessageOrBuilder {
 
-  /**
-   * <code>uint64 score = 1;</code>
-   * @return The score.
-   */
-  long getScore();
+    /**
+     * <code>uint64 score = 1;</code>
+     *
+     * @return The score.
+     */
+    long getScore();
 
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.User user = 2;</code>
-   * @return Whether the user field is set.
-   */
-  boolean hasUser();
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.User user = 2;</code>
-   * @return The user.
-   */
-  cn.yscme.scrolling.auto.douyin.User getUser();
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.User user = 2;</code>
-   */
-  cn.yscme.scrolling.auto.douyin.UserOrBuilder getUserOrBuilder();
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.User user = 2;</code>
+     *
+     * @return Whether the user field is set.
+     */
+    boolean hasUser();
 
-  /**
-   * <code>uint64 rank = 3;</code>
-   * @return The rank.
-   */
-  long getRank();
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.User user = 2;</code>
+     *
+     * @return The user.
+     */
+    cn.yscme.scrolling.auto.douyin.User getUser();
 
-  /**
-   * <code>uint64 delta = 4;</code>
-   * @return The delta.
-   */
-  long getDelta();
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.User user = 2;</code>
+     */
+    cn.yscme.scrolling.auto.douyin.UserOrBuilder getUserOrBuilder();
 
-  /**
-   * <code>bool isHidden = 5;</code>
-   * @return The isHidden.
-   */
-  boolean getIsHidden();
+    /**
+     * <code>uint64 rank = 3;</code>
+     *
+     * @return The rank.
+     */
+    long getRank();
 
-  /**
-   * <code>string scoreDescription = 6;</code>
-   * @return The scoreDescription.
-   */
-  java.lang.String getScoreDescription();
-  /**
-   * <code>string scoreDescription = 6;</code>
-   * @return The bytes for scoreDescription.
-   */
-  com.google.protobuf.ByteString
-      getScoreDescriptionBytes();
+    /**
+     * <code>uint64 delta = 4;</code>
+     *
+     * @return The delta.
+     */
+    long getDelta();
 
-  /**
-   * <code>string exactlyScore = 7;</code>
-   * @return The exactlyScore.
-   */
-  java.lang.String getExactlyScore();
-  /**
-   * <code>string exactlyScore = 7;</code>
-   * @return The bytes for exactlyScore.
-   */
-  com.google.protobuf.ByteString
-      getExactlyScoreBytes();
+    /**
+     * <code>bool isHidden = 5;</code>
+     *
+     * @return The isHidden.
+     */
+    boolean getIsHidden();
+
+    /**
+     * <code>string scoreDescription = 6;</code>
+     *
+     * @return The scoreDescription.
+     */
+    java.lang.String getScoreDescription();
+
+    /**
+     * <code>string scoreDescription = 6;</code>
+     *
+     * @return The bytes for scoreDescription.
+     */
+    com.google.protobuf.ByteString
+    getScoreDescriptionBytes();
+
+    /**
+     * <code>string exactlyScore = 7;</code>
+     *
+     * @return The exactlyScore.
+     */
+    java.lang.String getExactlyScore();
+
+    /**
+     * <code>string exactlyScore = 7;</code>
+     *
+     * @return The bytes for exactlyScore.
+     */
+    com.google.protobuf.ByteString
+    getExactlyScoreBytes();
 }

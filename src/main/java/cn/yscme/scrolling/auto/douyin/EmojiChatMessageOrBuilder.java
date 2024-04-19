@@ -5,96 +5,118 @@
 package cn.yscme.scrolling.auto.douyin;
 
 public interface EmojiChatMessageOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:cn.yscme.scrolling.auto.douyin.EmojiChatMessage)
-    com.google.protobuf.MessageOrBuilder {
+        // @@protoc_insertion_point(interface_extends:cn.yscme.scrolling.auto.douyin.EmojiChatMessage)
+        com.google.protobuf.MessageOrBuilder {
 
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.Common common = 1;</code>
-   * @return Whether the common field is set.
-   */
-  boolean hasCommon();
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.Common common = 1;</code>
-   * @return The common.
-   */
-  cn.yscme.scrolling.auto.douyin.Common getCommon();
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.Common common = 1;</code>
-   */
-  cn.yscme.scrolling.auto.douyin.CommonOrBuilder getCommonOrBuilder();
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.Common common = 1;</code>
+     *
+     * @return Whether the common field is set.
+     */
+    boolean hasCommon();
 
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.User user = 2;</code>
-   * @return Whether the user field is set.
-   */
-  boolean hasUser();
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.User user = 2;</code>
-   * @return The user.
-   */
-  cn.yscme.scrolling.auto.douyin.User getUser();
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.User user = 2;</code>
-   */
-  cn.yscme.scrolling.auto.douyin.UserOrBuilder getUserOrBuilder();
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.Common common = 1;</code>
+     *
+     * @return The common.
+     */
+    cn.yscme.scrolling.auto.douyin.Common getCommon();
 
-  /**
-   * <code>int64 emojiId = 3;</code>
-   * @return The emojiId.
-   */
-  long getEmojiId();
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.Common common = 1;</code>
+     */
+    cn.yscme.scrolling.auto.douyin.CommonOrBuilder getCommonOrBuilder();
 
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.Text emojiContent = 4;</code>
-   * @return Whether the emojiContent field is set.
-   */
-  boolean hasEmojiContent();
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.Text emojiContent = 4;</code>
-   * @return The emojiContent.
-   */
-  cn.yscme.scrolling.auto.douyin.Text getEmojiContent();
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.Text emojiContent = 4;</code>
-   */
-  cn.yscme.scrolling.auto.douyin.TextOrBuilder getEmojiContentOrBuilder();
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.User user = 2;</code>
+     *
+     * @return Whether the user field is set.
+     */
+    boolean hasUser();
 
-  /**
-   * <code>string defaultContent = 5;</code>
-   * @return The defaultContent.
-   */
-  java.lang.String getDefaultContent();
-  /**
-   * <code>string defaultContent = 5;</code>
-   * @return The bytes for defaultContent.
-   */
-  com.google.protobuf.ByteString
-      getDefaultContentBytes();
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.User user = 2;</code>
+     *
+     * @return The user.
+     */
+    cn.yscme.scrolling.auto.douyin.User getUser();
 
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.Image backgroundImage = 6;</code>
-   * @return Whether the backgroundImage field is set.
-   */
-  boolean hasBackgroundImage();
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.Image backgroundImage = 6;</code>
-   * @return The backgroundImage.
-   */
-  cn.yscme.scrolling.auto.douyin.Image getBackgroundImage();
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.Image backgroundImage = 6;</code>
-   */
-  cn.yscme.scrolling.auto.douyin.ImageOrBuilder getBackgroundImageOrBuilder();
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.User user = 2;</code>
+     */
+    cn.yscme.scrolling.auto.douyin.UserOrBuilder getUserOrBuilder();
 
-  /**
-   * <code>bool fromIntercom = 7;</code>
-   * @return The fromIntercom.
-   */
-  boolean getFromIntercom();
+    /**
+     * <code>int64 emojiId = 3;</code>
+     *
+     * @return The emojiId.
+     */
+    long getEmojiId();
 
-  /**
-   * <code>bool intercomHideUserCard = 8;</code>
-   * @return The intercomHideUserCard.
-   */
-  boolean getIntercomHideUserCard();
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.Text emojiContent = 4;</code>
+     *
+     * @return Whether the emojiContent field is set.
+     */
+    boolean hasEmojiContent();
+
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.Text emojiContent = 4;</code>
+     *
+     * @return The emojiContent.
+     */
+    cn.yscme.scrolling.auto.douyin.Text getEmojiContent();
+
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.Text emojiContent = 4;</code>
+     */
+    cn.yscme.scrolling.auto.douyin.TextOrBuilder getEmojiContentOrBuilder();
+
+    /**
+     * <code>string defaultContent = 5;</code>
+     *
+     * @return The defaultContent.
+     */
+    java.lang.String getDefaultContent();
+
+    /**
+     * <code>string defaultContent = 5;</code>
+     *
+     * @return The bytes for defaultContent.
+     */
+    com.google.protobuf.ByteString
+    getDefaultContentBytes();
+
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.Image backgroundImage = 6;</code>
+     *
+     * @return Whether the backgroundImage field is set.
+     */
+    boolean hasBackgroundImage();
+
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.Image backgroundImage = 6;</code>
+     *
+     * @return The backgroundImage.
+     */
+    cn.yscme.scrolling.auto.douyin.Image getBackgroundImage();
+
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.Image backgroundImage = 6;</code>
+     */
+    cn.yscme.scrolling.auto.douyin.ImageOrBuilder getBackgroundImageOrBuilder();
+
+    /**
+     * <code>bool fromIntercom = 7;</code>
+     *
+     * @return The fromIntercom.
+     */
+    boolean getFromIntercom();
+
+    /**
+     * <code>bool intercomHideUserCard = 8;</code>
+     *
+     * @return The intercomHideUserCard.
+     */
+    boolean getIntercomHideUserCard();
 }

@@ -5,58 +5,70 @@
 package cn.yscme.scrolling.auto.douyin;
 
 public interface FansclubMessageOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:cn.yscme.scrolling.auto.douyin.FansclubMessage)
-    com.google.protobuf.MessageOrBuilder {
+        // @@protoc_insertion_point(interface_extends:cn.yscme.scrolling.auto.douyin.FansclubMessage)
+        com.google.protobuf.MessageOrBuilder {
 
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.Common commonInfo = 1;</code>
-   * @return Whether the commonInfo field is set.
-   */
-  boolean hasCommonInfo();
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.Common commonInfo = 1;</code>
-   * @return The commonInfo.
-   */
-  cn.yscme.scrolling.auto.douyin.Common getCommonInfo();
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.Common commonInfo = 1;</code>
-   */
-  cn.yscme.scrolling.auto.douyin.CommonOrBuilder getCommonInfoOrBuilder();
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.Common commonInfo = 1;</code>
+     *
+     * @return Whether the commonInfo field is set.
+     */
+    boolean hasCommonInfo();
 
-  /**
-   * <pre>
-   * 升级是1，加入是2
-   * </pre>
-   *
-   * <code>int32 type = 2;</code>
-   * @return The type.
-   */
-  int getType();
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.Common commonInfo = 1;</code>
+     *
+     * @return The commonInfo.
+     */
+    cn.yscme.scrolling.auto.douyin.Common getCommonInfo();
 
-  /**
-   * <code>string content = 3;</code>
-   * @return The content.
-   */
-  java.lang.String getContent();
-  /**
-   * <code>string content = 3;</code>
-   * @return The bytes for content.
-   */
-  com.google.protobuf.ByteString
-      getContentBytes();
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.Common commonInfo = 1;</code>
+     */
+    cn.yscme.scrolling.auto.douyin.CommonOrBuilder getCommonInfoOrBuilder();
 
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.User user = 4;</code>
-   * @return Whether the user field is set.
-   */
-  boolean hasUser();
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.User user = 4;</code>
-   * @return The user.
-   */
-  cn.yscme.scrolling.auto.douyin.User getUser();
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.User user = 4;</code>
-   */
-  cn.yscme.scrolling.auto.douyin.UserOrBuilder getUserOrBuilder();
+    /**
+     * <pre>
+     * 升级是1，加入是2
+     * </pre>
+     *
+     * <code>int32 type = 2;</code>
+     *
+     * @return The type.
+     */
+    int getType();
+
+    /**
+     * <code>string content = 3;</code>
+     *
+     * @return The content.
+     */
+    java.lang.String getContent();
+
+    /**
+     * <code>string content = 3;</code>
+     *
+     * @return The bytes for content.
+     */
+    com.google.protobuf.ByteString
+    getContentBytes();
+
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.User user = 4;</code>
+     *
+     * @return Whether the user field is set.
+     */
+    boolean hasUser();
+
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.User user = 4;</code>
+     *
+     * @return The user.
+     */
+    cn.yscme.scrolling.auto.douyin.User getUser();
+
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.User user = 4;</code>
+     */
+    cn.yscme.scrolling.auto.douyin.UserOrBuilder getUserOrBuilder();
 }

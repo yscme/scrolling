@@ -5,257 +5,314 @@
 package cn.yscme.scrolling.auto.douyin;
 
 public interface EffectConfigOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:cn.yscme.scrolling.auto.douyin.EffectConfig)
-    com.google.protobuf.MessageOrBuilder {
+        // @@protoc_insertion_point(interface_extends:cn.yscme.scrolling.auto.douyin.EffectConfig)
+        com.google.protobuf.MessageOrBuilder {
 
-  /**
-   * <code>uint64 type = 1;</code>
-   * @return The type.
-   */
-  long getType();
+    /**
+     * <code>uint64 type = 1;</code>
+     *
+     * @return The type.
+     */
+    long getType();
 
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.Image icon = 2;</code>
-   * @return Whether the icon field is set.
-   */
-  boolean hasIcon();
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.Image icon = 2;</code>
-   * @return The icon.
-   */
-  cn.yscme.scrolling.auto.douyin.Image getIcon();
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.Image icon = 2;</code>
-   */
-  cn.yscme.scrolling.auto.douyin.ImageOrBuilder getIconOrBuilder();
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.Image icon = 2;</code>
+     *
+     * @return Whether the icon field is set.
+     */
+    boolean hasIcon();
 
-  /**
-   * <code>uint64 avatarPos = 3;</code>
-   * @return The avatarPos.
-   */
-  long getAvatarPos();
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.Image icon = 2;</code>
+     *
+     * @return The icon.
+     */
+    cn.yscme.scrolling.auto.douyin.Image getIcon();
 
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.Text text = 4;</code>
-   * @return Whether the text field is set.
-   */
-  boolean hasText();
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.Text text = 4;</code>
-   * @return The text.
-   */
-  cn.yscme.scrolling.auto.douyin.Text getText();
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.Text text = 4;</code>
-   */
-  cn.yscme.scrolling.auto.douyin.TextOrBuilder getTextOrBuilder();
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.Image icon = 2;</code>
+     */
+    cn.yscme.scrolling.auto.douyin.ImageOrBuilder getIconOrBuilder();
 
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.Image textIcon = 5;</code>
-   * @return Whether the textIcon field is set.
-   */
-  boolean hasTextIcon();
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.Image textIcon = 5;</code>
-   * @return The textIcon.
-   */
-  cn.yscme.scrolling.auto.douyin.Image getTextIcon();
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.Image textIcon = 5;</code>
-   */
-  cn.yscme.scrolling.auto.douyin.ImageOrBuilder getTextIconOrBuilder();
+    /**
+     * <code>uint64 avatarPos = 3;</code>
+     *
+     * @return The avatarPos.
+     */
+    long getAvatarPos();
 
-  /**
-   * <code>uint32 stayTime = 6;</code>
-   * @return The stayTime.
-   */
-  int getStayTime();
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.Text text = 4;</code>
+     *
+     * @return Whether the text field is set.
+     */
+    boolean hasText();
 
-  /**
-   * <code>uint64 animAssetId = 7;</code>
-   * @return The animAssetId.
-   */
-  long getAnimAssetId();
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.Text text = 4;</code>
+     *
+     * @return The text.
+     */
+    cn.yscme.scrolling.auto.douyin.Text getText();
 
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.Image badge = 8;</code>
-   * @return Whether the badge field is set.
-   */
-  boolean hasBadge();
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.Image badge = 8;</code>
-   * @return The badge.
-   */
-  cn.yscme.scrolling.auto.douyin.Image getBadge();
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.Image badge = 8;</code>
-   */
-  cn.yscme.scrolling.auto.douyin.ImageOrBuilder getBadgeOrBuilder();
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.Text text = 4;</code>
+     */
+    cn.yscme.scrolling.auto.douyin.TextOrBuilder getTextOrBuilder();
 
-  /**
-   * <code>repeated uint64 flexSettingArrayList = 9;</code>
-   * @return A list containing the flexSettingArrayList.
-   */
-  java.util.List<java.lang.Long> getFlexSettingArrayListList();
-  /**
-   * <code>repeated uint64 flexSettingArrayList = 9;</code>
-   * @return The count of flexSettingArrayList.
-   */
-  int getFlexSettingArrayListCount();
-  /**
-   * <code>repeated uint64 flexSettingArrayList = 9;</code>
-   * @param index The index of the element to return.
-   * @return The flexSettingArrayList at the given index.
-   */
-  long getFlexSettingArrayList(int index);
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.Image textIcon = 5;</code>
+     *
+     * @return Whether the textIcon field is set.
+     */
+    boolean hasTextIcon();
 
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.Image textIconOverlay = 10;</code>
-   * @return Whether the textIconOverlay field is set.
-   */
-  boolean hasTextIconOverlay();
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.Image textIconOverlay = 10;</code>
-   * @return The textIconOverlay.
-   */
-  cn.yscme.scrolling.auto.douyin.Image getTextIconOverlay();
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.Image textIconOverlay = 10;</code>
-   */
-  cn.yscme.scrolling.auto.douyin.ImageOrBuilder getTextIconOverlayOrBuilder();
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.Image textIcon = 5;</code>
+     *
+     * @return The textIcon.
+     */
+    cn.yscme.scrolling.auto.douyin.Image getTextIcon();
 
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.Image animatedBadge = 11;</code>
-   * @return Whether the animatedBadge field is set.
-   */
-  boolean hasAnimatedBadge();
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.Image animatedBadge = 11;</code>
-   * @return The animatedBadge.
-   */
-  cn.yscme.scrolling.auto.douyin.Image getAnimatedBadge();
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.Image animatedBadge = 11;</code>
-   */
-  cn.yscme.scrolling.auto.douyin.ImageOrBuilder getAnimatedBadgeOrBuilder();
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.Image textIcon = 5;</code>
+     */
+    cn.yscme.scrolling.auto.douyin.ImageOrBuilder getTextIconOrBuilder();
 
-  /**
-   * <code>bool hasSweepLight = 12;</code>
-   * @return The hasSweepLight.
-   */
-  boolean getHasSweepLight();
+    /**
+     * <code>uint32 stayTime = 6;</code>
+     *
+     * @return The stayTime.
+     */
+    int getStayTime();
 
-  /**
-   * <code>repeated uint64 textFlexSettingArrayList = 13;</code>
-   * @return A list containing the textFlexSettingArrayList.
-   */
-  java.util.List<java.lang.Long> getTextFlexSettingArrayListList();
-  /**
-   * <code>repeated uint64 textFlexSettingArrayList = 13;</code>
-   * @return The count of textFlexSettingArrayList.
-   */
-  int getTextFlexSettingArrayListCount();
-  /**
-   * <code>repeated uint64 textFlexSettingArrayList = 13;</code>
-   * @param index The index of the element to return.
-   * @return The textFlexSettingArrayList at the given index.
-   */
-  long getTextFlexSettingArrayList(int index);
+    /**
+     * <code>uint64 animAssetId = 7;</code>
+     *
+     * @return The animAssetId.
+     */
+    long getAnimAssetId();
 
-  /**
-   * <code>uint64 centerAnimAssetId = 14;</code>
-   * @return The centerAnimAssetId.
-   */
-  long getCenterAnimAssetId();
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.Image badge = 8;</code>
+     *
+     * @return Whether the badge field is set.
+     */
+    boolean hasBadge();
 
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.Image dynamicImage = 15;</code>
-   * @return Whether the dynamicImage field is set.
-   */
-  boolean hasDynamicImage();
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.Image dynamicImage = 15;</code>
-   * @return The dynamicImage.
-   */
-  cn.yscme.scrolling.auto.douyin.Image getDynamicImage();
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.Image dynamicImage = 15;</code>
-   */
-  cn.yscme.scrolling.auto.douyin.ImageOrBuilder getDynamicImageOrBuilder();
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.Image badge = 8;</code>
+     *
+     * @return The badge.
+     */
+    cn.yscme.scrolling.auto.douyin.Image getBadge();
 
-  /**
-   * <code>map&lt;string, string&gt; extraMap = 16;</code>
-   */
-  int getExtraMapCount();
-  /**
-   * <code>map&lt;string, string&gt; extraMap = 16;</code>
-   */
-  boolean containsExtraMap(
-      java.lang.String key);
-  /**
-   * Use {@link #getExtraMapMap()} instead.
-   */
-  @java.lang.Deprecated
-  java.util.Map<java.lang.String, java.lang.String>
-  getExtraMap();
-  /**
-   * <code>map&lt;string, string&gt; extraMap = 16;</code>
-   */
-  java.util.Map<java.lang.String, java.lang.String>
-  getExtraMapMap();
-  /**
-   * <code>map&lt;string, string&gt; extraMap = 16;</code>
-   */
-  /* nullable */
-java.lang.String getExtraMapOrDefault(
-      java.lang.String key,
-      /* nullable */
-java.lang.String defaultValue);
-  /**
-   * <code>map&lt;string, string&gt; extraMap = 16;</code>
-   */
-  java.lang.String getExtraMapOrThrow(
-      java.lang.String key);
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.Image badge = 8;</code>
+     */
+    cn.yscme.scrolling.auto.douyin.ImageOrBuilder getBadgeOrBuilder();
 
-  /**
-   * <code>uint64 mp4AnimAssetId = 17;</code>
-   * @return The mp4AnimAssetId.
-   */
-  long getMp4AnimAssetId();
+    /**
+     * <code>repeated uint64 flexSettingArrayList = 9;</code>
+     *
+     * @return A list containing the flexSettingArrayList.
+     */
+    java.util.List<java.lang.Long> getFlexSettingArrayListList();
 
-  /**
-   * <code>uint64 priority = 18;</code>
-   * @return The priority.
-   */
-  long getPriority();
+    /**
+     * <code>repeated uint64 flexSettingArrayList = 9;</code>
+     *
+     * @return The count of flexSettingArrayList.
+     */
+    int getFlexSettingArrayListCount();
 
-  /**
-   * <code>uint64 maxWaitTime = 19;</code>
-   * @return The maxWaitTime.
-   */
-  long getMaxWaitTime();
+    /**
+     * <code>repeated uint64 flexSettingArrayList = 9;</code>
+     *
+     * @param index The index of the element to return.
+     * @return The flexSettingArrayList at the given index.
+     */
+    long getFlexSettingArrayList(int index);
 
-  /**
-   * <code>string dressId = 20;</code>
-   * @return The dressId.
-   */
-  java.lang.String getDressId();
-  /**
-   * <code>string dressId = 20;</code>
-   * @return The bytes for dressId.
-   */
-  com.google.protobuf.ByteString
-      getDressIdBytes();
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.Image textIconOverlay = 10;</code>
+     *
+     * @return Whether the textIconOverlay field is set.
+     */
+    boolean hasTextIconOverlay();
 
-  /**
-   * <code>uint64 alignment = 21;</code>
-   * @return The alignment.
-   */
-  long getAlignment();
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.Image textIconOverlay = 10;</code>
+     *
+     * @return The textIconOverlay.
+     */
+    cn.yscme.scrolling.auto.douyin.Image getTextIconOverlay();
 
-  /**
-   * <code>uint64 alignmentOffset = 22;</code>
-   * @return The alignmentOffset.
-   */
-  long getAlignmentOffset();
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.Image textIconOverlay = 10;</code>
+     */
+    cn.yscme.scrolling.auto.douyin.ImageOrBuilder getTextIconOverlayOrBuilder();
+
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.Image animatedBadge = 11;</code>
+     *
+     * @return Whether the animatedBadge field is set.
+     */
+    boolean hasAnimatedBadge();
+
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.Image animatedBadge = 11;</code>
+     *
+     * @return The animatedBadge.
+     */
+    cn.yscme.scrolling.auto.douyin.Image getAnimatedBadge();
+
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.Image animatedBadge = 11;</code>
+     */
+    cn.yscme.scrolling.auto.douyin.ImageOrBuilder getAnimatedBadgeOrBuilder();
+
+    /**
+     * <code>bool hasSweepLight = 12;</code>
+     *
+     * @return The hasSweepLight.
+     */
+    boolean getHasSweepLight();
+
+    /**
+     * <code>repeated uint64 textFlexSettingArrayList = 13;</code>
+     *
+     * @return A list containing the textFlexSettingArrayList.
+     */
+    java.util.List<java.lang.Long> getTextFlexSettingArrayListList();
+
+    /**
+     * <code>repeated uint64 textFlexSettingArrayList = 13;</code>
+     *
+     * @return The count of textFlexSettingArrayList.
+     */
+    int getTextFlexSettingArrayListCount();
+
+    /**
+     * <code>repeated uint64 textFlexSettingArrayList = 13;</code>
+     *
+     * @param index The index of the element to return.
+     * @return The textFlexSettingArrayList at the given index.
+     */
+    long getTextFlexSettingArrayList(int index);
+
+    /**
+     * <code>uint64 centerAnimAssetId = 14;</code>
+     *
+     * @return The centerAnimAssetId.
+     */
+    long getCenterAnimAssetId();
+
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.Image dynamicImage = 15;</code>
+     *
+     * @return Whether the dynamicImage field is set.
+     */
+    boolean hasDynamicImage();
+
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.Image dynamicImage = 15;</code>
+     *
+     * @return The dynamicImage.
+     */
+    cn.yscme.scrolling.auto.douyin.Image getDynamicImage();
+
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.Image dynamicImage = 15;</code>
+     */
+    cn.yscme.scrolling.auto.douyin.ImageOrBuilder getDynamicImageOrBuilder();
+
+    /**
+     * <code>map&lt;string, string&gt; extraMap = 16;</code>
+     */
+    int getExtraMapCount();
+
+    /**
+     * <code>map&lt;string, string&gt; extraMap = 16;</code>
+     */
+    boolean containsExtraMap(
+            java.lang.String key);
+
+    /**
+     * Use {@link #getExtraMapMap()} instead.
+     */
+    @java.lang.Deprecated
+    java.util.Map<java.lang.String, java.lang.String>
+    getExtraMap();
+
+    /**
+     * <code>map&lt;string, string&gt; extraMap = 16;</code>
+     */
+    java.util.Map<java.lang.String, java.lang.String>
+    getExtraMapMap();
+
+    /**
+     * <code>map&lt;string, string&gt; extraMap = 16;</code>
+     */
+    /* nullable */
+    java.lang.String getExtraMapOrDefault(
+            java.lang.String key,
+            /* nullable */
+            java.lang.String defaultValue);
+
+    /**
+     * <code>map&lt;string, string&gt; extraMap = 16;</code>
+     */
+    java.lang.String getExtraMapOrThrow(
+            java.lang.String key);
+
+    /**
+     * <code>uint64 mp4AnimAssetId = 17;</code>
+     *
+     * @return The mp4AnimAssetId.
+     */
+    long getMp4AnimAssetId();
+
+    /**
+     * <code>uint64 priority = 18;</code>
+     *
+     * @return The priority.
+     */
+    long getPriority();
+
+    /**
+     * <code>uint64 maxWaitTime = 19;</code>
+     *
+     * @return The maxWaitTime.
+     */
+    long getMaxWaitTime();
+
+    /**
+     * <code>string dressId = 20;</code>
+     *
+     * @return The dressId.
+     */
+    java.lang.String getDressId();
+
+    /**
+     * <code>string dressId = 20;</code>
+     *
+     * @return The bytes for dressId.
+     */
+    com.google.protobuf.ByteString
+    getDressIdBytes();
+
+    /**
+     * <code>uint64 alignment = 21;</code>
+     *
+     * @return The alignment.
+     */
+    long getAlignment();
+
+    /**
+     * <code>uint64 alignmentOffset = 22;</code>
+     *
+     * @return The alignmentOffset.
+     */
+    long getAlignmentOffset();
 }

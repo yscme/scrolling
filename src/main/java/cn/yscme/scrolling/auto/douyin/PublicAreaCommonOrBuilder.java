@@ -5,33 +5,39 @@
 package cn.yscme.scrolling.auto.douyin;
 
 public interface PublicAreaCommonOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:cn.yscme.scrolling.auto.douyin.PublicAreaCommon)
-    com.google.protobuf.MessageOrBuilder {
+        // @@protoc_insertion_point(interface_extends:cn.yscme.scrolling.auto.douyin.PublicAreaCommon)
+        com.google.protobuf.MessageOrBuilder {
 
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.Image userLabel = 1;</code>
-   * @return Whether the userLabel field is set.
-   */
-  boolean hasUserLabel();
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.Image userLabel = 1;</code>
-   * @return The userLabel.
-   */
-  cn.yscme.scrolling.auto.douyin.Image getUserLabel();
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.Image userLabel = 1;</code>
-   */
-  cn.yscme.scrolling.auto.douyin.ImageOrBuilder getUserLabelOrBuilder();
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.Image userLabel = 1;</code>
+     *
+     * @return Whether the userLabel field is set.
+     */
+    boolean hasUserLabel();
 
-  /**
-   * <code>uint64 userConsumeInRoom = 2;</code>
-   * @return The userConsumeInRoom.
-   */
-  long getUserConsumeInRoom();
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.Image userLabel = 1;</code>
+     *
+     * @return The userLabel.
+     */
+    cn.yscme.scrolling.auto.douyin.Image getUserLabel();
 
-  /**
-   * <code>uint64 userSendGiftCntInRoom = 3;</code>
-   * @return The userSendGiftCntInRoom.
-   */
-  long getUserSendGiftCntInRoom();
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.Image userLabel = 1;</code>
+     */
+    cn.yscme.scrolling.auto.douyin.ImageOrBuilder getUserLabelOrBuilder();
+
+    /**
+     * <code>uint64 userConsumeInRoom = 2;</code>
+     *
+     * @return The userConsumeInRoom.
+     */
+    long getUserConsumeInRoom();
+
+    /**
+     * <code>uint64 userSendGiftCntInRoom = 3;</code>
+     *
+     * @return The userSendGiftCntInRoom.
+     */
+    long getUserSendGiftCntInRoom();
 }

@@ -5,18 +5,20 @@
 package cn.yscme.scrolling.auto.douyin;
 
 public interface DisplayControlInfoOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:cn.yscme.scrolling.auto.douyin.DisplayControlInfo)
-    com.google.protobuf.MessageOrBuilder {
+        // @@protoc_insertion_point(interface_extends:cn.yscme.scrolling.auto.douyin.DisplayControlInfo)
+        com.google.protobuf.MessageOrBuilder {
 
-  /**
-   * <code>bool showText = 1;</code>
-   * @return The showText.
-   */
-  boolean getShowText();
+    /**
+     * <code>bool showText = 1;</code>
+     *
+     * @return The showText.
+     */
+    boolean getShowText();
 
-  /**
-   * <code>bool showIcons = 2;</code>
-   * @return The showIcons.
-   */
-  boolean getShowIcons();
+    /**
+     * <code>bool showIcons = 2;</code>
+     *
+     * @return The showIcons.
+     */
+    boolean getShowIcons();
 }

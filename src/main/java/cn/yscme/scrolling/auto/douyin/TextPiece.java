@@ -8,1720 +8,1873 @@ package cn.yscme.scrolling.auto.douyin;
  * Protobuf type {@code cn.yscme.scrolling.auto.douyin.TextPiece}
  */
 public final class TextPiece extends
-    com.google.protobuf.GeneratedMessageV3 implements
-    // @@protoc_insertion_point(message_implements:cn.yscme.scrolling.auto.douyin.TextPiece)
-    TextPieceOrBuilder {
-private static final long serialVersionUID = 0L;
-  // Use TextPiece.newBuilder() to construct.
-  private TextPiece(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
-    super(builder);
-  }
-  private TextPiece() {
-    stringValue_ = "";
-  }
+        com.google.protobuf.GeneratedMessageV3 implements
+        // @@protoc_insertion_point(message_implements:cn.yscme.scrolling.auto.douyin.TextPiece)
+        TextPieceOrBuilder {
+    private static final long serialVersionUID = 0L;
 
-  @java.lang.Override
-  @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(
-      UnusedPrivateParameter unused) {
-    return new TextPiece();
-  }
+    // Use TextPiece.newBuilder() to construct.
+    private TextPiece(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+        super(builder);
+    }
 
-  public static final com.google.protobuf.Descriptors.Descriptor
-      getDescriptor() {
-    return cn.yscme.scrolling.auto.douyin.Douyin.internal_static_cn_yscme_scrolling_auto_douyin_TextPiece_descriptor;
-  }
+    private TextPiece() {
+        stringValue_ = "";
+    }
 
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internalGetFieldAccessorTable() {
-    return cn.yscme.scrolling.auto.douyin.Douyin.internal_static_cn_yscme_scrolling_auto_douyin_TextPiece_fieldAccessorTable
-        .ensureFieldAccessorsInitialized(
-            cn.yscme.scrolling.auto.douyin.TextPiece.class, cn.yscme.scrolling.auto.douyin.TextPiece.Builder.class);
-  }
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(
+            UnusedPrivateParameter unused) {
+        return new TextPiece();
+    }
 
-  private int bitField0_;
-  public static final int TYPE_FIELD_NUMBER = 1;
-  private boolean type_ = false;
-  /**
-   * <code>bool type = 1;</code>
-   * @return The type.
-   */
-  @java.lang.Override
-  public boolean getType() {
-    return type_;
-  }
-
-  public static final int FORMAT_FIELD_NUMBER = 2;
-  private cn.yscme.scrolling.auto.douyin.TextFormat format_;
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.TextFormat format = 2;</code>
-   * @return Whether the format field is set.
-   */
-  @java.lang.Override
-  public boolean hasFormat() {
-    return ((bitField0_ & 0x00000001) != 0);
-  }
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.TextFormat format = 2;</code>
-   * @return The format.
-   */
-  @java.lang.Override
-  public cn.yscme.scrolling.auto.douyin.TextFormat getFormat() {
-    return format_ == null ? cn.yscme.scrolling.auto.douyin.TextFormat.getDefaultInstance() : format_;
-  }
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.TextFormat format = 2;</code>
-   */
-  @java.lang.Override
-  public cn.yscme.scrolling.auto.douyin.TextFormatOrBuilder getFormatOrBuilder() {
-    return format_ == null ? cn.yscme.scrolling.auto.douyin.TextFormat.getDefaultInstance() : format_;
-  }
-
-  public static final int STRINGVALUE_FIELD_NUMBER = 3;
-  @SuppressWarnings("serial")
-  private volatile java.lang.Object stringValue_ = "";
-  /**
-   * <code>string stringValue = 3;</code>
-   * @return The stringValue.
-   */
-  @java.lang.Override
-  public java.lang.String getStringValue() {
-    java.lang.Object ref = stringValue_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
-    } else {
-      com.google.protobuf.ByteString bs = 
-          (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
-      stringValue_ = s;
-      return s;
-    }
-  }
-  /**
-   * <code>string stringValue = 3;</code>
-   * @return The bytes for stringValue.
-   */
-  @java.lang.Override
-  public com.google.protobuf.ByteString
-      getStringValueBytes() {
-    java.lang.Object ref = stringValue_;
-    if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b = 
-          com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
-      stringValue_ = b;
-      return b;
-    } else {
-      return (com.google.protobuf.ByteString) ref;
-    }
-  }
-
-  public static final int USERVALUE_FIELD_NUMBER = 4;
-  private cn.yscme.scrolling.auto.douyin.TextPieceUser userValue_;
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.TextPieceUser userValue = 4;</code>
-   * @return Whether the userValue field is set.
-   */
-  @java.lang.Override
-  public boolean hasUserValue() {
-    return ((bitField0_ & 0x00000002) != 0);
-  }
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.TextPieceUser userValue = 4;</code>
-   * @return The userValue.
-   */
-  @java.lang.Override
-  public cn.yscme.scrolling.auto.douyin.TextPieceUser getUserValue() {
-    return userValue_ == null ? cn.yscme.scrolling.auto.douyin.TextPieceUser.getDefaultInstance() : userValue_;
-  }
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.TextPieceUser userValue = 4;</code>
-   */
-  @java.lang.Override
-  public cn.yscme.scrolling.auto.douyin.TextPieceUserOrBuilder getUserValueOrBuilder() {
-    return userValue_ == null ? cn.yscme.scrolling.auto.douyin.TextPieceUser.getDefaultInstance() : userValue_;
-  }
-
-  public static final int GIFTVALUE_FIELD_NUMBER = 5;
-  private cn.yscme.scrolling.auto.douyin.TextPieceGift giftValue_;
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.TextPieceGift giftValue = 5;</code>
-   * @return Whether the giftValue field is set.
-   */
-  @java.lang.Override
-  public boolean hasGiftValue() {
-    return ((bitField0_ & 0x00000004) != 0);
-  }
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.TextPieceGift giftValue = 5;</code>
-   * @return The giftValue.
-   */
-  @java.lang.Override
-  public cn.yscme.scrolling.auto.douyin.TextPieceGift getGiftValue() {
-    return giftValue_ == null ? cn.yscme.scrolling.auto.douyin.TextPieceGift.getDefaultInstance() : giftValue_;
-  }
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.TextPieceGift giftValue = 5;</code>
-   */
-  @java.lang.Override
-  public cn.yscme.scrolling.auto.douyin.TextPieceGiftOrBuilder getGiftValueOrBuilder() {
-    return giftValue_ == null ? cn.yscme.scrolling.auto.douyin.TextPieceGift.getDefaultInstance() : giftValue_;
-  }
-
-  public static final int HEARTVALUE_FIELD_NUMBER = 6;
-  private cn.yscme.scrolling.auto.douyin.TextPieceHeart heartValue_;
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.TextPieceHeart heartValue = 6;</code>
-   * @return Whether the heartValue field is set.
-   */
-  @java.lang.Override
-  public boolean hasHeartValue() {
-    return ((bitField0_ & 0x00000008) != 0);
-  }
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.TextPieceHeart heartValue = 6;</code>
-   * @return The heartValue.
-   */
-  @java.lang.Override
-  public cn.yscme.scrolling.auto.douyin.TextPieceHeart getHeartValue() {
-    return heartValue_ == null ? cn.yscme.scrolling.auto.douyin.TextPieceHeart.getDefaultInstance() : heartValue_;
-  }
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.TextPieceHeart heartValue = 6;</code>
-   */
-  @java.lang.Override
-  public cn.yscme.scrolling.auto.douyin.TextPieceHeartOrBuilder getHeartValueOrBuilder() {
-    return heartValue_ == null ? cn.yscme.scrolling.auto.douyin.TextPieceHeart.getDefaultInstance() : heartValue_;
-  }
-
-  public static final int PATTERNREFVALUE_FIELD_NUMBER = 7;
-  private cn.yscme.scrolling.auto.douyin.TextPiecePatternRef patternRefValue_;
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.TextPiecePatternRef patternRefValue = 7;</code>
-   * @return Whether the patternRefValue field is set.
-   */
-  @java.lang.Override
-  public boolean hasPatternRefValue() {
-    return ((bitField0_ & 0x00000010) != 0);
-  }
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.TextPiecePatternRef patternRefValue = 7;</code>
-   * @return The patternRefValue.
-   */
-  @java.lang.Override
-  public cn.yscme.scrolling.auto.douyin.TextPiecePatternRef getPatternRefValue() {
-    return patternRefValue_ == null ? cn.yscme.scrolling.auto.douyin.TextPiecePatternRef.getDefaultInstance() : patternRefValue_;
-  }
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.TextPiecePatternRef patternRefValue = 7;</code>
-   */
-  @java.lang.Override
-  public cn.yscme.scrolling.auto.douyin.TextPiecePatternRefOrBuilder getPatternRefValueOrBuilder() {
-    return patternRefValue_ == null ? cn.yscme.scrolling.auto.douyin.TextPiecePatternRef.getDefaultInstance() : patternRefValue_;
-  }
-
-  public static final int IMAGEVALUE_FIELD_NUMBER = 8;
-  private cn.yscme.scrolling.auto.douyin.TextPieceImage imageValue_;
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.TextPieceImage imageValue = 8;</code>
-   * @return Whether the imageValue field is set.
-   */
-  @java.lang.Override
-  public boolean hasImageValue() {
-    return ((bitField0_ & 0x00000020) != 0);
-  }
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.TextPieceImage imageValue = 8;</code>
-   * @return The imageValue.
-   */
-  @java.lang.Override
-  public cn.yscme.scrolling.auto.douyin.TextPieceImage getImageValue() {
-    return imageValue_ == null ? cn.yscme.scrolling.auto.douyin.TextPieceImage.getDefaultInstance() : imageValue_;
-  }
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.TextPieceImage imageValue = 8;</code>
-   */
-  @java.lang.Override
-  public cn.yscme.scrolling.auto.douyin.TextPieceImageOrBuilder getImageValueOrBuilder() {
-    return imageValue_ == null ? cn.yscme.scrolling.auto.douyin.TextPieceImage.getDefaultInstance() : imageValue_;
-  }
-
-  private byte memoizedIsInitialized = -1;
-  @java.lang.Override
-  public final boolean isInitialized() {
-    byte isInitialized = memoizedIsInitialized;
-    if (isInitialized == 1) return true;
-    if (isInitialized == 0) return false;
-
-    memoizedIsInitialized = 1;
-    return true;
-  }
-
-  @java.lang.Override
-  public void writeTo(com.google.protobuf.CodedOutputStream output)
-                      throws java.io.IOException {
-    if (type_ != false) {
-      output.writeBool(1, type_);
-    }
-    if (((bitField0_ & 0x00000001) != 0)) {
-      output.writeMessage(2, getFormat());
-    }
-    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(stringValue_)) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 3, stringValue_);
-    }
-    if (((bitField0_ & 0x00000002) != 0)) {
-      output.writeMessage(4, getUserValue());
-    }
-    if (((bitField0_ & 0x00000004) != 0)) {
-      output.writeMessage(5, getGiftValue());
-    }
-    if (((bitField0_ & 0x00000008) != 0)) {
-      output.writeMessage(6, getHeartValue());
-    }
-    if (((bitField0_ & 0x00000010) != 0)) {
-      output.writeMessage(7, getPatternRefValue());
-    }
-    if (((bitField0_ & 0x00000020) != 0)) {
-      output.writeMessage(8, getImageValue());
-    }
-    getUnknownFields().writeTo(output);
-  }
-
-  @java.lang.Override
-  public int getSerializedSize() {
-    int size = memoizedSize;
-    if (size != -1) return size;
-
-    size = 0;
-    if (type_ != false) {
-      size += com.google.protobuf.CodedOutputStream
-        .computeBoolSize(1, type_);
-    }
-    if (((bitField0_ & 0x00000001) != 0)) {
-      size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(2, getFormat());
-    }
-    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(stringValue_)) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, stringValue_);
-    }
-    if (((bitField0_ & 0x00000002) != 0)) {
-      size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(4, getUserValue());
-    }
-    if (((bitField0_ & 0x00000004) != 0)) {
-      size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(5, getGiftValue());
-    }
-    if (((bitField0_ & 0x00000008) != 0)) {
-      size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(6, getHeartValue());
-    }
-    if (((bitField0_ & 0x00000010) != 0)) {
-      size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(7, getPatternRefValue());
-    }
-    if (((bitField0_ & 0x00000020) != 0)) {
-      size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(8, getImageValue());
-    }
-    size += getUnknownFields().getSerializedSize();
-    memoizedSize = size;
-    return size;
-  }
-
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
-    if (obj == this) {
-     return true;
-    }
-    if (!(obj instanceof cn.yscme.scrolling.auto.douyin.TextPiece)) {
-      return super.equals(obj);
-    }
-    cn.yscme.scrolling.auto.douyin.TextPiece other = (cn.yscme.scrolling.auto.douyin.TextPiece) obj;
-
-    if (getType()
-        != other.getType()) return false;
-    if (hasFormat() != other.hasFormat()) return false;
-    if (hasFormat()) {
-      if (!getFormat()
-          .equals(other.getFormat())) return false;
-    }
-    if (!getStringValue()
-        .equals(other.getStringValue())) return false;
-    if (hasUserValue() != other.hasUserValue()) return false;
-    if (hasUserValue()) {
-      if (!getUserValue()
-          .equals(other.getUserValue())) return false;
-    }
-    if (hasGiftValue() != other.hasGiftValue()) return false;
-    if (hasGiftValue()) {
-      if (!getGiftValue()
-          .equals(other.getGiftValue())) return false;
-    }
-    if (hasHeartValue() != other.hasHeartValue()) return false;
-    if (hasHeartValue()) {
-      if (!getHeartValue()
-          .equals(other.getHeartValue())) return false;
-    }
-    if (hasPatternRefValue() != other.hasPatternRefValue()) return false;
-    if (hasPatternRefValue()) {
-      if (!getPatternRefValue()
-          .equals(other.getPatternRefValue())) return false;
-    }
-    if (hasImageValue() != other.hasImageValue()) return false;
-    if (hasImageValue()) {
-      if (!getImageValue()
-          .equals(other.getImageValue())) return false;
-    }
-    if (!getUnknownFields().equals(other.getUnknownFields())) return false;
-    return true;
-  }
-
-  @java.lang.Override
-  public int hashCode() {
-    if (memoizedHashCode != 0) {
-      return memoizedHashCode;
-    }
-    int hash = 41;
-    hash = (19 * hash) + getDescriptor().hashCode();
-    hash = (37 * hash) + TYPE_FIELD_NUMBER;
-    hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-        getType());
-    if (hasFormat()) {
-      hash = (37 * hash) + FORMAT_FIELD_NUMBER;
-      hash = (53 * hash) + getFormat().hashCode();
-    }
-    hash = (37 * hash) + STRINGVALUE_FIELD_NUMBER;
-    hash = (53 * hash) + getStringValue().hashCode();
-    if (hasUserValue()) {
-      hash = (37 * hash) + USERVALUE_FIELD_NUMBER;
-      hash = (53 * hash) + getUserValue().hashCode();
-    }
-    if (hasGiftValue()) {
-      hash = (37 * hash) + GIFTVALUE_FIELD_NUMBER;
-      hash = (53 * hash) + getGiftValue().hashCode();
-    }
-    if (hasHeartValue()) {
-      hash = (37 * hash) + HEARTVALUE_FIELD_NUMBER;
-      hash = (53 * hash) + getHeartValue().hashCode();
-    }
-    if (hasPatternRefValue()) {
-      hash = (37 * hash) + PATTERNREFVALUE_FIELD_NUMBER;
-      hash = (53 * hash) + getPatternRefValue().hashCode();
-    }
-    if (hasImageValue()) {
-      hash = (37 * hash) + IMAGEVALUE_FIELD_NUMBER;
-      hash = (53 * hash) + getImageValue().hashCode();
-    }
-    hash = (29 * hash) + getUnknownFields().hashCode();
-    memoizedHashCode = hash;
-    return hash;
-  }
-
-  public static cn.yscme.scrolling.auto.douyin.TextPiece parseFrom(
-      java.nio.ByteBuffer data)
-      throws com.google.protobuf.InvalidProtocolBufferException {
-    return PARSER.parseFrom(data);
-  }
-  public static cn.yscme.scrolling.auto.douyin.TextPiece parseFrom(
-      java.nio.ByteBuffer data,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws com.google.protobuf.InvalidProtocolBufferException {
-    return PARSER.parseFrom(data, extensionRegistry);
-  }
-  public static cn.yscme.scrolling.auto.douyin.TextPiece parseFrom(
-      com.google.protobuf.ByteString data)
-      throws com.google.protobuf.InvalidProtocolBufferException {
-    return PARSER.parseFrom(data);
-  }
-  public static cn.yscme.scrolling.auto.douyin.TextPiece parseFrom(
-      com.google.protobuf.ByteString data,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws com.google.protobuf.InvalidProtocolBufferException {
-    return PARSER.parseFrom(data, extensionRegistry);
-  }
-  public static cn.yscme.scrolling.auto.douyin.TextPiece parseFrom(byte[] data)
-      throws com.google.protobuf.InvalidProtocolBufferException {
-    return PARSER.parseFrom(data);
-  }
-  public static cn.yscme.scrolling.auto.douyin.TextPiece parseFrom(
-      byte[] data,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws com.google.protobuf.InvalidProtocolBufferException {
-    return PARSER.parseFrom(data, extensionRegistry);
-  }
-  public static cn.yscme.scrolling.auto.douyin.TextPiece parseFrom(java.io.InputStream input)
-      throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessageV3
-        .parseWithIOException(PARSER, input);
-  }
-  public static cn.yscme.scrolling.auto.douyin.TextPiece parseFrom(
-      java.io.InputStream input,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessageV3
-        .parseWithIOException(PARSER, input, extensionRegistry);
-  }
-
-  public static cn.yscme.scrolling.auto.douyin.TextPiece parseDelimitedFrom(java.io.InputStream input)
-      throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessageV3
-        .parseDelimitedWithIOException(PARSER, input);
-  }
-
-  public static cn.yscme.scrolling.auto.douyin.TextPiece parseDelimitedFrom(
-      java.io.InputStream input,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessageV3
-        .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
-  }
-  public static cn.yscme.scrolling.auto.douyin.TextPiece parseFrom(
-      com.google.protobuf.CodedInputStream input)
-      throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessageV3
-        .parseWithIOException(PARSER, input);
-  }
-  public static cn.yscme.scrolling.auto.douyin.TextPiece parseFrom(
-      com.google.protobuf.CodedInputStream input,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessageV3
-        .parseWithIOException(PARSER, input, extensionRegistry);
-  }
-
-  @java.lang.Override
-  public Builder newBuilderForType() { return newBuilder(); }
-  public static Builder newBuilder() {
-    return DEFAULT_INSTANCE.toBuilder();
-  }
-  public static Builder newBuilder(cn.yscme.scrolling.auto.douyin.TextPiece prototype) {
-    return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
-  }
-  @java.lang.Override
-  public Builder toBuilder() {
-    return this == DEFAULT_INSTANCE
-        ? new Builder() : new Builder().mergeFrom(this);
-  }
-
-  @java.lang.Override
-  protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-    Builder builder = new Builder(parent);
-    return builder;
-  }
-  /**
-   * Protobuf type {@code cn.yscme.scrolling.auto.douyin.TextPiece}
-   */
-  public static final class Builder extends
-      com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-      // @@protoc_insertion_point(builder_implements:cn.yscme.scrolling.auto.douyin.TextPiece)
-      cn.yscme.scrolling.auto.douyin.TextPieceOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
-        getDescriptor() {
-      return cn.yscme.scrolling.auto.douyin.Douyin.internal_static_cn_yscme_scrolling_auto_douyin_TextPiece_descriptor;
+    getDescriptor() {
+        return cn.yscme.scrolling.auto.douyin.Douyin.internal_static_cn_yscme_scrolling_auto_douyin_TextPiece_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return cn.yscme.scrolling.auto.douyin.Douyin.internal_static_cn_yscme_scrolling_auto_douyin_TextPiece_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              cn.yscme.scrolling.auto.douyin.TextPiece.class, cn.yscme.scrolling.auto.douyin.TextPiece.Builder.class);
+    internalGetFieldAccessorTable() {
+        return cn.yscme.scrolling.auto.douyin.Douyin.internal_static_cn_yscme_scrolling_auto_douyin_TextPiece_fieldAccessorTable
+                .ensureFieldAccessorsInitialized(
+                        cn.yscme.scrolling.auto.douyin.TextPiece.class, cn.yscme.scrolling.auto.douyin.TextPiece.Builder.class);
     }
 
-    // Construct using cn.yscme.scrolling.auto.douyin.TextPiece.newBuilder()
-    private Builder() {
-      maybeForceBuilderInitialization();
-    }
-
-    private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-      super(parent);
-      maybeForceBuilderInitialization();
-    }
-    private void maybeForceBuilderInitialization() {
-      if (com.google.protobuf.GeneratedMessageV3
-              .alwaysUseFieldBuilders) {
-        getFormatFieldBuilder();
-        getUserValueFieldBuilder();
-        getGiftValueFieldBuilder();
-        getHeartValueFieldBuilder();
-        getPatternRefValueFieldBuilder();
-        getImageValueFieldBuilder();
-      }
-    }
-    @java.lang.Override
-    public Builder clear() {
-      super.clear();
-      bitField0_ = 0;
-      type_ = false;
-      format_ = null;
-      if (formatBuilder_ != null) {
-        formatBuilder_.dispose();
-        formatBuilder_ = null;
-      }
-      stringValue_ = "";
-      userValue_ = null;
-      if (userValueBuilder_ != null) {
-        userValueBuilder_.dispose();
-        userValueBuilder_ = null;
-      }
-      giftValue_ = null;
-      if (giftValueBuilder_ != null) {
-        giftValueBuilder_.dispose();
-        giftValueBuilder_ = null;
-      }
-      heartValue_ = null;
-      if (heartValueBuilder_ != null) {
-        heartValueBuilder_.dispose();
-        heartValueBuilder_ = null;
-      }
-      patternRefValue_ = null;
-      if (patternRefValueBuilder_ != null) {
-        patternRefValueBuilder_.dispose();
-        patternRefValueBuilder_ = null;
-      }
-      imageValue_ = null;
-      if (imageValueBuilder_ != null) {
-        imageValueBuilder_.dispose();
-        imageValueBuilder_ = null;
-      }
-      return this;
-    }
-
-    @java.lang.Override
-    public com.google.protobuf.Descriptors.Descriptor
-        getDescriptorForType() {
-      return cn.yscme.scrolling.auto.douyin.Douyin.internal_static_cn_yscme_scrolling_auto_douyin_TextPiece_descriptor;
-    }
-
-    @java.lang.Override
-    public cn.yscme.scrolling.auto.douyin.TextPiece getDefaultInstanceForType() {
-      return cn.yscme.scrolling.auto.douyin.TextPiece.getDefaultInstance();
-    }
-
-    @java.lang.Override
-    public cn.yscme.scrolling.auto.douyin.TextPiece build() {
-      cn.yscme.scrolling.auto.douyin.TextPiece result = buildPartial();
-      if (!result.isInitialized()) {
-        throw newUninitializedMessageException(result);
-      }
-      return result;
-    }
-
-    @java.lang.Override
-    public cn.yscme.scrolling.auto.douyin.TextPiece buildPartial() {
-      cn.yscme.scrolling.auto.douyin.TextPiece result = new cn.yscme.scrolling.auto.douyin.TextPiece(this);
-      if (bitField0_ != 0) { buildPartial0(result); }
-      onBuilt();
-      return result;
-    }
-
-    private void buildPartial0(cn.yscme.scrolling.auto.douyin.TextPiece result) {
-      int from_bitField0_ = bitField0_;
-      if (((from_bitField0_ & 0x00000001) != 0)) {
-        result.type_ = type_;
-      }
-      int to_bitField0_ = 0;
-      if (((from_bitField0_ & 0x00000002) != 0)) {
-        result.format_ = formatBuilder_ == null
-            ? format_
-            : formatBuilder_.build();
-        to_bitField0_ |= 0x00000001;
-      }
-      if (((from_bitField0_ & 0x00000004) != 0)) {
-        result.stringValue_ = stringValue_;
-      }
-      if (((from_bitField0_ & 0x00000008) != 0)) {
-        result.userValue_ = userValueBuilder_ == null
-            ? userValue_
-            : userValueBuilder_.build();
-        to_bitField0_ |= 0x00000002;
-      }
-      if (((from_bitField0_ & 0x00000010) != 0)) {
-        result.giftValue_ = giftValueBuilder_ == null
-            ? giftValue_
-            : giftValueBuilder_.build();
-        to_bitField0_ |= 0x00000004;
-      }
-      if (((from_bitField0_ & 0x00000020) != 0)) {
-        result.heartValue_ = heartValueBuilder_ == null
-            ? heartValue_
-            : heartValueBuilder_.build();
-        to_bitField0_ |= 0x00000008;
-      }
-      if (((from_bitField0_ & 0x00000040) != 0)) {
-        result.patternRefValue_ = patternRefValueBuilder_ == null
-            ? patternRefValue_
-            : patternRefValueBuilder_.build();
-        to_bitField0_ |= 0x00000010;
-      }
-      if (((from_bitField0_ & 0x00000080) != 0)) {
-        result.imageValue_ = imageValueBuilder_ == null
-            ? imageValue_
-            : imageValueBuilder_.build();
-        to_bitField0_ |= 0x00000020;
-      }
-      result.bitField0_ |= to_bitField0_;
-    }
-
-    @java.lang.Override
-    public Builder clone() {
-      return super.clone();
-    }
-    @java.lang.Override
-    public Builder setField(
-        com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
-      return super.setField(field, value);
-    }
-    @java.lang.Override
-    public Builder clearField(
-        com.google.protobuf.Descriptors.FieldDescriptor field) {
-      return super.clearField(field);
-    }
-    @java.lang.Override
-    public Builder clearOneof(
-        com.google.protobuf.Descriptors.OneofDescriptor oneof) {
-      return super.clearOneof(oneof);
-    }
-    @java.lang.Override
-    public Builder setRepeatedField(
-        com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
-      return super.setRepeatedField(field, index, value);
-    }
-    @java.lang.Override
-    public Builder addRepeatedField(
-        com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
-      return super.addRepeatedField(field, value);
-    }
-    @java.lang.Override
-    public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof cn.yscme.scrolling.auto.douyin.TextPiece) {
-        return mergeFrom((cn.yscme.scrolling.auto.douyin.TextPiece)other);
-      } else {
-        super.mergeFrom(other);
-        return this;
-      }
-    }
-
-    public Builder mergeFrom(cn.yscme.scrolling.auto.douyin.TextPiece other) {
-      if (other == cn.yscme.scrolling.auto.douyin.TextPiece.getDefaultInstance()) return this;
-      if (other.getType() != false) {
-        setType(other.getType());
-      }
-      if (other.hasFormat()) {
-        mergeFormat(other.getFormat());
-      }
-      if (!other.getStringValue().isEmpty()) {
-        stringValue_ = other.stringValue_;
-        bitField0_ |= 0x00000004;
-        onChanged();
-      }
-      if (other.hasUserValue()) {
-        mergeUserValue(other.getUserValue());
-      }
-      if (other.hasGiftValue()) {
-        mergeGiftValue(other.getGiftValue());
-      }
-      if (other.hasHeartValue()) {
-        mergeHeartValue(other.getHeartValue());
-      }
-      if (other.hasPatternRefValue()) {
-        mergePatternRefValue(other.getPatternRefValue());
-      }
-      if (other.hasImageValue()) {
-        mergeImageValue(other.getImageValue());
-      }
-      this.mergeUnknownFields(other.getUnknownFields());
-      onChanged();
-      return this;
-    }
-
-    @java.lang.Override
-    public final boolean isInitialized() {
-      return true;
-    }
-
-    @java.lang.Override
-    public Builder mergeFrom(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 8: {
-              type_ = input.readBool();
-              bitField0_ |= 0x00000001;
-              break;
-            } // case 8
-            case 18: {
-              input.readMessage(
-                  getFormatFieldBuilder().getBuilder(),
-                  extensionRegistry);
-              bitField0_ |= 0x00000002;
-              break;
-            } // case 18
-            case 26: {
-              stringValue_ = input.readStringRequireUtf8();
-              bitField0_ |= 0x00000004;
-              break;
-            } // case 26
-            case 34: {
-              input.readMessage(
-                  getUserValueFieldBuilder().getBuilder(),
-                  extensionRegistry);
-              bitField0_ |= 0x00000008;
-              break;
-            } // case 34
-            case 42: {
-              input.readMessage(
-                  getGiftValueFieldBuilder().getBuilder(),
-                  extensionRegistry);
-              bitField0_ |= 0x00000010;
-              break;
-            } // case 42
-            case 50: {
-              input.readMessage(
-                  getHeartValueFieldBuilder().getBuilder(),
-                  extensionRegistry);
-              bitField0_ |= 0x00000020;
-              break;
-            } // case 50
-            case 58: {
-              input.readMessage(
-                  getPatternRefValueFieldBuilder().getBuilder(),
-                  extensionRegistry);
-              bitField0_ |= 0x00000040;
-              break;
-            } // case 58
-            case 66: {
-              input.readMessage(
-                  getImageValueFieldBuilder().getBuilder(),
-                  extensionRegistry);
-              bitField0_ |= 0x00000080;
-              break;
-            } // case 66
-            default: {
-              if (!super.parseUnknownField(input, extensionRegistry, tag)) {
-                done = true; // was an endgroup tag
-              }
-              break;
-            } // default:
-          } // switch (tag)
-        } // while (!done)
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.unwrapIOException();
-      } finally {
-        onChanged();
-      } // finally
-      return this;
-    }
     private int bitField0_;
+    public static final int TYPE_FIELD_NUMBER = 1;
+    private boolean type_ = false;
 
-    private boolean type_ ;
     /**
      * <code>bool type = 1;</code>
+     *
      * @return The type.
      */
     @java.lang.Override
     public boolean getType() {
-      return type_;
-    }
-    /**
-     * <code>bool type = 1;</code>
-     * @param value The type to set.
-     * @return This builder for chaining.
-     */
-    public Builder setType(boolean value) {
-
-      type_ = value;
-      bitField0_ |= 0x00000001;
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>bool type = 1;</code>
-     * @return This builder for chaining.
-     */
-    public Builder clearType() {
-      bitField0_ = (bitField0_ & ~0x00000001);
-      type_ = false;
-      onChanged();
-      return this;
+        return type_;
     }
 
+    public static final int FORMAT_FIELD_NUMBER = 2;
     private cn.yscme.scrolling.auto.douyin.TextFormat format_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        cn.yscme.scrolling.auto.douyin.TextFormat, cn.yscme.scrolling.auto.douyin.TextFormat.Builder, cn.yscme.scrolling.auto.douyin.TextFormatOrBuilder> formatBuilder_;
+
     /**
      * <code>.cn.yscme.scrolling.auto.douyin.TextFormat format = 2;</code>
+     *
      * @return Whether the format field is set.
      */
+    @java.lang.Override
     public boolean hasFormat() {
-      return ((bitField0_ & 0x00000002) != 0);
+        return ((bitField0_ & 0x00000001) != 0);
     }
+
     /**
      * <code>.cn.yscme.scrolling.auto.douyin.TextFormat format = 2;</code>
+     *
      * @return The format.
      */
+    @java.lang.Override
     public cn.yscme.scrolling.auto.douyin.TextFormat getFormat() {
-      if (formatBuilder_ == null) {
         return format_ == null ? cn.yscme.scrolling.auto.douyin.TextFormat.getDefaultInstance() : format_;
-      } else {
-        return formatBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>.cn.yscme.scrolling.auto.douyin.TextFormat format = 2;</code>
-     */
-    public Builder setFormat(cn.yscme.scrolling.auto.douyin.TextFormat value) {
-      if (formatBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        format_ = value;
-      } else {
-        formatBuilder_.setMessage(value);
-      }
-      bitField0_ |= 0x00000002;
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>.cn.yscme.scrolling.auto.douyin.TextFormat format = 2;</code>
-     */
-    public Builder setFormat(
-        cn.yscme.scrolling.auto.douyin.TextFormat.Builder builderForValue) {
-      if (formatBuilder_ == null) {
-        format_ = builderForValue.build();
-      } else {
-        formatBuilder_.setMessage(builderForValue.build());
-      }
-      bitField0_ |= 0x00000002;
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>.cn.yscme.scrolling.auto.douyin.TextFormat format = 2;</code>
-     */
-    public Builder mergeFormat(cn.yscme.scrolling.auto.douyin.TextFormat value) {
-      if (formatBuilder_ == null) {
-        if (((bitField0_ & 0x00000002) != 0) &&
-          format_ != null &&
-          format_ != cn.yscme.scrolling.auto.douyin.TextFormat.getDefaultInstance()) {
-          getFormatBuilder().mergeFrom(value);
-        } else {
-          format_ = value;
-        }
-      } else {
-        formatBuilder_.mergeFrom(value);
-      }
-      if (format_ != null) {
-        bitField0_ |= 0x00000002;
-        onChanged();
-      }
-      return this;
-    }
-    /**
-     * <code>.cn.yscme.scrolling.auto.douyin.TextFormat format = 2;</code>
-     */
-    public Builder clearFormat() {
-      bitField0_ = (bitField0_ & ~0x00000002);
-      format_ = null;
-      if (formatBuilder_ != null) {
-        formatBuilder_.dispose();
-        formatBuilder_ = null;
-      }
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>.cn.yscme.scrolling.auto.douyin.TextFormat format = 2;</code>
-     */
-    public cn.yscme.scrolling.auto.douyin.TextFormat.Builder getFormatBuilder() {
-      bitField0_ |= 0x00000002;
-      onChanged();
-      return getFormatFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>.cn.yscme.scrolling.auto.douyin.TextFormat format = 2;</code>
-     */
-    public cn.yscme.scrolling.auto.douyin.TextFormatOrBuilder getFormatOrBuilder() {
-      if (formatBuilder_ != null) {
-        return formatBuilder_.getMessageOrBuilder();
-      } else {
-        return format_ == null ?
-            cn.yscme.scrolling.auto.douyin.TextFormat.getDefaultInstance() : format_;
-      }
-    }
-    /**
-     * <code>.cn.yscme.scrolling.auto.douyin.TextFormat format = 2;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        cn.yscme.scrolling.auto.douyin.TextFormat, cn.yscme.scrolling.auto.douyin.TextFormat.Builder, cn.yscme.scrolling.auto.douyin.TextFormatOrBuilder> 
-        getFormatFieldBuilder() {
-      if (formatBuilder_ == null) {
-        formatBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            cn.yscme.scrolling.auto.douyin.TextFormat, cn.yscme.scrolling.auto.douyin.TextFormat.Builder, cn.yscme.scrolling.auto.douyin.TextFormatOrBuilder>(
-                getFormat(),
-                getParentForChildren(),
-                isClean());
-        format_ = null;
-      }
-      return formatBuilder_;
     }
 
-    private java.lang.Object stringValue_ = "";
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.TextFormat format = 2;</code>
+     */
+    @java.lang.Override
+    public cn.yscme.scrolling.auto.douyin.TextFormatOrBuilder getFormatOrBuilder() {
+        return format_ == null ? cn.yscme.scrolling.auto.douyin.TextFormat.getDefaultInstance() : format_;
+    }
+
+    public static final int STRINGVALUE_FIELD_NUMBER = 3;
+    @SuppressWarnings("serial")
+    private volatile java.lang.Object stringValue_ = "";
+
     /**
      * <code>string stringValue = 3;</code>
+     *
      * @return The stringValue.
      */
+    @java.lang.Override
     public java.lang.String getStringValue() {
-      java.lang.Object ref = stringValue_;
-      if (!(ref instanceof java.lang.String)) {
-        com.google.protobuf.ByteString bs =
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        stringValue_ = s;
-        return s;
-      } else {
-        return (java.lang.String) ref;
-      }
+        java.lang.Object ref = stringValue_;
+        if (ref instanceof java.lang.String) {
+            return (java.lang.String) ref;
+        } else {
+            com.google.protobuf.ByteString bs =
+                    (com.google.protobuf.ByteString) ref;
+            java.lang.String s = bs.toStringUtf8();
+            stringValue_ = s;
+            return s;
+        }
     }
+
     /**
      * <code>string stringValue = 3;</code>
+     *
      * @return The bytes for stringValue.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString
-        getStringValueBytes() {
-      java.lang.Object ref = stringValue_;
-      if (ref instanceof String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        stringValue_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-    /**
-     * <code>string stringValue = 3;</code>
-     * @param value The stringValue to set.
-     * @return This builder for chaining.
-     */
-    public Builder setStringValue(
-        java.lang.String value) {
-      if (value == null) { throw new NullPointerException(); }
-      stringValue_ = value;
-      bitField0_ |= 0x00000004;
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>string stringValue = 3;</code>
-     * @return This builder for chaining.
-     */
-    public Builder clearStringValue() {
-      stringValue_ = getDefaultInstance().getStringValue();
-      bitField0_ = (bitField0_ & ~0x00000004);
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>string stringValue = 3;</code>
-     * @param value The bytes for stringValue to set.
-     * @return This builder for chaining.
-     */
-    public Builder setStringValueBytes(
-        com.google.protobuf.ByteString value) {
-      if (value == null) { throw new NullPointerException(); }
-      checkByteStringIsUtf8(value);
-      stringValue_ = value;
-      bitField0_ |= 0x00000004;
-      onChanged();
-      return this;
+    getStringValueBytes() {
+        java.lang.Object ref = stringValue_;
+        if (ref instanceof java.lang.String) {
+            com.google.protobuf.ByteString b =
+                    com.google.protobuf.ByteString.copyFromUtf8(
+                            (java.lang.String) ref);
+            stringValue_ = b;
+            return b;
+        } else {
+            return (com.google.protobuf.ByteString) ref;
+        }
     }
 
+    public static final int USERVALUE_FIELD_NUMBER = 4;
     private cn.yscme.scrolling.auto.douyin.TextPieceUser userValue_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        cn.yscme.scrolling.auto.douyin.TextPieceUser, cn.yscme.scrolling.auto.douyin.TextPieceUser.Builder, cn.yscme.scrolling.auto.douyin.TextPieceUserOrBuilder> userValueBuilder_;
+
     /**
      * <code>.cn.yscme.scrolling.auto.douyin.TextPieceUser userValue = 4;</code>
+     *
      * @return Whether the userValue field is set.
      */
+    @java.lang.Override
     public boolean hasUserValue() {
-      return ((bitField0_ & 0x00000008) != 0);
+        return ((bitField0_ & 0x00000002) != 0);
     }
+
     /**
      * <code>.cn.yscme.scrolling.auto.douyin.TextPieceUser userValue = 4;</code>
+     *
      * @return The userValue.
      */
+    @java.lang.Override
     public cn.yscme.scrolling.auto.douyin.TextPieceUser getUserValue() {
-      if (userValueBuilder_ == null) {
         return userValue_ == null ? cn.yscme.scrolling.auto.douyin.TextPieceUser.getDefaultInstance() : userValue_;
-      } else {
-        return userValueBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>.cn.yscme.scrolling.auto.douyin.TextPieceUser userValue = 4;</code>
-     */
-    public Builder setUserValue(cn.yscme.scrolling.auto.douyin.TextPieceUser value) {
-      if (userValueBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        userValue_ = value;
-      } else {
-        userValueBuilder_.setMessage(value);
-      }
-      bitField0_ |= 0x00000008;
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>.cn.yscme.scrolling.auto.douyin.TextPieceUser userValue = 4;</code>
-     */
-    public Builder setUserValue(
-        cn.yscme.scrolling.auto.douyin.TextPieceUser.Builder builderForValue) {
-      if (userValueBuilder_ == null) {
-        userValue_ = builderForValue.build();
-      } else {
-        userValueBuilder_.setMessage(builderForValue.build());
-      }
-      bitField0_ |= 0x00000008;
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>.cn.yscme.scrolling.auto.douyin.TextPieceUser userValue = 4;</code>
-     */
-    public Builder mergeUserValue(cn.yscme.scrolling.auto.douyin.TextPieceUser value) {
-      if (userValueBuilder_ == null) {
-        if (((bitField0_ & 0x00000008) != 0) &&
-          userValue_ != null &&
-          userValue_ != cn.yscme.scrolling.auto.douyin.TextPieceUser.getDefaultInstance()) {
-          getUserValueBuilder().mergeFrom(value);
-        } else {
-          userValue_ = value;
-        }
-      } else {
-        userValueBuilder_.mergeFrom(value);
-      }
-      if (userValue_ != null) {
-        bitField0_ |= 0x00000008;
-        onChanged();
-      }
-      return this;
-    }
-    /**
-     * <code>.cn.yscme.scrolling.auto.douyin.TextPieceUser userValue = 4;</code>
-     */
-    public Builder clearUserValue() {
-      bitField0_ = (bitField0_ & ~0x00000008);
-      userValue_ = null;
-      if (userValueBuilder_ != null) {
-        userValueBuilder_.dispose();
-        userValueBuilder_ = null;
-      }
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>.cn.yscme.scrolling.auto.douyin.TextPieceUser userValue = 4;</code>
-     */
-    public cn.yscme.scrolling.auto.douyin.TextPieceUser.Builder getUserValueBuilder() {
-      bitField0_ |= 0x00000008;
-      onChanged();
-      return getUserValueFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>.cn.yscme.scrolling.auto.douyin.TextPieceUser userValue = 4;</code>
-     */
-    public cn.yscme.scrolling.auto.douyin.TextPieceUserOrBuilder getUserValueOrBuilder() {
-      if (userValueBuilder_ != null) {
-        return userValueBuilder_.getMessageOrBuilder();
-      } else {
-        return userValue_ == null ?
-            cn.yscme.scrolling.auto.douyin.TextPieceUser.getDefaultInstance() : userValue_;
-      }
-    }
-    /**
-     * <code>.cn.yscme.scrolling.auto.douyin.TextPieceUser userValue = 4;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        cn.yscme.scrolling.auto.douyin.TextPieceUser, cn.yscme.scrolling.auto.douyin.TextPieceUser.Builder, cn.yscme.scrolling.auto.douyin.TextPieceUserOrBuilder> 
-        getUserValueFieldBuilder() {
-      if (userValueBuilder_ == null) {
-        userValueBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            cn.yscme.scrolling.auto.douyin.TextPieceUser, cn.yscme.scrolling.auto.douyin.TextPieceUser.Builder, cn.yscme.scrolling.auto.douyin.TextPieceUserOrBuilder>(
-                getUserValue(),
-                getParentForChildren(),
-                isClean());
-        userValue_ = null;
-      }
-      return userValueBuilder_;
     }
 
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.TextPieceUser userValue = 4;</code>
+     */
+    @java.lang.Override
+    public cn.yscme.scrolling.auto.douyin.TextPieceUserOrBuilder getUserValueOrBuilder() {
+        return userValue_ == null ? cn.yscme.scrolling.auto.douyin.TextPieceUser.getDefaultInstance() : userValue_;
+    }
+
+    public static final int GIFTVALUE_FIELD_NUMBER = 5;
     private cn.yscme.scrolling.auto.douyin.TextPieceGift giftValue_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        cn.yscme.scrolling.auto.douyin.TextPieceGift, cn.yscme.scrolling.auto.douyin.TextPieceGift.Builder, cn.yscme.scrolling.auto.douyin.TextPieceGiftOrBuilder> giftValueBuilder_;
+
     /**
      * <code>.cn.yscme.scrolling.auto.douyin.TextPieceGift giftValue = 5;</code>
+     *
      * @return Whether the giftValue field is set.
      */
+    @java.lang.Override
     public boolean hasGiftValue() {
-      return ((bitField0_ & 0x00000010) != 0);
+        return ((bitField0_ & 0x00000004) != 0);
     }
+
     /**
      * <code>.cn.yscme.scrolling.auto.douyin.TextPieceGift giftValue = 5;</code>
+     *
      * @return The giftValue.
      */
+    @java.lang.Override
     public cn.yscme.scrolling.auto.douyin.TextPieceGift getGiftValue() {
-      if (giftValueBuilder_ == null) {
         return giftValue_ == null ? cn.yscme.scrolling.auto.douyin.TextPieceGift.getDefaultInstance() : giftValue_;
-      } else {
-        return giftValueBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>.cn.yscme.scrolling.auto.douyin.TextPieceGift giftValue = 5;</code>
-     */
-    public Builder setGiftValue(cn.yscme.scrolling.auto.douyin.TextPieceGift value) {
-      if (giftValueBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        giftValue_ = value;
-      } else {
-        giftValueBuilder_.setMessage(value);
-      }
-      bitField0_ |= 0x00000010;
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>.cn.yscme.scrolling.auto.douyin.TextPieceGift giftValue = 5;</code>
-     */
-    public Builder setGiftValue(
-        cn.yscme.scrolling.auto.douyin.TextPieceGift.Builder builderForValue) {
-      if (giftValueBuilder_ == null) {
-        giftValue_ = builderForValue.build();
-      } else {
-        giftValueBuilder_.setMessage(builderForValue.build());
-      }
-      bitField0_ |= 0x00000010;
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>.cn.yscme.scrolling.auto.douyin.TextPieceGift giftValue = 5;</code>
-     */
-    public Builder mergeGiftValue(cn.yscme.scrolling.auto.douyin.TextPieceGift value) {
-      if (giftValueBuilder_ == null) {
-        if (((bitField0_ & 0x00000010) != 0) &&
-          giftValue_ != null &&
-          giftValue_ != cn.yscme.scrolling.auto.douyin.TextPieceGift.getDefaultInstance()) {
-          getGiftValueBuilder().mergeFrom(value);
-        } else {
-          giftValue_ = value;
-        }
-      } else {
-        giftValueBuilder_.mergeFrom(value);
-      }
-      if (giftValue_ != null) {
-        bitField0_ |= 0x00000010;
-        onChanged();
-      }
-      return this;
-    }
-    /**
-     * <code>.cn.yscme.scrolling.auto.douyin.TextPieceGift giftValue = 5;</code>
-     */
-    public Builder clearGiftValue() {
-      bitField0_ = (bitField0_ & ~0x00000010);
-      giftValue_ = null;
-      if (giftValueBuilder_ != null) {
-        giftValueBuilder_.dispose();
-        giftValueBuilder_ = null;
-      }
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>.cn.yscme.scrolling.auto.douyin.TextPieceGift giftValue = 5;</code>
-     */
-    public cn.yscme.scrolling.auto.douyin.TextPieceGift.Builder getGiftValueBuilder() {
-      bitField0_ |= 0x00000010;
-      onChanged();
-      return getGiftValueFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>.cn.yscme.scrolling.auto.douyin.TextPieceGift giftValue = 5;</code>
-     */
-    public cn.yscme.scrolling.auto.douyin.TextPieceGiftOrBuilder getGiftValueOrBuilder() {
-      if (giftValueBuilder_ != null) {
-        return giftValueBuilder_.getMessageOrBuilder();
-      } else {
-        return giftValue_ == null ?
-            cn.yscme.scrolling.auto.douyin.TextPieceGift.getDefaultInstance() : giftValue_;
-      }
-    }
-    /**
-     * <code>.cn.yscme.scrolling.auto.douyin.TextPieceGift giftValue = 5;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        cn.yscme.scrolling.auto.douyin.TextPieceGift, cn.yscme.scrolling.auto.douyin.TextPieceGift.Builder, cn.yscme.scrolling.auto.douyin.TextPieceGiftOrBuilder> 
-        getGiftValueFieldBuilder() {
-      if (giftValueBuilder_ == null) {
-        giftValueBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            cn.yscme.scrolling.auto.douyin.TextPieceGift, cn.yscme.scrolling.auto.douyin.TextPieceGift.Builder, cn.yscme.scrolling.auto.douyin.TextPieceGiftOrBuilder>(
-                getGiftValue(),
-                getParentForChildren(),
-                isClean());
-        giftValue_ = null;
-      }
-      return giftValueBuilder_;
     }
 
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.TextPieceGift giftValue = 5;</code>
+     */
+    @java.lang.Override
+    public cn.yscme.scrolling.auto.douyin.TextPieceGiftOrBuilder getGiftValueOrBuilder() {
+        return giftValue_ == null ? cn.yscme.scrolling.auto.douyin.TextPieceGift.getDefaultInstance() : giftValue_;
+    }
+
+    public static final int HEARTVALUE_FIELD_NUMBER = 6;
     private cn.yscme.scrolling.auto.douyin.TextPieceHeart heartValue_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        cn.yscme.scrolling.auto.douyin.TextPieceHeart, cn.yscme.scrolling.auto.douyin.TextPieceHeart.Builder, cn.yscme.scrolling.auto.douyin.TextPieceHeartOrBuilder> heartValueBuilder_;
+
     /**
      * <code>.cn.yscme.scrolling.auto.douyin.TextPieceHeart heartValue = 6;</code>
+     *
      * @return Whether the heartValue field is set.
      */
+    @java.lang.Override
     public boolean hasHeartValue() {
-      return ((bitField0_ & 0x00000020) != 0);
+        return ((bitField0_ & 0x00000008) != 0);
     }
+
     /**
      * <code>.cn.yscme.scrolling.auto.douyin.TextPieceHeart heartValue = 6;</code>
+     *
      * @return The heartValue.
      */
+    @java.lang.Override
     public cn.yscme.scrolling.auto.douyin.TextPieceHeart getHeartValue() {
-      if (heartValueBuilder_ == null) {
         return heartValue_ == null ? cn.yscme.scrolling.auto.douyin.TextPieceHeart.getDefaultInstance() : heartValue_;
-      } else {
-        return heartValueBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>.cn.yscme.scrolling.auto.douyin.TextPieceHeart heartValue = 6;</code>
-     */
-    public Builder setHeartValue(cn.yscme.scrolling.auto.douyin.TextPieceHeart value) {
-      if (heartValueBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        heartValue_ = value;
-      } else {
-        heartValueBuilder_.setMessage(value);
-      }
-      bitField0_ |= 0x00000020;
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>.cn.yscme.scrolling.auto.douyin.TextPieceHeart heartValue = 6;</code>
-     */
-    public Builder setHeartValue(
-        cn.yscme.scrolling.auto.douyin.TextPieceHeart.Builder builderForValue) {
-      if (heartValueBuilder_ == null) {
-        heartValue_ = builderForValue.build();
-      } else {
-        heartValueBuilder_.setMessage(builderForValue.build());
-      }
-      bitField0_ |= 0x00000020;
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>.cn.yscme.scrolling.auto.douyin.TextPieceHeart heartValue = 6;</code>
-     */
-    public Builder mergeHeartValue(cn.yscme.scrolling.auto.douyin.TextPieceHeart value) {
-      if (heartValueBuilder_ == null) {
-        if (((bitField0_ & 0x00000020) != 0) &&
-          heartValue_ != null &&
-          heartValue_ != cn.yscme.scrolling.auto.douyin.TextPieceHeart.getDefaultInstance()) {
-          getHeartValueBuilder().mergeFrom(value);
-        } else {
-          heartValue_ = value;
-        }
-      } else {
-        heartValueBuilder_.mergeFrom(value);
-      }
-      if (heartValue_ != null) {
-        bitField0_ |= 0x00000020;
-        onChanged();
-      }
-      return this;
-    }
-    /**
-     * <code>.cn.yscme.scrolling.auto.douyin.TextPieceHeart heartValue = 6;</code>
-     */
-    public Builder clearHeartValue() {
-      bitField0_ = (bitField0_ & ~0x00000020);
-      heartValue_ = null;
-      if (heartValueBuilder_ != null) {
-        heartValueBuilder_.dispose();
-        heartValueBuilder_ = null;
-      }
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>.cn.yscme.scrolling.auto.douyin.TextPieceHeart heartValue = 6;</code>
-     */
-    public cn.yscme.scrolling.auto.douyin.TextPieceHeart.Builder getHeartValueBuilder() {
-      bitField0_ |= 0x00000020;
-      onChanged();
-      return getHeartValueFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>.cn.yscme.scrolling.auto.douyin.TextPieceHeart heartValue = 6;</code>
-     */
-    public cn.yscme.scrolling.auto.douyin.TextPieceHeartOrBuilder getHeartValueOrBuilder() {
-      if (heartValueBuilder_ != null) {
-        return heartValueBuilder_.getMessageOrBuilder();
-      } else {
-        return heartValue_ == null ?
-            cn.yscme.scrolling.auto.douyin.TextPieceHeart.getDefaultInstance() : heartValue_;
-      }
-    }
-    /**
-     * <code>.cn.yscme.scrolling.auto.douyin.TextPieceHeart heartValue = 6;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        cn.yscme.scrolling.auto.douyin.TextPieceHeart, cn.yscme.scrolling.auto.douyin.TextPieceHeart.Builder, cn.yscme.scrolling.auto.douyin.TextPieceHeartOrBuilder> 
-        getHeartValueFieldBuilder() {
-      if (heartValueBuilder_ == null) {
-        heartValueBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            cn.yscme.scrolling.auto.douyin.TextPieceHeart, cn.yscme.scrolling.auto.douyin.TextPieceHeart.Builder, cn.yscme.scrolling.auto.douyin.TextPieceHeartOrBuilder>(
-                getHeartValue(),
-                getParentForChildren(),
-                isClean());
-        heartValue_ = null;
-      }
-      return heartValueBuilder_;
     }
 
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.TextPieceHeart heartValue = 6;</code>
+     */
+    @java.lang.Override
+    public cn.yscme.scrolling.auto.douyin.TextPieceHeartOrBuilder getHeartValueOrBuilder() {
+        return heartValue_ == null ? cn.yscme.scrolling.auto.douyin.TextPieceHeart.getDefaultInstance() : heartValue_;
+    }
+
+    public static final int PATTERNREFVALUE_FIELD_NUMBER = 7;
     private cn.yscme.scrolling.auto.douyin.TextPiecePatternRef patternRefValue_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        cn.yscme.scrolling.auto.douyin.TextPiecePatternRef, cn.yscme.scrolling.auto.douyin.TextPiecePatternRef.Builder, cn.yscme.scrolling.auto.douyin.TextPiecePatternRefOrBuilder> patternRefValueBuilder_;
+
     /**
      * <code>.cn.yscme.scrolling.auto.douyin.TextPiecePatternRef patternRefValue = 7;</code>
+     *
      * @return Whether the patternRefValue field is set.
      */
+    @java.lang.Override
     public boolean hasPatternRefValue() {
-      return ((bitField0_ & 0x00000040) != 0);
+        return ((bitField0_ & 0x00000010) != 0);
     }
+
     /**
      * <code>.cn.yscme.scrolling.auto.douyin.TextPiecePatternRef patternRefValue = 7;</code>
+     *
      * @return The patternRefValue.
      */
+    @java.lang.Override
     public cn.yscme.scrolling.auto.douyin.TextPiecePatternRef getPatternRefValue() {
-      if (patternRefValueBuilder_ == null) {
         return patternRefValue_ == null ? cn.yscme.scrolling.auto.douyin.TextPiecePatternRef.getDefaultInstance() : patternRefValue_;
-      } else {
-        return patternRefValueBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>.cn.yscme.scrolling.auto.douyin.TextPiecePatternRef patternRefValue = 7;</code>
-     */
-    public Builder setPatternRefValue(cn.yscme.scrolling.auto.douyin.TextPiecePatternRef value) {
-      if (patternRefValueBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        patternRefValue_ = value;
-      } else {
-        patternRefValueBuilder_.setMessage(value);
-      }
-      bitField0_ |= 0x00000040;
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>.cn.yscme.scrolling.auto.douyin.TextPiecePatternRef patternRefValue = 7;</code>
-     */
-    public Builder setPatternRefValue(
-        cn.yscme.scrolling.auto.douyin.TextPiecePatternRef.Builder builderForValue) {
-      if (patternRefValueBuilder_ == null) {
-        patternRefValue_ = builderForValue.build();
-      } else {
-        patternRefValueBuilder_.setMessage(builderForValue.build());
-      }
-      bitField0_ |= 0x00000040;
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>.cn.yscme.scrolling.auto.douyin.TextPiecePatternRef patternRefValue = 7;</code>
-     */
-    public Builder mergePatternRefValue(cn.yscme.scrolling.auto.douyin.TextPiecePatternRef value) {
-      if (patternRefValueBuilder_ == null) {
-        if (((bitField0_ & 0x00000040) != 0) &&
-          patternRefValue_ != null &&
-          patternRefValue_ != cn.yscme.scrolling.auto.douyin.TextPiecePatternRef.getDefaultInstance()) {
-          getPatternRefValueBuilder().mergeFrom(value);
-        } else {
-          patternRefValue_ = value;
-        }
-      } else {
-        patternRefValueBuilder_.mergeFrom(value);
-      }
-      if (patternRefValue_ != null) {
-        bitField0_ |= 0x00000040;
-        onChanged();
-      }
-      return this;
-    }
-    /**
-     * <code>.cn.yscme.scrolling.auto.douyin.TextPiecePatternRef patternRefValue = 7;</code>
-     */
-    public Builder clearPatternRefValue() {
-      bitField0_ = (bitField0_ & ~0x00000040);
-      patternRefValue_ = null;
-      if (patternRefValueBuilder_ != null) {
-        patternRefValueBuilder_.dispose();
-        patternRefValueBuilder_ = null;
-      }
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>.cn.yscme.scrolling.auto.douyin.TextPiecePatternRef patternRefValue = 7;</code>
-     */
-    public cn.yscme.scrolling.auto.douyin.TextPiecePatternRef.Builder getPatternRefValueBuilder() {
-      bitField0_ |= 0x00000040;
-      onChanged();
-      return getPatternRefValueFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>.cn.yscme.scrolling.auto.douyin.TextPiecePatternRef patternRefValue = 7;</code>
-     */
-    public cn.yscme.scrolling.auto.douyin.TextPiecePatternRefOrBuilder getPatternRefValueOrBuilder() {
-      if (patternRefValueBuilder_ != null) {
-        return patternRefValueBuilder_.getMessageOrBuilder();
-      } else {
-        return patternRefValue_ == null ?
-            cn.yscme.scrolling.auto.douyin.TextPiecePatternRef.getDefaultInstance() : patternRefValue_;
-      }
-    }
-    /**
-     * <code>.cn.yscme.scrolling.auto.douyin.TextPiecePatternRef patternRefValue = 7;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        cn.yscme.scrolling.auto.douyin.TextPiecePatternRef, cn.yscme.scrolling.auto.douyin.TextPiecePatternRef.Builder, cn.yscme.scrolling.auto.douyin.TextPiecePatternRefOrBuilder> 
-        getPatternRefValueFieldBuilder() {
-      if (patternRefValueBuilder_ == null) {
-        patternRefValueBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            cn.yscme.scrolling.auto.douyin.TextPiecePatternRef, cn.yscme.scrolling.auto.douyin.TextPiecePatternRef.Builder, cn.yscme.scrolling.auto.douyin.TextPiecePatternRefOrBuilder>(
-                getPatternRefValue(),
-                getParentForChildren(),
-                isClean());
-        patternRefValue_ = null;
-      }
-      return patternRefValueBuilder_;
     }
 
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.TextPiecePatternRef patternRefValue = 7;</code>
+     */
+    @java.lang.Override
+    public cn.yscme.scrolling.auto.douyin.TextPiecePatternRefOrBuilder getPatternRefValueOrBuilder() {
+        return patternRefValue_ == null ? cn.yscme.scrolling.auto.douyin.TextPiecePatternRef.getDefaultInstance() : patternRefValue_;
+    }
+
+    public static final int IMAGEVALUE_FIELD_NUMBER = 8;
     private cn.yscme.scrolling.auto.douyin.TextPieceImage imageValue_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        cn.yscme.scrolling.auto.douyin.TextPieceImage, cn.yscme.scrolling.auto.douyin.TextPieceImage.Builder, cn.yscme.scrolling.auto.douyin.TextPieceImageOrBuilder> imageValueBuilder_;
+
     /**
      * <code>.cn.yscme.scrolling.auto.douyin.TextPieceImage imageValue = 8;</code>
+     *
      * @return Whether the imageValue field is set.
      */
+    @java.lang.Override
     public boolean hasImageValue() {
-      return ((bitField0_ & 0x00000080) != 0);
+        return ((bitField0_ & 0x00000020) != 0);
     }
+
     /**
      * <code>.cn.yscme.scrolling.auto.douyin.TextPieceImage imageValue = 8;</code>
+     *
      * @return The imageValue.
      */
+    @java.lang.Override
     public cn.yscme.scrolling.auto.douyin.TextPieceImage getImageValue() {
-      if (imageValueBuilder_ == null) {
         return imageValue_ == null ? cn.yscme.scrolling.auto.douyin.TextPieceImage.getDefaultInstance() : imageValue_;
-      } else {
-        return imageValueBuilder_.getMessage();
-      }
     }
+
     /**
      * <code>.cn.yscme.scrolling.auto.douyin.TextPieceImage imageValue = 8;</code>
      */
-    public Builder setImageValue(cn.yscme.scrolling.auto.douyin.TextPieceImage value) {
-      if (imageValueBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        imageValue_ = value;
-      } else {
-        imageValueBuilder_.setMessage(value);
-      }
-      bitField0_ |= 0x00000080;
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>.cn.yscme.scrolling.auto.douyin.TextPieceImage imageValue = 8;</code>
-     */
-    public Builder setImageValue(
-        cn.yscme.scrolling.auto.douyin.TextPieceImage.Builder builderForValue) {
-      if (imageValueBuilder_ == null) {
-        imageValue_ = builderForValue.build();
-      } else {
-        imageValueBuilder_.setMessage(builderForValue.build());
-      }
-      bitField0_ |= 0x00000080;
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>.cn.yscme.scrolling.auto.douyin.TextPieceImage imageValue = 8;</code>
-     */
-    public Builder mergeImageValue(cn.yscme.scrolling.auto.douyin.TextPieceImage value) {
-      if (imageValueBuilder_ == null) {
-        if (((bitField0_ & 0x00000080) != 0) &&
-          imageValue_ != null &&
-          imageValue_ != cn.yscme.scrolling.auto.douyin.TextPieceImage.getDefaultInstance()) {
-          getImageValueBuilder().mergeFrom(value);
-        } else {
-          imageValue_ = value;
-        }
-      } else {
-        imageValueBuilder_.mergeFrom(value);
-      }
-      if (imageValue_ != null) {
-        bitField0_ |= 0x00000080;
-        onChanged();
-      }
-      return this;
-    }
-    /**
-     * <code>.cn.yscme.scrolling.auto.douyin.TextPieceImage imageValue = 8;</code>
-     */
-    public Builder clearImageValue() {
-      bitField0_ = (bitField0_ & ~0x00000080);
-      imageValue_ = null;
-      if (imageValueBuilder_ != null) {
-        imageValueBuilder_.dispose();
-        imageValueBuilder_ = null;
-      }
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>.cn.yscme.scrolling.auto.douyin.TextPieceImage imageValue = 8;</code>
-     */
-    public cn.yscme.scrolling.auto.douyin.TextPieceImage.Builder getImageValueBuilder() {
-      bitField0_ |= 0x00000080;
-      onChanged();
-      return getImageValueFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>.cn.yscme.scrolling.auto.douyin.TextPieceImage imageValue = 8;</code>
-     */
+    @java.lang.Override
     public cn.yscme.scrolling.auto.douyin.TextPieceImageOrBuilder getImageValueOrBuilder() {
-      if (imageValueBuilder_ != null) {
-        return imageValueBuilder_.getMessageOrBuilder();
-      } else {
-        return imageValue_ == null ?
-            cn.yscme.scrolling.auto.douyin.TextPieceImage.getDefaultInstance() : imageValue_;
-      }
+        return imageValue_ == null ? cn.yscme.scrolling.auto.douyin.TextPieceImage.getDefaultInstance() : imageValue_;
     }
+
+    private byte memoizedIsInitialized = -1;
+
+    @java.lang.Override
+    public final boolean isInitialized() {
+        byte isInitialized = memoizedIsInitialized;
+        if (isInitialized == 1) return true;
+        if (isInitialized == 0) return false;
+
+        memoizedIsInitialized = 1;
+        return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+            throws java.io.IOException {
+        if (type_ != false) {
+            output.writeBool(1, type_);
+        }
+        if (((bitField0_ & 0x00000001) != 0)) {
+            output.writeMessage(2, getFormat());
+        }
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(stringValue_)) {
+            com.google.protobuf.GeneratedMessageV3.writeString(output, 3, stringValue_);
+        }
+        if (((bitField0_ & 0x00000002) != 0)) {
+            output.writeMessage(4, getUserValue());
+        }
+        if (((bitField0_ & 0x00000004) != 0)) {
+            output.writeMessage(5, getGiftValue());
+        }
+        if (((bitField0_ & 0x00000008) != 0)) {
+            output.writeMessage(6, getHeartValue());
+        }
+        if (((bitField0_ & 0x00000010) != 0)) {
+            output.writeMessage(7, getPatternRefValue());
+        }
+        if (((bitField0_ & 0x00000020) != 0)) {
+            output.writeMessage(8, getImageValue());
+        }
+        getUnknownFields().writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+        int size = memoizedSize;
+        if (size != -1) return size;
+
+        size = 0;
+        if (type_ != false) {
+            size += com.google.protobuf.CodedOutputStream
+                    .computeBoolSize(1, type_);
+        }
+        if (((bitField0_ & 0x00000001) != 0)) {
+            size += com.google.protobuf.CodedOutputStream
+                    .computeMessageSize(2, getFormat());
+        }
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(stringValue_)) {
+            size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, stringValue_);
+        }
+        if (((bitField0_ & 0x00000002) != 0)) {
+            size += com.google.protobuf.CodedOutputStream
+                    .computeMessageSize(4, getUserValue());
+        }
+        if (((bitField0_ & 0x00000004) != 0)) {
+            size += com.google.protobuf.CodedOutputStream
+                    .computeMessageSize(5, getGiftValue());
+        }
+        if (((bitField0_ & 0x00000008) != 0)) {
+            size += com.google.protobuf.CodedOutputStream
+                    .computeMessageSize(6, getHeartValue());
+        }
+        if (((bitField0_ & 0x00000010) != 0)) {
+            size += com.google.protobuf.CodedOutputStream
+                    .computeMessageSize(7, getPatternRefValue());
+        }
+        if (((bitField0_ & 0x00000020) != 0)) {
+            size += com.google.protobuf.CodedOutputStream
+                    .computeMessageSize(8, getImageValue());
+        }
+        size += getUnknownFields().getSerializedSize();
+        memoizedSize = size;
+        return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+        if (obj == this) {
+            return true;
+        }
+        if (!(obj instanceof cn.yscme.scrolling.auto.douyin.TextPiece)) {
+            return super.equals(obj);
+        }
+        cn.yscme.scrolling.auto.douyin.TextPiece other = (cn.yscme.scrolling.auto.douyin.TextPiece) obj;
+
+        if (getType()
+                != other.getType()) return false;
+        if (hasFormat() != other.hasFormat()) return false;
+        if (hasFormat()) {
+            if (!getFormat()
+                    .equals(other.getFormat())) return false;
+        }
+        if (!getStringValue()
+                .equals(other.getStringValue())) return false;
+        if (hasUserValue() != other.hasUserValue()) return false;
+        if (hasUserValue()) {
+            if (!getUserValue()
+                    .equals(other.getUserValue())) return false;
+        }
+        if (hasGiftValue() != other.hasGiftValue()) return false;
+        if (hasGiftValue()) {
+            if (!getGiftValue()
+                    .equals(other.getGiftValue())) return false;
+        }
+        if (hasHeartValue() != other.hasHeartValue()) return false;
+        if (hasHeartValue()) {
+            if (!getHeartValue()
+                    .equals(other.getHeartValue())) return false;
+        }
+        if (hasPatternRefValue() != other.hasPatternRefValue()) return false;
+        if (hasPatternRefValue()) {
+            if (!getPatternRefValue()
+                    .equals(other.getPatternRefValue())) return false;
+        }
+        if (hasImageValue() != other.hasImageValue()) return false;
+        if (hasImageValue()) {
+            if (!getImageValue()
+                    .equals(other.getImageValue())) return false;
+        }
+        if (!getUnknownFields().equals(other.getUnknownFields())) return false;
+        return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+        if (memoizedHashCode != 0) {
+            return memoizedHashCode;
+        }
+        int hash = 41;
+        hash = (19 * hash) + getDescriptor().hashCode();
+        hash = (37 * hash) + TYPE_FIELD_NUMBER;
+        hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+                getType());
+        if (hasFormat()) {
+            hash = (37 * hash) + FORMAT_FIELD_NUMBER;
+            hash = (53 * hash) + getFormat().hashCode();
+        }
+        hash = (37 * hash) + STRINGVALUE_FIELD_NUMBER;
+        hash = (53 * hash) + getStringValue().hashCode();
+        if (hasUserValue()) {
+            hash = (37 * hash) + USERVALUE_FIELD_NUMBER;
+            hash = (53 * hash) + getUserValue().hashCode();
+        }
+        if (hasGiftValue()) {
+            hash = (37 * hash) + GIFTVALUE_FIELD_NUMBER;
+            hash = (53 * hash) + getGiftValue().hashCode();
+        }
+        if (hasHeartValue()) {
+            hash = (37 * hash) + HEARTVALUE_FIELD_NUMBER;
+            hash = (53 * hash) + getHeartValue().hashCode();
+        }
+        if (hasPatternRefValue()) {
+            hash = (37 * hash) + PATTERNREFVALUE_FIELD_NUMBER;
+            hash = (53 * hash) + getPatternRefValue().hashCode();
+        }
+        if (hasImageValue()) {
+            hash = (37 * hash) + IMAGEVALUE_FIELD_NUMBER;
+            hash = (53 * hash) + getImageValue().hashCode();
+        }
+        hash = (29 * hash) + getUnknownFields().hashCode();
+        memoizedHashCode = hash;
+        return hash;
+    }
+
+    public static cn.yscme.scrolling.auto.douyin.TextPiece parseFrom(
+            java.nio.ByteBuffer data)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data);
+    }
+
+    public static cn.yscme.scrolling.auto.douyin.TextPiece parseFrom(
+            java.nio.ByteBuffer data,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data, extensionRegistry);
+    }
+
+    public static cn.yscme.scrolling.auto.douyin.TextPiece parseFrom(
+            com.google.protobuf.ByteString data)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data);
+    }
+
+    public static cn.yscme.scrolling.auto.douyin.TextPiece parseFrom(
+            com.google.protobuf.ByteString data,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data, extensionRegistry);
+    }
+
+    public static cn.yscme.scrolling.auto.douyin.TextPiece parseFrom(byte[] data)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data);
+    }
+
+    public static cn.yscme.scrolling.auto.douyin.TextPiece parseFrom(
+            byte[] data,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data, extensionRegistry);
+    }
+
+    public static cn.yscme.scrolling.auto.douyin.TextPiece parseFrom(java.io.InputStream input)
+            throws java.io.IOException {
+        return com.google.protobuf.GeneratedMessageV3
+                .parseWithIOException(PARSER, input);
+    }
+
+    public static cn.yscme.scrolling.auto.douyin.TextPiece parseFrom(
+            java.io.InputStream input,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws java.io.IOException {
+        return com.google.protobuf.GeneratedMessageV3
+                .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    public static cn.yscme.scrolling.auto.douyin.TextPiece parseDelimitedFrom(java.io.InputStream input)
+            throws java.io.IOException {
+        return com.google.protobuf.GeneratedMessageV3
+                .parseDelimitedWithIOException(PARSER, input);
+    }
+
+    public static cn.yscme.scrolling.auto.douyin.TextPiece parseDelimitedFrom(
+            java.io.InputStream input,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws java.io.IOException {
+        return com.google.protobuf.GeneratedMessageV3
+                .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    public static cn.yscme.scrolling.auto.douyin.TextPiece parseFrom(
+            com.google.protobuf.CodedInputStream input)
+            throws java.io.IOException {
+        return com.google.protobuf.GeneratedMessageV3
+                .parseWithIOException(PARSER, input);
+    }
+
+    public static cn.yscme.scrolling.auto.douyin.TextPiece parseFrom(
+            com.google.protobuf.CodedInputStream input,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws java.io.IOException {
+        return com.google.protobuf.GeneratedMessageV3
+                .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() {
+        return newBuilder();
+    }
+
+    public static Builder newBuilder() {
+        return DEFAULT_INSTANCE.toBuilder();
+    }
+
+    public static Builder newBuilder(cn.yscme.scrolling.auto.douyin.TextPiece prototype) {
+        return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+
+    @java.lang.Override
+    public Builder toBuilder() {
+        return this == DEFAULT_INSTANCE
+                ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+            com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        Builder builder = new Builder(parent);
+        return builder;
+    }
+
     /**
-     * <code>.cn.yscme.scrolling.auto.douyin.TextPieceImage imageValue = 8;</code>
+     * Protobuf type {@code cn.yscme.scrolling.auto.douyin.TextPiece}
      */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        cn.yscme.scrolling.auto.douyin.TextPieceImage, cn.yscme.scrolling.auto.douyin.TextPieceImage.Builder, cn.yscme.scrolling.auto.douyin.TextPieceImageOrBuilder> 
+    public static final class Builder extends
+            com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+            // @@protoc_insertion_point(builder_implements:cn.yscme.scrolling.auto.douyin.TextPiece)
+            cn.yscme.scrolling.auto.douyin.TextPieceOrBuilder {
+        public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+            return cn.yscme.scrolling.auto.douyin.Douyin.internal_static_cn_yscme_scrolling_auto_douyin_TextPiece_descriptor;
+        }
+
+        @java.lang.Override
+        protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+            return cn.yscme.scrolling.auto.douyin.Douyin.internal_static_cn_yscme_scrolling_auto_douyin_TextPiece_fieldAccessorTable
+                    .ensureFieldAccessorsInitialized(
+                            cn.yscme.scrolling.auto.douyin.TextPiece.class, cn.yscme.scrolling.auto.douyin.TextPiece.Builder.class);
+        }
+
+        // Construct using cn.yscme.scrolling.auto.douyin.TextPiece.newBuilder()
+        private Builder() {
+            maybeForceBuilderInitialization();
+        }
+
+        private Builder(
+                com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+            super(parent);
+            maybeForceBuilderInitialization();
+        }
+
+        private void maybeForceBuilderInitialization() {
+            if (com.google.protobuf.GeneratedMessageV3
+                    .alwaysUseFieldBuilders) {
+                getFormatFieldBuilder();
+                getUserValueFieldBuilder();
+                getGiftValueFieldBuilder();
+                getHeartValueFieldBuilder();
+                getPatternRefValueFieldBuilder();
+                getImageValueFieldBuilder();
+            }
+        }
+
+        @java.lang.Override
+        public Builder clear() {
+            super.clear();
+            bitField0_ = 0;
+            type_ = false;
+            format_ = null;
+            if (formatBuilder_ != null) {
+                formatBuilder_.dispose();
+                formatBuilder_ = null;
+            }
+            stringValue_ = "";
+            userValue_ = null;
+            if (userValueBuilder_ != null) {
+                userValueBuilder_.dispose();
+                userValueBuilder_ = null;
+            }
+            giftValue_ = null;
+            if (giftValueBuilder_ != null) {
+                giftValueBuilder_.dispose();
+                giftValueBuilder_ = null;
+            }
+            heartValue_ = null;
+            if (heartValueBuilder_ != null) {
+                heartValueBuilder_.dispose();
+                heartValueBuilder_ = null;
+            }
+            patternRefValue_ = null;
+            if (patternRefValueBuilder_ != null) {
+                patternRefValueBuilder_.dispose();
+                patternRefValueBuilder_ = null;
+            }
+            imageValue_ = null;
+            if (imageValueBuilder_ != null) {
+                imageValueBuilder_.dispose();
+                imageValueBuilder_ = null;
+            }
+            return this;
+        }
+
+        @java.lang.Override
+        public com.google.protobuf.Descriptors.Descriptor
+        getDescriptorForType() {
+            return cn.yscme.scrolling.auto.douyin.Douyin.internal_static_cn_yscme_scrolling_auto_douyin_TextPiece_descriptor;
+        }
+
+        @java.lang.Override
+        public cn.yscme.scrolling.auto.douyin.TextPiece getDefaultInstanceForType() {
+            return cn.yscme.scrolling.auto.douyin.TextPiece.getDefaultInstance();
+        }
+
+        @java.lang.Override
+        public cn.yscme.scrolling.auto.douyin.TextPiece build() {
+            cn.yscme.scrolling.auto.douyin.TextPiece result = buildPartial();
+            if (!result.isInitialized()) {
+                throw newUninitializedMessageException(result);
+            }
+            return result;
+        }
+
+        @java.lang.Override
+        public cn.yscme.scrolling.auto.douyin.TextPiece buildPartial() {
+            cn.yscme.scrolling.auto.douyin.TextPiece result = new cn.yscme.scrolling.auto.douyin.TextPiece(this);
+            if (bitField0_ != 0) {
+                buildPartial0(result);
+            }
+            onBuilt();
+            return result;
+        }
+
+        private void buildPartial0(cn.yscme.scrolling.auto.douyin.TextPiece result) {
+            int from_bitField0_ = bitField0_;
+            if (((from_bitField0_ & 0x00000001) != 0)) {
+                result.type_ = type_;
+            }
+            int to_bitField0_ = 0;
+            if (((from_bitField0_ & 0x00000002) != 0)) {
+                result.format_ = formatBuilder_ == null
+                        ? format_
+                        : formatBuilder_.build();
+                to_bitField0_ |= 0x00000001;
+            }
+            if (((from_bitField0_ & 0x00000004) != 0)) {
+                result.stringValue_ = stringValue_;
+            }
+            if (((from_bitField0_ & 0x00000008) != 0)) {
+                result.userValue_ = userValueBuilder_ == null
+                        ? userValue_
+                        : userValueBuilder_.build();
+                to_bitField0_ |= 0x00000002;
+            }
+            if (((from_bitField0_ & 0x00000010) != 0)) {
+                result.giftValue_ = giftValueBuilder_ == null
+                        ? giftValue_
+                        : giftValueBuilder_.build();
+                to_bitField0_ |= 0x00000004;
+            }
+            if (((from_bitField0_ & 0x00000020) != 0)) {
+                result.heartValue_ = heartValueBuilder_ == null
+                        ? heartValue_
+                        : heartValueBuilder_.build();
+                to_bitField0_ |= 0x00000008;
+            }
+            if (((from_bitField0_ & 0x00000040) != 0)) {
+                result.patternRefValue_ = patternRefValueBuilder_ == null
+                        ? patternRefValue_
+                        : patternRefValueBuilder_.build();
+                to_bitField0_ |= 0x00000010;
+            }
+            if (((from_bitField0_ & 0x00000080) != 0)) {
+                result.imageValue_ = imageValueBuilder_ == null
+                        ? imageValue_
+                        : imageValueBuilder_.build();
+                to_bitField0_ |= 0x00000020;
+            }
+            result.bitField0_ |= to_bitField0_;
+        }
+
+        @java.lang.Override
+        public Builder clone() {
+            return super.clone();
+        }
+
+        @java.lang.Override
+        public Builder setField(
+                com.google.protobuf.Descriptors.FieldDescriptor field,
+                java.lang.Object value) {
+            return super.setField(field, value);
+        }
+
+        @java.lang.Override
+        public Builder clearField(
+                com.google.protobuf.Descriptors.FieldDescriptor field) {
+            return super.clearField(field);
+        }
+
+        @java.lang.Override
+        public Builder clearOneof(
+                com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+            return super.clearOneof(oneof);
+        }
+
+        @java.lang.Override
+        public Builder setRepeatedField(
+                com.google.protobuf.Descriptors.FieldDescriptor field,
+                int index, java.lang.Object value) {
+            return super.setRepeatedField(field, index, value);
+        }
+
+        @java.lang.Override
+        public Builder addRepeatedField(
+                com.google.protobuf.Descriptors.FieldDescriptor field,
+                java.lang.Object value) {
+            return super.addRepeatedField(field, value);
+        }
+
+        @java.lang.Override
+        public Builder mergeFrom(com.google.protobuf.Message other) {
+            if (other instanceof cn.yscme.scrolling.auto.douyin.TextPiece) {
+                return mergeFrom((cn.yscme.scrolling.auto.douyin.TextPiece) other);
+            } else {
+                super.mergeFrom(other);
+                return this;
+            }
+        }
+
+        public Builder mergeFrom(cn.yscme.scrolling.auto.douyin.TextPiece other) {
+            if (other == cn.yscme.scrolling.auto.douyin.TextPiece.getDefaultInstance()) return this;
+            if (other.getType() != false) {
+                setType(other.getType());
+            }
+            if (other.hasFormat()) {
+                mergeFormat(other.getFormat());
+            }
+            if (!other.getStringValue().isEmpty()) {
+                stringValue_ = other.stringValue_;
+                bitField0_ |= 0x00000004;
+                onChanged();
+            }
+            if (other.hasUserValue()) {
+                mergeUserValue(other.getUserValue());
+            }
+            if (other.hasGiftValue()) {
+                mergeGiftValue(other.getGiftValue());
+            }
+            if (other.hasHeartValue()) {
+                mergeHeartValue(other.getHeartValue());
+            }
+            if (other.hasPatternRefValue()) {
+                mergePatternRefValue(other.getPatternRefValue());
+            }
+            if (other.hasImageValue()) {
+                mergeImageValue(other.getImageValue());
+            }
+            this.mergeUnknownFields(other.getUnknownFields());
+            onChanged();
+            return this;
+        }
+
+        @java.lang.Override
+        public final boolean isInitialized() {
+            return true;
+        }
+
+        @java.lang.Override
+        public Builder mergeFrom(
+                com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws java.io.IOException {
+            if (extensionRegistry == null) {
+                throw new java.lang.NullPointerException();
+            }
+            try {
+                boolean done = false;
+                while (!done) {
+                    int tag = input.readTag();
+                    switch (tag) {
+                        case 0:
+                            done = true;
+                            break;
+                        case 8: {
+                            type_ = input.readBool();
+                            bitField0_ |= 0x00000001;
+                            break;
+                        } // case 8
+                        case 18: {
+                            input.readMessage(
+                                    getFormatFieldBuilder().getBuilder(),
+                                    extensionRegistry);
+                            bitField0_ |= 0x00000002;
+                            break;
+                        } // case 18
+                        case 26: {
+                            stringValue_ = input.readStringRequireUtf8();
+                            bitField0_ |= 0x00000004;
+                            break;
+                        } // case 26
+                        case 34: {
+                            input.readMessage(
+                                    getUserValueFieldBuilder().getBuilder(),
+                                    extensionRegistry);
+                            bitField0_ |= 0x00000008;
+                            break;
+                        } // case 34
+                        case 42: {
+                            input.readMessage(
+                                    getGiftValueFieldBuilder().getBuilder(),
+                                    extensionRegistry);
+                            bitField0_ |= 0x00000010;
+                            break;
+                        } // case 42
+                        case 50: {
+                            input.readMessage(
+                                    getHeartValueFieldBuilder().getBuilder(),
+                                    extensionRegistry);
+                            bitField0_ |= 0x00000020;
+                            break;
+                        } // case 50
+                        case 58: {
+                            input.readMessage(
+                                    getPatternRefValueFieldBuilder().getBuilder(),
+                                    extensionRegistry);
+                            bitField0_ |= 0x00000040;
+                            break;
+                        } // case 58
+                        case 66: {
+                            input.readMessage(
+                                    getImageValueFieldBuilder().getBuilder(),
+                                    extensionRegistry);
+                            bitField0_ |= 0x00000080;
+                            break;
+                        } // case 66
+                        default: {
+                            if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                                done = true; // was an endgroup tag
+                            }
+                            break;
+                        } // default:
+                    } // switch (tag)
+                } // while (!done)
+            } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+                throw e.unwrapIOException();
+            } finally {
+                onChanged();
+            } // finally
+            return this;
+        }
+
+        private int bitField0_;
+
+        private boolean type_;
+
+        /**
+         * <code>bool type = 1;</code>
+         *
+         * @return The type.
+         */
+        @java.lang.Override
+        public boolean getType() {
+            return type_;
+        }
+
+        /**
+         * <code>bool type = 1;</code>
+         *
+         * @param value The type to set.
+         * @return This builder for chaining.
+         */
+        public Builder setType(boolean value) {
+
+            type_ = value;
+            bitField0_ |= 0x00000001;
+            onChanged();
+            return this;
+        }
+
+        /**
+         * <code>bool type = 1;</code>
+         *
+         * @return This builder for chaining.
+         */
+        public Builder clearType() {
+            bitField0_ = (bitField0_ & ~0x00000001);
+            type_ = false;
+            onChanged();
+            return this;
+        }
+
+        private cn.yscme.scrolling.auto.douyin.TextFormat format_;
+        private com.google.protobuf.SingleFieldBuilderV3<
+                cn.yscme.scrolling.auto.douyin.TextFormat, cn.yscme.scrolling.auto.douyin.TextFormat.Builder, cn.yscme.scrolling.auto.douyin.TextFormatOrBuilder> formatBuilder_;
+
+        /**
+         * <code>.cn.yscme.scrolling.auto.douyin.TextFormat format = 2;</code>
+         *
+         * @return Whether the format field is set.
+         */
+        public boolean hasFormat() {
+            return ((bitField0_ & 0x00000002) != 0);
+        }
+
+        /**
+         * <code>.cn.yscme.scrolling.auto.douyin.TextFormat format = 2;</code>
+         *
+         * @return The format.
+         */
+        public cn.yscme.scrolling.auto.douyin.TextFormat getFormat() {
+            if (formatBuilder_ == null) {
+                return format_ == null ? cn.yscme.scrolling.auto.douyin.TextFormat.getDefaultInstance() : format_;
+            } else {
+                return formatBuilder_.getMessage();
+            }
+        }
+
+        /**
+         * <code>.cn.yscme.scrolling.auto.douyin.TextFormat format = 2;</code>
+         */
+        public Builder setFormat(cn.yscme.scrolling.auto.douyin.TextFormat value) {
+            if (formatBuilder_ == null) {
+                if (value == null) {
+                    throw new NullPointerException();
+                }
+                format_ = value;
+            } else {
+                formatBuilder_.setMessage(value);
+            }
+            bitField0_ |= 0x00000002;
+            onChanged();
+            return this;
+        }
+
+        /**
+         * <code>.cn.yscme.scrolling.auto.douyin.TextFormat format = 2;</code>
+         */
+        public Builder setFormat(
+                cn.yscme.scrolling.auto.douyin.TextFormat.Builder builderForValue) {
+            if (formatBuilder_ == null) {
+                format_ = builderForValue.build();
+            } else {
+                formatBuilder_.setMessage(builderForValue.build());
+            }
+            bitField0_ |= 0x00000002;
+            onChanged();
+            return this;
+        }
+
+        /**
+         * <code>.cn.yscme.scrolling.auto.douyin.TextFormat format = 2;</code>
+         */
+        public Builder mergeFormat(cn.yscme.scrolling.auto.douyin.TextFormat value) {
+            if (formatBuilder_ == null) {
+                if (((bitField0_ & 0x00000002) != 0) &&
+                        format_ != null &&
+                        format_ != cn.yscme.scrolling.auto.douyin.TextFormat.getDefaultInstance()) {
+                    getFormatBuilder().mergeFrom(value);
+                } else {
+                    format_ = value;
+                }
+            } else {
+                formatBuilder_.mergeFrom(value);
+            }
+            if (format_ != null) {
+                bitField0_ |= 0x00000002;
+                onChanged();
+            }
+            return this;
+        }
+
+        /**
+         * <code>.cn.yscme.scrolling.auto.douyin.TextFormat format = 2;</code>
+         */
+        public Builder clearFormat() {
+            bitField0_ = (bitField0_ & ~0x00000002);
+            format_ = null;
+            if (formatBuilder_ != null) {
+                formatBuilder_.dispose();
+                formatBuilder_ = null;
+            }
+            onChanged();
+            return this;
+        }
+
+        /**
+         * <code>.cn.yscme.scrolling.auto.douyin.TextFormat format = 2;</code>
+         */
+        public cn.yscme.scrolling.auto.douyin.TextFormat.Builder getFormatBuilder() {
+            bitField0_ |= 0x00000002;
+            onChanged();
+            return getFormatFieldBuilder().getBuilder();
+        }
+
+        /**
+         * <code>.cn.yscme.scrolling.auto.douyin.TextFormat format = 2;</code>
+         */
+        public cn.yscme.scrolling.auto.douyin.TextFormatOrBuilder getFormatOrBuilder() {
+            if (formatBuilder_ != null) {
+                return formatBuilder_.getMessageOrBuilder();
+            } else {
+                return format_ == null ?
+                        cn.yscme.scrolling.auto.douyin.TextFormat.getDefaultInstance() : format_;
+            }
+        }
+
+        /**
+         * <code>.cn.yscme.scrolling.auto.douyin.TextFormat format = 2;</code>
+         */
+        private com.google.protobuf.SingleFieldBuilderV3<
+                cn.yscme.scrolling.auto.douyin.TextFormat, cn.yscme.scrolling.auto.douyin.TextFormat.Builder, cn.yscme.scrolling.auto.douyin.TextFormatOrBuilder>
+        getFormatFieldBuilder() {
+            if (formatBuilder_ == null) {
+                formatBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+                        cn.yscme.scrolling.auto.douyin.TextFormat, cn.yscme.scrolling.auto.douyin.TextFormat.Builder, cn.yscme.scrolling.auto.douyin.TextFormatOrBuilder>(
+                        getFormat(),
+                        getParentForChildren(),
+                        isClean());
+                format_ = null;
+            }
+            return formatBuilder_;
+        }
+
+        private java.lang.Object stringValue_ = "";
+
+        /**
+         * <code>string stringValue = 3;</code>
+         *
+         * @return The stringValue.
+         */
+        public java.lang.String getStringValue() {
+            java.lang.Object ref = stringValue_;
+            if (!(ref instanceof java.lang.String)) {
+                com.google.protobuf.ByteString bs =
+                        (com.google.protobuf.ByteString) ref;
+                java.lang.String s = bs.toStringUtf8();
+                stringValue_ = s;
+                return s;
+            } else {
+                return (java.lang.String) ref;
+            }
+        }
+
+        /**
+         * <code>string stringValue = 3;</code>
+         *
+         * @return The bytes for stringValue.
+         */
+        public com.google.protobuf.ByteString
+        getStringValueBytes() {
+            java.lang.Object ref = stringValue_;
+            if (ref instanceof String) {
+                com.google.protobuf.ByteString b =
+                        com.google.protobuf.ByteString.copyFromUtf8(
+                                (java.lang.String) ref);
+                stringValue_ = b;
+                return b;
+            } else {
+                return (com.google.protobuf.ByteString) ref;
+            }
+        }
+
+        /**
+         * <code>string stringValue = 3;</code>
+         *
+         * @param value The stringValue to set.
+         * @return This builder for chaining.
+         */
+        public Builder setStringValue(
+                java.lang.String value) {
+            if (value == null) {
+                throw new NullPointerException();
+            }
+            stringValue_ = value;
+            bitField0_ |= 0x00000004;
+            onChanged();
+            return this;
+        }
+
+        /**
+         * <code>string stringValue = 3;</code>
+         *
+         * @return This builder for chaining.
+         */
+        public Builder clearStringValue() {
+            stringValue_ = getDefaultInstance().getStringValue();
+            bitField0_ = (bitField0_ & ~0x00000004);
+            onChanged();
+            return this;
+        }
+
+        /**
+         * <code>string stringValue = 3;</code>
+         *
+         * @param value The bytes for stringValue to set.
+         * @return This builder for chaining.
+         */
+        public Builder setStringValueBytes(
+                com.google.protobuf.ByteString value) {
+            if (value == null) {
+                throw new NullPointerException();
+            }
+            checkByteStringIsUtf8(value);
+            stringValue_ = value;
+            bitField0_ |= 0x00000004;
+            onChanged();
+            return this;
+        }
+
+        private cn.yscme.scrolling.auto.douyin.TextPieceUser userValue_;
+        private com.google.protobuf.SingleFieldBuilderV3<
+                cn.yscme.scrolling.auto.douyin.TextPieceUser, cn.yscme.scrolling.auto.douyin.TextPieceUser.Builder, cn.yscme.scrolling.auto.douyin.TextPieceUserOrBuilder> userValueBuilder_;
+
+        /**
+         * <code>.cn.yscme.scrolling.auto.douyin.TextPieceUser userValue = 4;</code>
+         *
+         * @return Whether the userValue field is set.
+         */
+        public boolean hasUserValue() {
+            return ((bitField0_ & 0x00000008) != 0);
+        }
+
+        /**
+         * <code>.cn.yscme.scrolling.auto.douyin.TextPieceUser userValue = 4;</code>
+         *
+         * @return The userValue.
+         */
+        public cn.yscme.scrolling.auto.douyin.TextPieceUser getUserValue() {
+            if (userValueBuilder_ == null) {
+                return userValue_ == null ? cn.yscme.scrolling.auto.douyin.TextPieceUser.getDefaultInstance() : userValue_;
+            } else {
+                return userValueBuilder_.getMessage();
+            }
+        }
+
+        /**
+         * <code>.cn.yscme.scrolling.auto.douyin.TextPieceUser userValue = 4;</code>
+         */
+        public Builder setUserValue(cn.yscme.scrolling.auto.douyin.TextPieceUser value) {
+            if (userValueBuilder_ == null) {
+                if (value == null) {
+                    throw new NullPointerException();
+                }
+                userValue_ = value;
+            } else {
+                userValueBuilder_.setMessage(value);
+            }
+            bitField0_ |= 0x00000008;
+            onChanged();
+            return this;
+        }
+
+        /**
+         * <code>.cn.yscme.scrolling.auto.douyin.TextPieceUser userValue = 4;</code>
+         */
+        public Builder setUserValue(
+                cn.yscme.scrolling.auto.douyin.TextPieceUser.Builder builderForValue) {
+            if (userValueBuilder_ == null) {
+                userValue_ = builderForValue.build();
+            } else {
+                userValueBuilder_.setMessage(builderForValue.build());
+            }
+            bitField0_ |= 0x00000008;
+            onChanged();
+            return this;
+        }
+
+        /**
+         * <code>.cn.yscme.scrolling.auto.douyin.TextPieceUser userValue = 4;</code>
+         */
+        public Builder mergeUserValue(cn.yscme.scrolling.auto.douyin.TextPieceUser value) {
+            if (userValueBuilder_ == null) {
+                if (((bitField0_ & 0x00000008) != 0) &&
+                        userValue_ != null &&
+                        userValue_ != cn.yscme.scrolling.auto.douyin.TextPieceUser.getDefaultInstance()) {
+                    getUserValueBuilder().mergeFrom(value);
+                } else {
+                    userValue_ = value;
+                }
+            } else {
+                userValueBuilder_.mergeFrom(value);
+            }
+            if (userValue_ != null) {
+                bitField0_ |= 0x00000008;
+                onChanged();
+            }
+            return this;
+        }
+
+        /**
+         * <code>.cn.yscme.scrolling.auto.douyin.TextPieceUser userValue = 4;</code>
+         */
+        public Builder clearUserValue() {
+            bitField0_ = (bitField0_ & ~0x00000008);
+            userValue_ = null;
+            if (userValueBuilder_ != null) {
+                userValueBuilder_.dispose();
+                userValueBuilder_ = null;
+            }
+            onChanged();
+            return this;
+        }
+
+        /**
+         * <code>.cn.yscme.scrolling.auto.douyin.TextPieceUser userValue = 4;</code>
+         */
+        public cn.yscme.scrolling.auto.douyin.TextPieceUser.Builder getUserValueBuilder() {
+            bitField0_ |= 0x00000008;
+            onChanged();
+            return getUserValueFieldBuilder().getBuilder();
+        }
+
+        /**
+         * <code>.cn.yscme.scrolling.auto.douyin.TextPieceUser userValue = 4;</code>
+         */
+        public cn.yscme.scrolling.auto.douyin.TextPieceUserOrBuilder getUserValueOrBuilder() {
+            if (userValueBuilder_ != null) {
+                return userValueBuilder_.getMessageOrBuilder();
+            } else {
+                return userValue_ == null ?
+                        cn.yscme.scrolling.auto.douyin.TextPieceUser.getDefaultInstance() : userValue_;
+            }
+        }
+
+        /**
+         * <code>.cn.yscme.scrolling.auto.douyin.TextPieceUser userValue = 4;</code>
+         */
+        private com.google.protobuf.SingleFieldBuilderV3<
+                cn.yscme.scrolling.auto.douyin.TextPieceUser, cn.yscme.scrolling.auto.douyin.TextPieceUser.Builder, cn.yscme.scrolling.auto.douyin.TextPieceUserOrBuilder>
+        getUserValueFieldBuilder() {
+            if (userValueBuilder_ == null) {
+                userValueBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+                        cn.yscme.scrolling.auto.douyin.TextPieceUser, cn.yscme.scrolling.auto.douyin.TextPieceUser.Builder, cn.yscme.scrolling.auto.douyin.TextPieceUserOrBuilder>(
+                        getUserValue(),
+                        getParentForChildren(),
+                        isClean());
+                userValue_ = null;
+            }
+            return userValueBuilder_;
+        }
+
+        private cn.yscme.scrolling.auto.douyin.TextPieceGift giftValue_;
+        private com.google.protobuf.SingleFieldBuilderV3<
+                cn.yscme.scrolling.auto.douyin.TextPieceGift, cn.yscme.scrolling.auto.douyin.TextPieceGift.Builder, cn.yscme.scrolling.auto.douyin.TextPieceGiftOrBuilder> giftValueBuilder_;
+
+        /**
+         * <code>.cn.yscme.scrolling.auto.douyin.TextPieceGift giftValue = 5;</code>
+         *
+         * @return Whether the giftValue field is set.
+         */
+        public boolean hasGiftValue() {
+            return ((bitField0_ & 0x00000010) != 0);
+        }
+
+        /**
+         * <code>.cn.yscme.scrolling.auto.douyin.TextPieceGift giftValue = 5;</code>
+         *
+         * @return The giftValue.
+         */
+        public cn.yscme.scrolling.auto.douyin.TextPieceGift getGiftValue() {
+            if (giftValueBuilder_ == null) {
+                return giftValue_ == null ? cn.yscme.scrolling.auto.douyin.TextPieceGift.getDefaultInstance() : giftValue_;
+            } else {
+                return giftValueBuilder_.getMessage();
+            }
+        }
+
+        /**
+         * <code>.cn.yscme.scrolling.auto.douyin.TextPieceGift giftValue = 5;</code>
+         */
+        public Builder setGiftValue(cn.yscme.scrolling.auto.douyin.TextPieceGift value) {
+            if (giftValueBuilder_ == null) {
+                if (value == null) {
+                    throw new NullPointerException();
+                }
+                giftValue_ = value;
+            } else {
+                giftValueBuilder_.setMessage(value);
+            }
+            bitField0_ |= 0x00000010;
+            onChanged();
+            return this;
+        }
+
+        /**
+         * <code>.cn.yscme.scrolling.auto.douyin.TextPieceGift giftValue = 5;</code>
+         */
+        public Builder setGiftValue(
+                cn.yscme.scrolling.auto.douyin.TextPieceGift.Builder builderForValue) {
+            if (giftValueBuilder_ == null) {
+                giftValue_ = builderForValue.build();
+            } else {
+                giftValueBuilder_.setMessage(builderForValue.build());
+            }
+            bitField0_ |= 0x00000010;
+            onChanged();
+            return this;
+        }
+
+        /**
+         * <code>.cn.yscme.scrolling.auto.douyin.TextPieceGift giftValue = 5;</code>
+         */
+        public Builder mergeGiftValue(cn.yscme.scrolling.auto.douyin.TextPieceGift value) {
+            if (giftValueBuilder_ == null) {
+                if (((bitField0_ & 0x00000010) != 0) &&
+                        giftValue_ != null &&
+                        giftValue_ != cn.yscme.scrolling.auto.douyin.TextPieceGift.getDefaultInstance()) {
+                    getGiftValueBuilder().mergeFrom(value);
+                } else {
+                    giftValue_ = value;
+                }
+            } else {
+                giftValueBuilder_.mergeFrom(value);
+            }
+            if (giftValue_ != null) {
+                bitField0_ |= 0x00000010;
+                onChanged();
+            }
+            return this;
+        }
+
+        /**
+         * <code>.cn.yscme.scrolling.auto.douyin.TextPieceGift giftValue = 5;</code>
+         */
+        public Builder clearGiftValue() {
+            bitField0_ = (bitField0_ & ~0x00000010);
+            giftValue_ = null;
+            if (giftValueBuilder_ != null) {
+                giftValueBuilder_.dispose();
+                giftValueBuilder_ = null;
+            }
+            onChanged();
+            return this;
+        }
+
+        /**
+         * <code>.cn.yscme.scrolling.auto.douyin.TextPieceGift giftValue = 5;</code>
+         */
+        public cn.yscme.scrolling.auto.douyin.TextPieceGift.Builder getGiftValueBuilder() {
+            bitField0_ |= 0x00000010;
+            onChanged();
+            return getGiftValueFieldBuilder().getBuilder();
+        }
+
+        /**
+         * <code>.cn.yscme.scrolling.auto.douyin.TextPieceGift giftValue = 5;</code>
+         */
+        public cn.yscme.scrolling.auto.douyin.TextPieceGiftOrBuilder getGiftValueOrBuilder() {
+            if (giftValueBuilder_ != null) {
+                return giftValueBuilder_.getMessageOrBuilder();
+            } else {
+                return giftValue_ == null ?
+                        cn.yscme.scrolling.auto.douyin.TextPieceGift.getDefaultInstance() : giftValue_;
+            }
+        }
+
+        /**
+         * <code>.cn.yscme.scrolling.auto.douyin.TextPieceGift giftValue = 5;</code>
+         */
+        private com.google.protobuf.SingleFieldBuilderV3<
+                cn.yscme.scrolling.auto.douyin.TextPieceGift, cn.yscme.scrolling.auto.douyin.TextPieceGift.Builder, cn.yscme.scrolling.auto.douyin.TextPieceGiftOrBuilder>
+        getGiftValueFieldBuilder() {
+            if (giftValueBuilder_ == null) {
+                giftValueBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+                        cn.yscme.scrolling.auto.douyin.TextPieceGift, cn.yscme.scrolling.auto.douyin.TextPieceGift.Builder, cn.yscme.scrolling.auto.douyin.TextPieceGiftOrBuilder>(
+                        getGiftValue(),
+                        getParentForChildren(),
+                        isClean());
+                giftValue_ = null;
+            }
+            return giftValueBuilder_;
+        }
+
+        private cn.yscme.scrolling.auto.douyin.TextPieceHeart heartValue_;
+        private com.google.protobuf.SingleFieldBuilderV3<
+                cn.yscme.scrolling.auto.douyin.TextPieceHeart, cn.yscme.scrolling.auto.douyin.TextPieceHeart.Builder, cn.yscme.scrolling.auto.douyin.TextPieceHeartOrBuilder> heartValueBuilder_;
+
+        /**
+         * <code>.cn.yscme.scrolling.auto.douyin.TextPieceHeart heartValue = 6;</code>
+         *
+         * @return Whether the heartValue field is set.
+         */
+        public boolean hasHeartValue() {
+            return ((bitField0_ & 0x00000020) != 0);
+        }
+
+        /**
+         * <code>.cn.yscme.scrolling.auto.douyin.TextPieceHeart heartValue = 6;</code>
+         *
+         * @return The heartValue.
+         */
+        public cn.yscme.scrolling.auto.douyin.TextPieceHeart getHeartValue() {
+            if (heartValueBuilder_ == null) {
+                return heartValue_ == null ? cn.yscme.scrolling.auto.douyin.TextPieceHeart.getDefaultInstance() : heartValue_;
+            } else {
+                return heartValueBuilder_.getMessage();
+            }
+        }
+
+        /**
+         * <code>.cn.yscme.scrolling.auto.douyin.TextPieceHeart heartValue = 6;</code>
+         */
+        public Builder setHeartValue(cn.yscme.scrolling.auto.douyin.TextPieceHeart value) {
+            if (heartValueBuilder_ == null) {
+                if (value == null) {
+                    throw new NullPointerException();
+                }
+                heartValue_ = value;
+            } else {
+                heartValueBuilder_.setMessage(value);
+            }
+            bitField0_ |= 0x00000020;
+            onChanged();
+            return this;
+        }
+
+        /**
+         * <code>.cn.yscme.scrolling.auto.douyin.TextPieceHeart heartValue = 6;</code>
+         */
+        public Builder setHeartValue(
+                cn.yscme.scrolling.auto.douyin.TextPieceHeart.Builder builderForValue) {
+            if (heartValueBuilder_ == null) {
+                heartValue_ = builderForValue.build();
+            } else {
+                heartValueBuilder_.setMessage(builderForValue.build());
+            }
+            bitField0_ |= 0x00000020;
+            onChanged();
+            return this;
+        }
+
+        /**
+         * <code>.cn.yscme.scrolling.auto.douyin.TextPieceHeart heartValue = 6;</code>
+         */
+        public Builder mergeHeartValue(cn.yscme.scrolling.auto.douyin.TextPieceHeart value) {
+            if (heartValueBuilder_ == null) {
+                if (((bitField0_ & 0x00000020) != 0) &&
+                        heartValue_ != null &&
+                        heartValue_ != cn.yscme.scrolling.auto.douyin.TextPieceHeart.getDefaultInstance()) {
+                    getHeartValueBuilder().mergeFrom(value);
+                } else {
+                    heartValue_ = value;
+                }
+            } else {
+                heartValueBuilder_.mergeFrom(value);
+            }
+            if (heartValue_ != null) {
+                bitField0_ |= 0x00000020;
+                onChanged();
+            }
+            return this;
+        }
+
+        /**
+         * <code>.cn.yscme.scrolling.auto.douyin.TextPieceHeart heartValue = 6;</code>
+         */
+        public Builder clearHeartValue() {
+            bitField0_ = (bitField0_ & ~0x00000020);
+            heartValue_ = null;
+            if (heartValueBuilder_ != null) {
+                heartValueBuilder_.dispose();
+                heartValueBuilder_ = null;
+            }
+            onChanged();
+            return this;
+        }
+
+        /**
+         * <code>.cn.yscme.scrolling.auto.douyin.TextPieceHeart heartValue = 6;</code>
+         */
+        public cn.yscme.scrolling.auto.douyin.TextPieceHeart.Builder getHeartValueBuilder() {
+            bitField0_ |= 0x00000020;
+            onChanged();
+            return getHeartValueFieldBuilder().getBuilder();
+        }
+
+        /**
+         * <code>.cn.yscme.scrolling.auto.douyin.TextPieceHeart heartValue = 6;</code>
+         */
+        public cn.yscme.scrolling.auto.douyin.TextPieceHeartOrBuilder getHeartValueOrBuilder() {
+            if (heartValueBuilder_ != null) {
+                return heartValueBuilder_.getMessageOrBuilder();
+            } else {
+                return heartValue_ == null ?
+                        cn.yscme.scrolling.auto.douyin.TextPieceHeart.getDefaultInstance() : heartValue_;
+            }
+        }
+
+        /**
+         * <code>.cn.yscme.scrolling.auto.douyin.TextPieceHeart heartValue = 6;</code>
+         */
+        private com.google.protobuf.SingleFieldBuilderV3<
+                cn.yscme.scrolling.auto.douyin.TextPieceHeart, cn.yscme.scrolling.auto.douyin.TextPieceHeart.Builder, cn.yscme.scrolling.auto.douyin.TextPieceHeartOrBuilder>
+        getHeartValueFieldBuilder() {
+            if (heartValueBuilder_ == null) {
+                heartValueBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+                        cn.yscme.scrolling.auto.douyin.TextPieceHeart, cn.yscme.scrolling.auto.douyin.TextPieceHeart.Builder, cn.yscme.scrolling.auto.douyin.TextPieceHeartOrBuilder>(
+                        getHeartValue(),
+                        getParentForChildren(),
+                        isClean());
+                heartValue_ = null;
+            }
+            return heartValueBuilder_;
+        }
+
+        private cn.yscme.scrolling.auto.douyin.TextPiecePatternRef patternRefValue_;
+        private com.google.protobuf.SingleFieldBuilderV3<
+                cn.yscme.scrolling.auto.douyin.TextPiecePatternRef, cn.yscme.scrolling.auto.douyin.TextPiecePatternRef.Builder, cn.yscme.scrolling.auto.douyin.TextPiecePatternRefOrBuilder> patternRefValueBuilder_;
+
+        /**
+         * <code>.cn.yscme.scrolling.auto.douyin.TextPiecePatternRef patternRefValue = 7;</code>
+         *
+         * @return Whether the patternRefValue field is set.
+         */
+        public boolean hasPatternRefValue() {
+            return ((bitField0_ & 0x00000040) != 0);
+        }
+
+        /**
+         * <code>.cn.yscme.scrolling.auto.douyin.TextPiecePatternRef patternRefValue = 7;</code>
+         *
+         * @return The patternRefValue.
+         */
+        public cn.yscme.scrolling.auto.douyin.TextPiecePatternRef getPatternRefValue() {
+            if (patternRefValueBuilder_ == null) {
+                return patternRefValue_ == null ? cn.yscme.scrolling.auto.douyin.TextPiecePatternRef.getDefaultInstance() : patternRefValue_;
+            } else {
+                return patternRefValueBuilder_.getMessage();
+            }
+        }
+
+        /**
+         * <code>.cn.yscme.scrolling.auto.douyin.TextPiecePatternRef patternRefValue = 7;</code>
+         */
+        public Builder setPatternRefValue(cn.yscme.scrolling.auto.douyin.TextPiecePatternRef value) {
+            if (patternRefValueBuilder_ == null) {
+                if (value == null) {
+                    throw new NullPointerException();
+                }
+                patternRefValue_ = value;
+            } else {
+                patternRefValueBuilder_.setMessage(value);
+            }
+            bitField0_ |= 0x00000040;
+            onChanged();
+            return this;
+        }
+
+        /**
+         * <code>.cn.yscme.scrolling.auto.douyin.TextPiecePatternRef patternRefValue = 7;</code>
+         */
+        public Builder setPatternRefValue(
+                cn.yscme.scrolling.auto.douyin.TextPiecePatternRef.Builder builderForValue) {
+            if (patternRefValueBuilder_ == null) {
+                patternRefValue_ = builderForValue.build();
+            } else {
+                patternRefValueBuilder_.setMessage(builderForValue.build());
+            }
+            bitField0_ |= 0x00000040;
+            onChanged();
+            return this;
+        }
+
+        /**
+         * <code>.cn.yscme.scrolling.auto.douyin.TextPiecePatternRef patternRefValue = 7;</code>
+         */
+        public Builder mergePatternRefValue(cn.yscme.scrolling.auto.douyin.TextPiecePatternRef value) {
+            if (patternRefValueBuilder_ == null) {
+                if (((bitField0_ & 0x00000040) != 0) &&
+                        patternRefValue_ != null &&
+                        patternRefValue_ != cn.yscme.scrolling.auto.douyin.TextPiecePatternRef.getDefaultInstance()) {
+                    getPatternRefValueBuilder().mergeFrom(value);
+                } else {
+                    patternRefValue_ = value;
+                }
+            } else {
+                patternRefValueBuilder_.mergeFrom(value);
+            }
+            if (patternRefValue_ != null) {
+                bitField0_ |= 0x00000040;
+                onChanged();
+            }
+            return this;
+        }
+
+        /**
+         * <code>.cn.yscme.scrolling.auto.douyin.TextPiecePatternRef patternRefValue = 7;</code>
+         */
+        public Builder clearPatternRefValue() {
+            bitField0_ = (bitField0_ & ~0x00000040);
+            patternRefValue_ = null;
+            if (patternRefValueBuilder_ != null) {
+                patternRefValueBuilder_.dispose();
+                patternRefValueBuilder_ = null;
+            }
+            onChanged();
+            return this;
+        }
+
+        /**
+         * <code>.cn.yscme.scrolling.auto.douyin.TextPiecePatternRef patternRefValue = 7;</code>
+         */
+        public cn.yscme.scrolling.auto.douyin.TextPiecePatternRef.Builder getPatternRefValueBuilder() {
+            bitField0_ |= 0x00000040;
+            onChanged();
+            return getPatternRefValueFieldBuilder().getBuilder();
+        }
+
+        /**
+         * <code>.cn.yscme.scrolling.auto.douyin.TextPiecePatternRef patternRefValue = 7;</code>
+         */
+        public cn.yscme.scrolling.auto.douyin.TextPiecePatternRefOrBuilder getPatternRefValueOrBuilder() {
+            if (patternRefValueBuilder_ != null) {
+                return patternRefValueBuilder_.getMessageOrBuilder();
+            } else {
+                return patternRefValue_ == null ?
+                        cn.yscme.scrolling.auto.douyin.TextPiecePatternRef.getDefaultInstance() : patternRefValue_;
+            }
+        }
+
+        /**
+         * <code>.cn.yscme.scrolling.auto.douyin.TextPiecePatternRef patternRefValue = 7;</code>
+         */
+        private com.google.protobuf.SingleFieldBuilderV3<
+                cn.yscme.scrolling.auto.douyin.TextPiecePatternRef, cn.yscme.scrolling.auto.douyin.TextPiecePatternRef.Builder, cn.yscme.scrolling.auto.douyin.TextPiecePatternRefOrBuilder>
+        getPatternRefValueFieldBuilder() {
+            if (patternRefValueBuilder_ == null) {
+                patternRefValueBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+                        cn.yscme.scrolling.auto.douyin.TextPiecePatternRef, cn.yscme.scrolling.auto.douyin.TextPiecePatternRef.Builder, cn.yscme.scrolling.auto.douyin.TextPiecePatternRefOrBuilder>(
+                        getPatternRefValue(),
+                        getParentForChildren(),
+                        isClean());
+                patternRefValue_ = null;
+            }
+            return patternRefValueBuilder_;
+        }
+
+        private cn.yscme.scrolling.auto.douyin.TextPieceImage imageValue_;
+        private com.google.protobuf.SingleFieldBuilderV3<
+                cn.yscme.scrolling.auto.douyin.TextPieceImage, cn.yscme.scrolling.auto.douyin.TextPieceImage.Builder, cn.yscme.scrolling.auto.douyin.TextPieceImageOrBuilder> imageValueBuilder_;
+
+        /**
+         * <code>.cn.yscme.scrolling.auto.douyin.TextPieceImage imageValue = 8;</code>
+         *
+         * @return Whether the imageValue field is set.
+         */
+        public boolean hasImageValue() {
+            return ((bitField0_ & 0x00000080) != 0);
+        }
+
+        /**
+         * <code>.cn.yscme.scrolling.auto.douyin.TextPieceImage imageValue = 8;</code>
+         *
+         * @return The imageValue.
+         */
+        public cn.yscme.scrolling.auto.douyin.TextPieceImage getImageValue() {
+            if (imageValueBuilder_ == null) {
+                return imageValue_ == null ? cn.yscme.scrolling.auto.douyin.TextPieceImage.getDefaultInstance() : imageValue_;
+            } else {
+                return imageValueBuilder_.getMessage();
+            }
+        }
+
+        /**
+         * <code>.cn.yscme.scrolling.auto.douyin.TextPieceImage imageValue = 8;</code>
+         */
+        public Builder setImageValue(cn.yscme.scrolling.auto.douyin.TextPieceImage value) {
+            if (imageValueBuilder_ == null) {
+                if (value == null) {
+                    throw new NullPointerException();
+                }
+                imageValue_ = value;
+            } else {
+                imageValueBuilder_.setMessage(value);
+            }
+            bitField0_ |= 0x00000080;
+            onChanged();
+            return this;
+        }
+
+        /**
+         * <code>.cn.yscme.scrolling.auto.douyin.TextPieceImage imageValue = 8;</code>
+         */
+        public Builder setImageValue(
+                cn.yscme.scrolling.auto.douyin.TextPieceImage.Builder builderForValue) {
+            if (imageValueBuilder_ == null) {
+                imageValue_ = builderForValue.build();
+            } else {
+                imageValueBuilder_.setMessage(builderForValue.build());
+            }
+            bitField0_ |= 0x00000080;
+            onChanged();
+            return this;
+        }
+
+        /**
+         * <code>.cn.yscme.scrolling.auto.douyin.TextPieceImage imageValue = 8;</code>
+         */
+        public Builder mergeImageValue(cn.yscme.scrolling.auto.douyin.TextPieceImage value) {
+            if (imageValueBuilder_ == null) {
+                if (((bitField0_ & 0x00000080) != 0) &&
+                        imageValue_ != null &&
+                        imageValue_ != cn.yscme.scrolling.auto.douyin.TextPieceImage.getDefaultInstance()) {
+                    getImageValueBuilder().mergeFrom(value);
+                } else {
+                    imageValue_ = value;
+                }
+            } else {
+                imageValueBuilder_.mergeFrom(value);
+            }
+            if (imageValue_ != null) {
+                bitField0_ |= 0x00000080;
+                onChanged();
+            }
+            return this;
+        }
+
+        /**
+         * <code>.cn.yscme.scrolling.auto.douyin.TextPieceImage imageValue = 8;</code>
+         */
+        public Builder clearImageValue() {
+            bitField0_ = (bitField0_ & ~0x00000080);
+            imageValue_ = null;
+            if (imageValueBuilder_ != null) {
+                imageValueBuilder_.dispose();
+                imageValueBuilder_ = null;
+            }
+            onChanged();
+            return this;
+        }
+
+        /**
+         * <code>.cn.yscme.scrolling.auto.douyin.TextPieceImage imageValue = 8;</code>
+         */
+        public cn.yscme.scrolling.auto.douyin.TextPieceImage.Builder getImageValueBuilder() {
+            bitField0_ |= 0x00000080;
+            onChanged();
+            return getImageValueFieldBuilder().getBuilder();
+        }
+
+        /**
+         * <code>.cn.yscme.scrolling.auto.douyin.TextPieceImage imageValue = 8;</code>
+         */
+        public cn.yscme.scrolling.auto.douyin.TextPieceImageOrBuilder getImageValueOrBuilder() {
+            if (imageValueBuilder_ != null) {
+                return imageValueBuilder_.getMessageOrBuilder();
+            } else {
+                return imageValue_ == null ?
+                        cn.yscme.scrolling.auto.douyin.TextPieceImage.getDefaultInstance() : imageValue_;
+            }
+        }
+
+        /**
+         * <code>.cn.yscme.scrolling.auto.douyin.TextPieceImage imageValue = 8;</code>
+         */
+        private com.google.protobuf.SingleFieldBuilderV3<
+                cn.yscme.scrolling.auto.douyin.TextPieceImage, cn.yscme.scrolling.auto.douyin.TextPieceImage.Builder, cn.yscme.scrolling.auto.douyin.TextPieceImageOrBuilder>
         getImageValueFieldBuilder() {
-      if (imageValueBuilder_ == null) {
-        imageValueBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            cn.yscme.scrolling.auto.douyin.TextPieceImage, cn.yscme.scrolling.auto.douyin.TextPieceImage.Builder, cn.yscme.scrolling.auto.douyin.TextPieceImageOrBuilder>(
-                getImageValue(),
-                getParentForChildren(),
-                isClean());
-        imageValue_ = null;
-      }
-      return imageValueBuilder_;
+            if (imageValueBuilder_ == null) {
+                imageValueBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+                        cn.yscme.scrolling.auto.douyin.TextPieceImage, cn.yscme.scrolling.auto.douyin.TextPieceImage.Builder, cn.yscme.scrolling.auto.douyin.TextPieceImageOrBuilder>(
+                        getImageValue(),
+                        getParentForChildren(),
+                        isClean());
+                imageValue_ = null;
+            }
+            return imageValueBuilder_;
+        }
+
+        @java.lang.Override
+        public final Builder setUnknownFields(
+                final com.google.protobuf.UnknownFieldSet unknownFields) {
+            return super.setUnknownFields(unknownFields);
+        }
+
+        @java.lang.Override
+        public final Builder mergeUnknownFields(
+                final com.google.protobuf.UnknownFieldSet unknownFields) {
+            return super.mergeUnknownFields(unknownFields);
+        }
+
+
+        // @@protoc_insertion_point(builder_scope:cn.yscme.scrolling.auto.douyin.TextPiece)
     }
+
+    // @@protoc_insertion_point(class_scope:cn.yscme.scrolling.auto.douyin.TextPiece)
+    private static final cn.yscme.scrolling.auto.douyin.TextPiece DEFAULT_INSTANCE;
+
+    static {
+        DEFAULT_INSTANCE = new cn.yscme.scrolling.auto.douyin.TextPiece();
+    }
+
+    public static cn.yscme.scrolling.auto.douyin.TextPiece getDefaultInstance() {
+        return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<TextPiece>
+            PARSER = new com.google.protobuf.AbstractParser<TextPiece>() {
+        @java.lang.Override
+        public TextPiece parsePartialFrom(
+                com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            Builder builder = newBuilder();
+            try {
+                builder.mergeFrom(input, extensionRegistry);
+            } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+                throw e.setUnfinishedMessage(builder.buildPartial());
+            } catch (com.google.protobuf.UninitializedMessageException e) {
+                throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+            } catch (java.io.IOException e) {
+                throw new com.google.protobuf.InvalidProtocolBufferException(e)
+                        .setUnfinishedMessage(builder.buildPartial());
+            }
+            return builder.buildPartial();
+        }
+    };
+
+    public static com.google.protobuf.Parser<TextPiece> parser() {
+        return PARSER;
+    }
+
     @java.lang.Override
-    public final Builder setUnknownFields(
-        final com.google.protobuf.UnknownFieldSet unknownFields) {
-      return super.setUnknownFields(unknownFields);
+    public com.google.protobuf.Parser<TextPiece> getParserForType() {
+        return PARSER;
     }
 
     @java.lang.Override
-    public final Builder mergeUnknownFields(
-        final com.google.protobuf.UnknownFieldSet unknownFields) {
-      return super.mergeUnknownFields(unknownFields);
+    public cn.yscme.scrolling.auto.douyin.TextPiece getDefaultInstanceForType() {
+        return DEFAULT_INSTANCE;
     }
-
-
-    // @@protoc_insertion_point(builder_scope:cn.yscme.scrolling.auto.douyin.TextPiece)
-  }
-
-  // @@protoc_insertion_point(class_scope:cn.yscme.scrolling.auto.douyin.TextPiece)
-  private static final cn.yscme.scrolling.auto.douyin.TextPiece DEFAULT_INSTANCE;
-  static {
-    DEFAULT_INSTANCE = new cn.yscme.scrolling.auto.douyin.TextPiece();
-  }
-
-  public static cn.yscme.scrolling.auto.douyin.TextPiece getDefaultInstance() {
-    return DEFAULT_INSTANCE;
-  }
-
-  private static final com.google.protobuf.Parser<TextPiece>
-      PARSER = new com.google.protobuf.AbstractParser<TextPiece>() {
-    @java.lang.Override
-    public TextPiece parsePartialFrom(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      Builder builder = newBuilder();
-      try {
-        builder.mergeFrom(input, extensionRegistry);
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(builder.buildPartial());
-      } catch (com.google.protobuf.UninitializedMessageException e) {
-        throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(e)
-            .setUnfinishedMessage(builder.buildPartial());
-      }
-      return builder.buildPartial();
-    }
-  };
-
-  public static com.google.protobuf.Parser<TextPiece> parser() {
-    return PARSER;
-  }
-
-  @java.lang.Override
-  public com.google.protobuf.Parser<TextPiece> getParserForType() {
-    return PARSER;
-  }
-
-  @java.lang.Override
-  public cn.yscme.scrolling.auto.douyin.TextPiece getDefaultInstanceForType() {
-    return DEFAULT_INSTANCE;
-  }
 
 }
 

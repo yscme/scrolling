@@ -5,6 +5,6 @@
 package cn.yscme.scrolling.auto.douyin;
 
 public interface GradeBuffInfoOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:cn.yscme.scrolling.auto.douyin.GradeBuffInfo)
-    com.google.protobuf.MessageOrBuilder {
+        // @@protoc_insertion_point(interface_extends:cn.yscme.scrolling.auto.douyin.GradeBuffInfo)
+        com.google.protobuf.MessageOrBuilder {
 }

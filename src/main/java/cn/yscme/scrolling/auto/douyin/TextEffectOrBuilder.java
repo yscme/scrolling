@@ -5,36 +5,44 @@
 package cn.yscme.scrolling.auto.douyin;
 
 public interface TextEffectOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:cn.yscme.scrolling.auto.douyin.TextEffect)
-    com.google.protobuf.MessageOrBuilder {
+        // @@protoc_insertion_point(interface_extends:cn.yscme.scrolling.auto.douyin.TextEffect)
+        com.google.protobuf.MessageOrBuilder {
 
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.TextEffectDetail portrait = 1;</code>
-   * @return Whether the portrait field is set.
-   */
-  boolean hasPortrait();
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.TextEffectDetail portrait = 1;</code>
-   * @return The portrait.
-   */
-  cn.yscme.scrolling.auto.douyin.TextEffectDetail getPortrait();
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.TextEffectDetail portrait = 1;</code>
-   */
-  cn.yscme.scrolling.auto.douyin.TextEffectDetailOrBuilder getPortraitOrBuilder();
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.TextEffectDetail portrait = 1;</code>
+     *
+     * @return Whether the portrait field is set.
+     */
+    boolean hasPortrait();
 
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.TextEffectDetail landscape = 2;</code>
-   * @return Whether the landscape field is set.
-   */
-  boolean hasLandscape();
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.TextEffectDetail landscape = 2;</code>
-   * @return The landscape.
-   */
-  cn.yscme.scrolling.auto.douyin.TextEffectDetail getLandscape();
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.TextEffectDetail landscape = 2;</code>
-   */
-  cn.yscme.scrolling.auto.douyin.TextEffectDetailOrBuilder getLandscapeOrBuilder();
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.TextEffectDetail portrait = 1;</code>
+     *
+     * @return The portrait.
+     */
+    cn.yscme.scrolling.auto.douyin.TextEffectDetail getPortrait();
+
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.TextEffectDetail portrait = 1;</code>
+     */
+    cn.yscme.scrolling.auto.douyin.TextEffectDetailOrBuilder getPortraitOrBuilder();
+
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.TextEffectDetail landscape = 2;</code>
+     *
+     * @return Whether the landscape field is set.
+     */
+    boolean hasLandscape();
+
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.TextEffectDetail landscape = 2;</code>
+     *
+     * @return The landscape.
+     */
+    cn.yscme.scrolling.auto.douyin.TextEffectDetail getLandscape();
+
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.TextEffectDetail landscape = 2;</code>
+     */
+    cn.yscme.scrolling.auto.douyin.TextEffectDetailOrBuilder getLandscapeOrBuilder();
 }

@@ -5,87 +5,104 @@
 package cn.yscme.scrolling.auto.douyin;
 
 public interface RspOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:cn.yscme.scrolling.auto.douyin.Rsp)
-    com.google.protobuf.MessageOrBuilder {
+        // @@protoc_insertion_point(interface_extends:cn.yscme.scrolling.auto.douyin.Rsp)
+        com.google.protobuf.MessageOrBuilder {
 
-  /**
-   * <code>int32 a = 1;</code>
-   * @return The a.
-   */
-  int getA();
+    /**
+     * <code>int32 a = 1;</code>
+     *
+     * @return The a.
+     */
+    int getA();
 
-  /**
-   * <code>int32 b = 2;</code>
-   * @return The b.
-   */
-  int getB();
+    /**
+     * <code>int32 b = 2;</code>
+     *
+     * @return The b.
+     */
+    int getB();
 
-  /**
-   * <code>int32 c = 3;</code>
-   * @return The c.
-   */
-  int getC();
+    /**
+     * <code>int32 c = 3;</code>
+     *
+     * @return The c.
+     */
+    int getC();
 
-  /**
-   * <code>string d = 4;</code>
-   * @return The d.
-   */
-  java.lang.String getD();
-  /**
-   * <code>string d = 4;</code>
-   * @return The bytes for d.
-   */
-  com.google.protobuf.ByteString
-      getDBytes();
+    /**
+     * <code>string d = 4;</code>
+     *
+     * @return The d.
+     */
+    java.lang.String getD();
 
-  /**
-   * <code>int32 e = 5;</code>
-   * @return The e.
-   */
-  int getE();
+    /**
+     * <code>string d = 4;</code>
+     *
+     * @return The bytes for d.
+     */
+    com.google.protobuf.ByteString
+    getDBytes();
 
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.Rsp.F f = 6;</code>
-   * @return Whether the f field is set.
-   */
-  boolean hasF();
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.Rsp.F f = 6;</code>
-   * @return The f.
-   */
-  cn.yscme.scrolling.auto.douyin.Rsp.F getF();
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.Rsp.F f = 6;</code>
-   */
-  cn.yscme.scrolling.auto.douyin.Rsp.FOrBuilder getFOrBuilder();
+    /**
+     * <code>int32 e = 5;</code>
+     *
+     * @return The e.
+     */
+    int getE();
 
-  /**
-   * <code>string g = 7;</code>
-   * @return The g.
-   */
-  java.lang.String getG();
-  /**
-   * <code>string g = 7;</code>
-   * @return The bytes for g.
-   */
-  com.google.protobuf.ByteString
-      getGBytes();
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.Rsp.F f = 6;</code>
+     *
+     * @return Whether the f field is set.
+     */
+    boolean hasF();
 
-  /**
-   * <code>uint64 h = 10;</code>
-   * @return The h.
-   */
-  long getH();
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.Rsp.F f = 6;</code>
+     *
+     * @return The f.
+     */
+    cn.yscme.scrolling.auto.douyin.Rsp.F getF();
 
-  /**
-   * <code>uint64 i = 11;</code>
-   * @return The i.
-   */
-  long getI();
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.Rsp.F f = 6;</code>
+     */
+    cn.yscme.scrolling.auto.douyin.Rsp.FOrBuilder getFOrBuilder();
 
-  /**
-   * <code>uint64 j = 13;</code>
-   * @return The j.
-   */
-  long getJ();
+    /**
+     * <code>string g = 7;</code>
+     *
+     * @return The g.
+     */
+    java.lang.String getG();
+
+    /**
+     * <code>string g = 7;</code>
+     *
+     * @return The bytes for g.
+     */
+    com.google.protobuf.ByteString
+    getGBytes();
+
+    /**
+     * <code>uint64 h = 10;</code>
+     *
+     * @return The h.
+     */
+    long getH();
+
+    /**
+     * <code>uint64 i = 11;</code>
+     *
+     * @return The i.
+     */
+    long getI();
+
+    /**
+     * <code>uint64 j = 13;</code>
+     *
+     * @return The j.
+     */
+    long getJ();
 }

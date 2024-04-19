@@ -5,45 +5,54 @@
 package cn.yscme.scrolling.auto.douyin;
 
 public interface UpdateFanTicketMessageOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:cn.yscme.scrolling.auto.douyin.UpdateFanTicketMessage)
-    com.google.protobuf.MessageOrBuilder {
+        // @@protoc_insertion_point(interface_extends:cn.yscme.scrolling.auto.douyin.UpdateFanTicketMessage)
+        com.google.protobuf.MessageOrBuilder {
 
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.Common common = 1;</code>
-   * @return Whether the common field is set.
-   */
-  boolean hasCommon();
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.Common common = 1;</code>
-   * @return The common.
-   */
-  cn.yscme.scrolling.auto.douyin.Common getCommon();
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.Common common = 1;</code>
-   */
-  cn.yscme.scrolling.auto.douyin.CommonOrBuilder getCommonOrBuilder();
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.Common common = 1;</code>
+     *
+     * @return Whether the common field is set.
+     */
+    boolean hasCommon();
 
-  /**
-   * <code>string roomFanTicketCountText = 2;</code>
-   * @return The roomFanTicketCountText.
-   */
-  java.lang.String getRoomFanTicketCountText();
-  /**
-   * <code>string roomFanTicketCountText = 2;</code>
-   * @return The bytes for roomFanTicketCountText.
-   */
-  com.google.protobuf.ByteString
-      getRoomFanTicketCountTextBytes();
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.Common common = 1;</code>
+     *
+     * @return The common.
+     */
+    cn.yscme.scrolling.auto.douyin.Common getCommon();
 
-  /**
-   * <code>uint64 roomFanTicketCount = 3;</code>
-   * @return The roomFanTicketCount.
-   */
-  long getRoomFanTicketCount();
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.Common common = 1;</code>
+     */
+    cn.yscme.scrolling.auto.douyin.CommonOrBuilder getCommonOrBuilder();
 
-  /**
-   * <code>bool forceUpdate = 4;</code>
-   * @return The forceUpdate.
-   */
-  boolean getForceUpdate();
+    /**
+     * <code>string roomFanTicketCountText = 2;</code>
+     *
+     * @return The roomFanTicketCountText.
+     */
+    java.lang.String getRoomFanTicketCountText();
+
+    /**
+     * <code>string roomFanTicketCountText = 2;</code>
+     *
+     * @return The bytes for roomFanTicketCountText.
+     */
+    com.google.protobuf.ByteString
+    getRoomFanTicketCountTextBytes();
+
+    /**
+     * <code>uint64 roomFanTicketCount = 3;</code>
+     *
+     * @return The roomFanTicketCount.
+     */
+    long getRoomFanTicketCount();
+
+    /**
+     * <code>bool forceUpdate = 4;</code>
+     *
+     * @return The forceUpdate.
+     */
+    boolean getForceUpdate();
 }

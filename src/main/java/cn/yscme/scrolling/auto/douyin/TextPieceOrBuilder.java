@@ -5,114 +5,142 @@
 package cn.yscme.scrolling.auto.douyin;
 
 public interface TextPieceOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:cn.yscme.scrolling.auto.douyin.TextPiece)
-    com.google.protobuf.MessageOrBuilder {
+        // @@protoc_insertion_point(interface_extends:cn.yscme.scrolling.auto.douyin.TextPiece)
+        com.google.protobuf.MessageOrBuilder {
 
-  /**
-   * <code>bool type = 1;</code>
-   * @return The type.
-   */
-  boolean getType();
+    /**
+     * <code>bool type = 1;</code>
+     *
+     * @return The type.
+     */
+    boolean getType();
 
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.TextFormat format = 2;</code>
-   * @return Whether the format field is set.
-   */
-  boolean hasFormat();
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.TextFormat format = 2;</code>
-   * @return The format.
-   */
-  cn.yscme.scrolling.auto.douyin.TextFormat getFormat();
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.TextFormat format = 2;</code>
-   */
-  cn.yscme.scrolling.auto.douyin.TextFormatOrBuilder getFormatOrBuilder();
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.TextFormat format = 2;</code>
+     *
+     * @return Whether the format field is set.
+     */
+    boolean hasFormat();
 
-  /**
-   * <code>string stringValue = 3;</code>
-   * @return The stringValue.
-   */
-  java.lang.String getStringValue();
-  /**
-   * <code>string stringValue = 3;</code>
-   * @return The bytes for stringValue.
-   */
-  com.google.protobuf.ByteString
-      getStringValueBytes();
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.TextFormat format = 2;</code>
+     *
+     * @return The format.
+     */
+    cn.yscme.scrolling.auto.douyin.TextFormat getFormat();
 
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.TextPieceUser userValue = 4;</code>
-   * @return Whether the userValue field is set.
-   */
-  boolean hasUserValue();
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.TextPieceUser userValue = 4;</code>
-   * @return The userValue.
-   */
-  cn.yscme.scrolling.auto.douyin.TextPieceUser getUserValue();
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.TextPieceUser userValue = 4;</code>
-   */
-  cn.yscme.scrolling.auto.douyin.TextPieceUserOrBuilder getUserValueOrBuilder();
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.TextFormat format = 2;</code>
+     */
+    cn.yscme.scrolling.auto.douyin.TextFormatOrBuilder getFormatOrBuilder();
 
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.TextPieceGift giftValue = 5;</code>
-   * @return Whether the giftValue field is set.
-   */
-  boolean hasGiftValue();
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.TextPieceGift giftValue = 5;</code>
-   * @return The giftValue.
-   */
-  cn.yscme.scrolling.auto.douyin.TextPieceGift getGiftValue();
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.TextPieceGift giftValue = 5;</code>
-   */
-  cn.yscme.scrolling.auto.douyin.TextPieceGiftOrBuilder getGiftValueOrBuilder();
+    /**
+     * <code>string stringValue = 3;</code>
+     *
+     * @return The stringValue.
+     */
+    java.lang.String getStringValue();
 
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.TextPieceHeart heartValue = 6;</code>
-   * @return Whether the heartValue field is set.
-   */
-  boolean hasHeartValue();
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.TextPieceHeart heartValue = 6;</code>
-   * @return The heartValue.
-   */
-  cn.yscme.scrolling.auto.douyin.TextPieceHeart getHeartValue();
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.TextPieceHeart heartValue = 6;</code>
-   */
-  cn.yscme.scrolling.auto.douyin.TextPieceHeartOrBuilder getHeartValueOrBuilder();
+    /**
+     * <code>string stringValue = 3;</code>
+     *
+     * @return The bytes for stringValue.
+     */
+    com.google.protobuf.ByteString
+    getStringValueBytes();
 
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.TextPiecePatternRef patternRefValue = 7;</code>
-   * @return Whether the patternRefValue field is set.
-   */
-  boolean hasPatternRefValue();
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.TextPiecePatternRef patternRefValue = 7;</code>
-   * @return The patternRefValue.
-   */
-  cn.yscme.scrolling.auto.douyin.TextPiecePatternRef getPatternRefValue();
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.TextPiecePatternRef patternRefValue = 7;</code>
-   */
-  cn.yscme.scrolling.auto.douyin.TextPiecePatternRefOrBuilder getPatternRefValueOrBuilder();
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.TextPieceUser userValue = 4;</code>
+     *
+     * @return Whether the userValue field is set.
+     */
+    boolean hasUserValue();
 
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.TextPieceImage imageValue = 8;</code>
-   * @return Whether the imageValue field is set.
-   */
-  boolean hasImageValue();
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.TextPieceImage imageValue = 8;</code>
-   * @return The imageValue.
-   */
-  cn.yscme.scrolling.auto.douyin.TextPieceImage getImageValue();
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.TextPieceImage imageValue = 8;</code>
-   */
-  cn.yscme.scrolling.auto.douyin.TextPieceImageOrBuilder getImageValueOrBuilder();
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.TextPieceUser userValue = 4;</code>
+     *
+     * @return The userValue.
+     */
+    cn.yscme.scrolling.auto.douyin.TextPieceUser getUserValue();
+
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.TextPieceUser userValue = 4;</code>
+     */
+    cn.yscme.scrolling.auto.douyin.TextPieceUserOrBuilder getUserValueOrBuilder();
+
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.TextPieceGift giftValue = 5;</code>
+     *
+     * @return Whether the giftValue field is set.
+     */
+    boolean hasGiftValue();
+
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.TextPieceGift giftValue = 5;</code>
+     *
+     * @return The giftValue.
+     */
+    cn.yscme.scrolling.auto.douyin.TextPieceGift getGiftValue();
+
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.TextPieceGift giftValue = 5;</code>
+     */
+    cn.yscme.scrolling.auto.douyin.TextPieceGiftOrBuilder getGiftValueOrBuilder();
+
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.TextPieceHeart heartValue = 6;</code>
+     *
+     * @return Whether the heartValue field is set.
+     */
+    boolean hasHeartValue();
+
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.TextPieceHeart heartValue = 6;</code>
+     *
+     * @return The heartValue.
+     */
+    cn.yscme.scrolling.auto.douyin.TextPieceHeart getHeartValue();
+
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.TextPieceHeart heartValue = 6;</code>
+     */
+    cn.yscme.scrolling.auto.douyin.TextPieceHeartOrBuilder getHeartValueOrBuilder();
+
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.TextPiecePatternRef patternRefValue = 7;</code>
+     *
+     * @return Whether the patternRefValue field is set.
+     */
+    boolean hasPatternRefValue();
+
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.TextPiecePatternRef patternRefValue = 7;</code>
+     *
+     * @return The patternRefValue.
+     */
+    cn.yscme.scrolling.auto.douyin.TextPiecePatternRef getPatternRefValue();
+
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.TextPiecePatternRef patternRefValue = 7;</code>
+     */
+    cn.yscme.scrolling.auto.douyin.TextPiecePatternRefOrBuilder getPatternRefValueOrBuilder();
+
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.TextPieceImage imageValue = 8;</code>
+     *
+     * @return Whether the imageValue field is set.
+     */
+    boolean hasImageValue();
+
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.TextPieceImage imageValue = 8;</code>
+     *
+     * @return The imageValue.
+     */
+    cn.yscme.scrolling.auto.douyin.TextPieceImage getImageValue();
+
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.TextPieceImage imageValue = 8;</code>
+     */
+    cn.yscme.scrolling.auto.douyin.TextPieceImageOrBuilder getImageValueOrBuilder();
 }

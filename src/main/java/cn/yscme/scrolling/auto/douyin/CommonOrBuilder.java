@@ -5,179 +5,213 @@
 package cn.yscme.scrolling.auto.douyin;
 
 public interface CommonOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:cn.yscme.scrolling.auto.douyin.Common)
-    com.google.protobuf.MessageOrBuilder {
+        // @@protoc_insertion_point(interface_extends:cn.yscme.scrolling.auto.douyin.Common)
+        com.google.protobuf.MessageOrBuilder {
 
-  /**
-   * <code>string method = 1;</code>
-   * @return The method.
-   */
-  java.lang.String getMethod();
-  /**
-   * <code>string method = 1;</code>
-   * @return The bytes for method.
-   */
-  com.google.protobuf.ByteString
-      getMethodBytes();
+    /**
+     * <code>string method = 1;</code>
+     *
+     * @return The method.
+     */
+    java.lang.String getMethod();
 
-  /**
-   * <code>uint64 msgId = 2;</code>
-   * @return The msgId.
-   */
-  long getMsgId();
+    /**
+     * <code>string method = 1;</code>
+     *
+     * @return The bytes for method.
+     */
+    com.google.protobuf.ByteString
+    getMethodBytes();
 
-  /**
-   * <code>uint64 roomId = 3;</code>
-   * @return The roomId.
-   */
-  long getRoomId();
+    /**
+     * <code>uint64 msgId = 2;</code>
+     *
+     * @return The msgId.
+     */
+    long getMsgId();
 
-  /**
-   * <code>uint64 createTime = 4;</code>
-   * @return The createTime.
-   */
-  long getCreateTime();
+    /**
+     * <code>uint64 roomId = 3;</code>
+     *
+     * @return The roomId.
+     */
+    long getRoomId();
 
-  /**
-   * <code>uint32 monitor = 5;</code>
-   * @return The monitor.
-   */
-  int getMonitor();
+    /**
+     * <code>uint64 createTime = 4;</code>
+     *
+     * @return The createTime.
+     */
+    long getCreateTime();
 
-  /**
-   * <code>bool isShowMsg = 6;</code>
-   * @return The isShowMsg.
-   */
-  boolean getIsShowMsg();
+    /**
+     * <code>uint32 monitor = 5;</code>
+     *
+     * @return The monitor.
+     */
+    int getMonitor();
 
-  /**
-   * <code>string describe = 7;</code>
-   * @return The describe.
-   */
-  java.lang.String getDescribe();
-  /**
-   * <code>string describe = 7;</code>
-   * @return The bytes for describe.
-   */
-  com.google.protobuf.ByteString
-      getDescribeBytes();
+    /**
+     * <code>bool isShowMsg = 6;</code>
+     *
+     * @return The isShowMsg.
+     */
+    boolean getIsShowMsg();
 
-  /**
-   * <pre>
-   *  DisplayText displayText = 8;
-   * </pre>
-   *
-   * <code>uint64 foldType = 9;</code>
-   * @return The foldType.
-   */
-  long getFoldType();
+    /**
+     * <code>string describe = 7;</code>
+     *
+     * @return The describe.
+     */
+    java.lang.String getDescribe();
 
-  /**
-   * <code>uint64 anchorFoldType = 10;</code>
-   * @return The anchorFoldType.
-   */
-  long getAnchorFoldType();
+    /**
+     * <code>string describe = 7;</code>
+     *
+     * @return The bytes for describe.
+     */
+    com.google.protobuf.ByteString
+    getDescribeBytes();
 
-  /**
-   * <code>uint64 priorityScore = 11;</code>
-   * @return The priorityScore.
-   */
-  long getPriorityScore();
+    /**
+     * <pre>
+     *  DisplayText displayText = 8;
+     * </pre>
+     *
+     * <code>uint64 foldType = 9;</code>
+     *
+     * @return The foldType.
+     */
+    long getFoldType();
 
-  /**
-   * <code>string logId = 12;</code>
-   * @return The logId.
-   */
-  java.lang.String getLogId();
-  /**
-   * <code>string logId = 12;</code>
-   * @return The bytes for logId.
-   */
-  com.google.protobuf.ByteString
-      getLogIdBytes();
+    /**
+     * <code>uint64 anchorFoldType = 10;</code>
+     *
+     * @return The anchorFoldType.
+     */
+    long getAnchorFoldType();
 
-  /**
-   * <code>string msgProcessFilterK = 13;</code>
-   * @return The msgProcessFilterK.
-   */
-  java.lang.String getMsgProcessFilterK();
-  /**
-   * <code>string msgProcessFilterK = 13;</code>
-   * @return The bytes for msgProcessFilterK.
-   */
-  com.google.protobuf.ByteString
-      getMsgProcessFilterKBytes();
+    /**
+     * <code>uint64 priorityScore = 11;</code>
+     *
+     * @return The priorityScore.
+     */
+    long getPriorityScore();
 
-  /**
-   * <code>string msgProcessFilterV = 14;</code>
-   * @return The msgProcessFilterV.
-   */
-  java.lang.String getMsgProcessFilterV();
-  /**
-   * <code>string msgProcessFilterV = 14;</code>
-   * @return The bytes for msgProcessFilterV.
-   */
-  com.google.protobuf.ByteString
-      getMsgProcessFilterVBytes();
+    /**
+     * <code>string logId = 12;</code>
+     *
+     * @return The logId.
+     */
+    java.lang.String getLogId();
 
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.User user = 15;</code>
-   * @return Whether the user field is set.
-   */
-  boolean hasUser();
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.User user = 15;</code>
-   * @return The user.
-   */
-  cn.yscme.scrolling.auto.douyin.User getUser();
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.User user = 15;</code>
-   */
-  cn.yscme.scrolling.auto.douyin.UserOrBuilder getUserOrBuilder();
+    /**
+     * <code>string logId = 12;</code>
+     *
+     * @return The bytes for logId.
+     */
+    com.google.protobuf.ByteString
+    getLogIdBytes();
 
-  /**
-   * <pre>
-   *  Room room = 16;
-   * </pre>
-   *
-   * <code>uint64 anchorFoldTypeV2 = 17;</code>
-   * @return The anchorFoldTypeV2.
-   */
-  long getAnchorFoldTypeV2();
+    /**
+     * <code>string msgProcessFilterK = 13;</code>
+     *
+     * @return The msgProcessFilterK.
+     */
+    java.lang.String getMsgProcessFilterK();
 
-  /**
-   * <code>uint64 processAtSeiTimeMs = 18;</code>
-   * @return The processAtSeiTimeMs.
-   */
-  long getProcessAtSeiTimeMs();
+    /**
+     * <code>string msgProcessFilterK = 13;</code>
+     *
+     * @return The bytes for msgProcessFilterK.
+     */
+    com.google.protobuf.ByteString
+    getMsgProcessFilterKBytes();
 
-  /**
-   * <code>uint64 randomDispatchMs = 19;</code>
-   * @return The randomDispatchMs.
-   */
-  long getRandomDispatchMs();
+    /**
+     * <code>string msgProcessFilterV = 14;</code>
+     *
+     * @return The msgProcessFilterV.
+     */
+    java.lang.String getMsgProcessFilterV();
 
-  /**
-   * <code>bool isDispatch = 20;</code>
-   * @return The isDispatch.
-   */
-  boolean getIsDispatch();
+    /**
+     * <code>string msgProcessFilterV = 14;</code>
+     *
+     * @return The bytes for msgProcessFilterV.
+     */
+    com.google.protobuf.ByteString
+    getMsgProcessFilterVBytes();
 
-  /**
-   * <code>uint64 channelId = 21;</code>
-   * @return The channelId.
-   */
-  long getChannelId();
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.User user = 15;</code>
+     *
+     * @return Whether the user field is set.
+     */
+    boolean hasUser();
 
-  /**
-   * <code>uint64 diffSei2absSecond = 22;</code>
-   * @return The diffSei2absSecond.
-   */
-  long getDiffSei2AbsSecond();
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.User user = 15;</code>
+     *
+     * @return The user.
+     */
+    cn.yscme.scrolling.auto.douyin.User getUser();
 
-  /**
-   * <code>uint64 anchorFoldDuration = 23;</code>
-   * @return The anchorFoldDuration.
-   */
-  long getAnchorFoldDuration();
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.User user = 15;</code>
+     */
+    cn.yscme.scrolling.auto.douyin.UserOrBuilder getUserOrBuilder();
+
+    /**
+     * <pre>
+     *  Room room = 16;
+     * </pre>
+     *
+     * <code>uint64 anchorFoldTypeV2 = 17;</code>
+     *
+     * @return The anchorFoldTypeV2.
+     */
+    long getAnchorFoldTypeV2();
+
+    /**
+     * <code>uint64 processAtSeiTimeMs = 18;</code>
+     *
+     * @return The processAtSeiTimeMs.
+     */
+    long getProcessAtSeiTimeMs();
+
+    /**
+     * <code>uint64 randomDispatchMs = 19;</code>
+     *
+     * @return The randomDispatchMs.
+     */
+    long getRandomDispatchMs();
+
+    /**
+     * <code>bool isDispatch = 20;</code>
+     *
+     * @return The isDispatch.
+     */
+    boolean getIsDispatch();
+
+    /**
+     * <code>uint64 channelId = 21;</code>
+     *
+     * @return The channelId.
+     */
+    long getChannelId();
+
+    /**
+     * <code>uint64 diffSei2absSecond = 22;</code>
+     *
+     * @return The diffSei2absSecond.
+     */
+    long getDiffSei2AbsSecond();
+
+    /**
+     * <code>uint64 anchorFoldDuration = 23;</code>
+     *
+     * @return The anchorFoldDuration.
+     */
+    long getAnchorFoldDuration();
 }

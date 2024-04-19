@@ -5,12 +5,13 @@
 package cn.yscme.scrolling.auto.douyin;
 
 public interface kkOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:cn.yscme.scrolling.auto.douyin.kk)
-    com.google.protobuf.MessageOrBuilder {
+        // @@protoc_insertion_point(interface_extends:cn.yscme.scrolling.auto.douyin.kk)
+        com.google.protobuf.MessageOrBuilder {
 
-  /**
-   * <code>uint32 k = 14;</code>
-   * @return The k.
-   */
-  int getK();
+    /**
+     * <code>uint32 k = 14;</code>
+     *
+     * @return The k.
+     */
+    int getK();
 }

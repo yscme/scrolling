@@ -5,197 +5,234 @@
 package cn.yscme.scrolling.auto.douyin;
 
 public interface GiftStructOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:cn.yscme.scrolling.auto.douyin.GiftStruct)
-    com.google.protobuf.MessageOrBuilder {
+        // @@protoc_insertion_point(interface_extends:cn.yscme.scrolling.auto.douyin.GiftStruct)
+        com.google.protobuf.MessageOrBuilder {
 
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.Image image = 1;</code>
-   * @return Whether the image field is set.
-   */
-  boolean hasImage();
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.Image image = 1;</code>
-   * @return The image.
-   */
-  cn.yscme.scrolling.auto.douyin.Image getImage();
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.Image image = 1;</code>
-   */
-  cn.yscme.scrolling.auto.douyin.ImageOrBuilder getImageOrBuilder();
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.Image image = 1;</code>
+     *
+     * @return Whether the image field is set.
+     */
+    boolean hasImage();
 
-  /**
-   * <code>string describe = 2;</code>
-   * @return The describe.
-   */
-  java.lang.String getDescribe();
-  /**
-   * <code>string describe = 2;</code>
-   * @return The bytes for describe.
-   */
-  com.google.protobuf.ByteString
-      getDescribeBytes();
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.Image image = 1;</code>
+     *
+     * @return The image.
+     */
+    cn.yscme.scrolling.auto.douyin.Image getImage();
 
-  /**
-   * <code>bool notify = 3;</code>
-   * @return The notify.
-   */
-  boolean getNotify();
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.Image image = 1;</code>
+     */
+    cn.yscme.scrolling.auto.douyin.ImageOrBuilder getImageOrBuilder();
 
-  /**
-   * <code>uint64 duration = 4;</code>
-   * @return The duration.
-   */
-  long getDuration();
+    /**
+     * <code>string describe = 2;</code>
+     *
+     * @return The describe.
+     */
+    java.lang.String getDescribe();
 
-  /**
-   * <code>uint64 id = 5;</code>
-   * @return The id.
-   */
-  long getId();
+    /**
+     * <code>string describe = 2;</code>
+     *
+     * @return The bytes for describe.
+     */
+    com.google.protobuf.ByteString
+    getDescribeBytes();
 
-  /**
-   * <pre>
-   *  GiftStructFansClubInfo fansclubInfo = 6;
-   * </pre>
-   *
-   * <code>bool forLinkmic = 7;</code>
-   * @return The forLinkmic.
-   */
-  boolean getForLinkmic();
+    /**
+     * <code>bool notify = 3;</code>
+     *
+     * @return The notify.
+     */
+    boolean getNotify();
 
-  /**
-   * <code>bool doodle = 8;</code>
-   * @return The doodle.
-   */
-  boolean getDoodle();
+    /**
+     * <code>uint64 duration = 4;</code>
+     *
+     * @return The duration.
+     */
+    long getDuration();
 
-  /**
-   * <code>bool forFansclub = 9;</code>
-   * @return The forFansclub.
-   */
-  boolean getForFansclub();
+    /**
+     * <code>uint64 id = 5;</code>
+     *
+     * @return The id.
+     */
+    long getId();
 
-  /**
-   * <code>bool combo = 10;</code>
-   * @return The combo.
-   */
-  boolean getCombo();
+    /**
+     * <pre>
+     *  GiftStructFansClubInfo fansclubInfo = 6;
+     * </pre>
+     *
+     * <code>bool forLinkmic = 7;</code>
+     *
+     * @return The forLinkmic.
+     */
+    boolean getForLinkmic();
 
-  /**
-   * <code>uint32 type = 11;</code>
-   * @return The type.
-   */
-  int getType();
+    /**
+     * <code>bool doodle = 8;</code>
+     *
+     * @return The doodle.
+     */
+    boolean getDoodle();
 
-  /**
-   * <code>uint32 diamondCount = 12;</code>
-   * @return The diamondCount.
-   */
-  int getDiamondCount();
+    /**
+     * <code>bool forFansclub = 9;</code>
+     *
+     * @return The forFansclub.
+     */
+    boolean getForFansclub();
 
-  /**
-   * <code>bool isDisplayedOnPanel = 13;</code>
-   * @return The isDisplayedOnPanel.
-   */
-  boolean getIsDisplayedOnPanel();
+    /**
+     * <code>bool combo = 10;</code>
+     *
+     * @return The combo.
+     */
+    boolean getCombo();
 
-  /**
-   * <code>uint64 primaryEffectId = 14;</code>
-   * @return The primaryEffectId.
-   */
-  long getPrimaryEffectId();
+    /**
+     * <code>uint32 type = 11;</code>
+     *
+     * @return The type.
+     */
+    int getType();
 
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.Image giftLabelIcon = 15;</code>
-   * @return Whether the giftLabelIcon field is set.
-   */
-  boolean hasGiftLabelIcon();
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.Image giftLabelIcon = 15;</code>
-   * @return The giftLabelIcon.
-   */
-  cn.yscme.scrolling.auto.douyin.Image getGiftLabelIcon();
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.Image giftLabelIcon = 15;</code>
-   */
-  cn.yscme.scrolling.auto.douyin.ImageOrBuilder getGiftLabelIconOrBuilder();
+    /**
+     * <code>uint32 diamondCount = 12;</code>
+     *
+     * @return The diamondCount.
+     */
+    int getDiamondCount();
 
-  /**
-   * <code>string name = 16;</code>
-   * @return The name.
-   */
-  java.lang.String getName();
-  /**
-   * <code>string name = 16;</code>
-   * @return The bytes for name.
-   */
-  com.google.protobuf.ByteString
-      getNameBytes();
+    /**
+     * <code>bool isDisplayedOnPanel = 13;</code>
+     *
+     * @return The isDisplayedOnPanel.
+     */
+    boolean getIsDisplayedOnPanel();
 
-  /**
-   * <code>string region = 17;</code>
-   * @return The region.
-   */
-  java.lang.String getRegion();
-  /**
-   * <code>string region = 17;</code>
-   * @return The bytes for region.
-   */
-  com.google.protobuf.ByteString
-      getRegionBytes();
+    /**
+     * <code>uint64 primaryEffectId = 14;</code>
+     *
+     * @return The primaryEffectId.
+     */
+    long getPrimaryEffectId();
 
-  /**
-   * <code>string manual = 18;</code>
-   * @return The manual.
-   */
-  java.lang.String getManual();
-  /**
-   * <code>string manual = 18;</code>
-   * @return The bytes for manual.
-   */
-  com.google.protobuf.ByteString
-      getManualBytes();
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.Image giftLabelIcon = 15;</code>
+     *
+     * @return Whether the giftLabelIcon field is set.
+     */
+    boolean hasGiftLabelIcon();
 
-  /**
-   * <code>bool forCustom = 19;</code>
-   * @return The forCustom.
-   */
-  boolean getForCustom();
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.Image giftLabelIcon = 15;</code>
+     *
+     * @return The giftLabelIcon.
+     */
+    cn.yscme.scrolling.auto.douyin.Image getGiftLabelIcon();
 
-  /**
-   * <pre>
-   *  specialEffectsMap = 20;
-   * </pre>
-   *
-   * <code>.cn.yscme.scrolling.auto.douyin.Image icon = 21;</code>
-   * @return Whether the icon field is set.
-   */
-  boolean hasIcon();
-  /**
-   * <pre>
-   *  specialEffectsMap = 20;
-   * </pre>
-   *
-   * <code>.cn.yscme.scrolling.auto.douyin.Image icon = 21;</code>
-   * @return The icon.
-   */
-  cn.yscme.scrolling.auto.douyin.Image getIcon();
-  /**
-   * <pre>
-   *  specialEffectsMap = 20;
-   * </pre>
-   *
-   * <code>.cn.yscme.scrolling.auto.douyin.Image icon = 21;</code>
-   */
-  cn.yscme.scrolling.auto.douyin.ImageOrBuilder getIconOrBuilder();
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.Image giftLabelIcon = 15;</code>
+     */
+    cn.yscme.scrolling.auto.douyin.ImageOrBuilder getGiftLabelIconOrBuilder();
 
-  /**
-   * <pre>
-   * fixme 后面的就不写了还有几十个属性
-   * </pre>
-   *
-   * <code>uint32 actionType = 22;</code>
-   * @return The actionType.
-   */
-  int getActionType();
+    /**
+     * <code>string name = 16;</code>
+     *
+     * @return The name.
+     */
+    java.lang.String getName();
+
+    /**
+     * <code>string name = 16;</code>
+     *
+     * @return The bytes for name.
+     */
+    com.google.protobuf.ByteString
+    getNameBytes();
+
+    /**
+     * <code>string region = 17;</code>
+     *
+     * @return The region.
+     */
+    java.lang.String getRegion();
+
+    /**
+     * <code>string region = 17;</code>
+     *
+     * @return The bytes for region.
+     */
+    com.google.protobuf.ByteString
+    getRegionBytes();
+
+    /**
+     * <code>string manual = 18;</code>
+     *
+     * @return The manual.
+     */
+    java.lang.String getManual();
+
+    /**
+     * <code>string manual = 18;</code>
+     *
+     * @return The bytes for manual.
+     */
+    com.google.protobuf.ByteString
+    getManualBytes();
+
+    /**
+     * <code>bool forCustom = 19;</code>
+     *
+     * @return The forCustom.
+     */
+    boolean getForCustom();
+
+    /**
+     * <pre>
+     *  specialEffectsMap = 20;
+     * </pre>
+     *
+     * <code>.cn.yscme.scrolling.auto.douyin.Image icon = 21;</code>
+     *
+     * @return Whether the icon field is set.
+     */
+    boolean hasIcon();
+
+    /**
+     * <pre>
+     *  specialEffectsMap = 20;
+     * </pre>
+     *
+     * <code>.cn.yscme.scrolling.auto.douyin.Image icon = 21;</code>
+     *
+     * @return The icon.
+     */
+    cn.yscme.scrolling.auto.douyin.Image getIcon();
+
+    /**
+     * <pre>
+     *  specialEffectsMap = 20;
+     * </pre>
+     *
+     * <code>.cn.yscme.scrolling.auto.douyin.Image icon = 21;</code>
+     */
+    cn.yscme.scrolling.auto.douyin.ImageOrBuilder getIconOrBuilder();
+
+    /**
+     * <pre>
+     * fixme 后面的就不写了还有几十个属性
+     * </pre>
+     *
+     * <code>uint32 actionType = 22;</code>
+     *
+     * @return The actionType.
+     */
+    int getActionType();
 }

@@ -5,374 +5,455 @@
 package cn.yscme.scrolling.auto.douyin;
 
 public interface UserOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:cn.yscme.scrolling.auto.douyin.User)
-    com.google.protobuf.MessageOrBuilder {
+        // @@protoc_insertion_point(interface_extends:cn.yscme.scrolling.auto.douyin.User)
+        com.google.protobuf.MessageOrBuilder {
 
-  /**
-   * <code>uint64 id = 1;</code>
-   * @return The id.
-   */
-  long getId();
+    /**
+     * <code>uint64 id = 1;</code>
+     *
+     * @return The id.
+     */
+    long getId();
 
-  /**
-   * <code>uint64 shortId = 2;</code>
-   * @return The shortId.
-   */
-  long getShortId();
+    /**
+     * <code>uint64 shortId = 2;</code>
+     *
+     * @return The shortId.
+     */
+    long getShortId();
 
-  /**
-   * <code>string nickName = 3;</code>
-   * @return The nickName.
-   */
-  java.lang.String getNickName();
-  /**
-   * <code>string nickName = 3;</code>
-   * @return The bytes for nickName.
-   */
-  com.google.protobuf.ByteString
-      getNickNameBytes();
+    /**
+     * <code>string nickName = 3;</code>
+     *
+     * @return The nickName.
+     */
+    java.lang.String getNickName();
 
-  /**
-   * <code>uint32 gender = 4;</code>
-   * @return The gender.
-   */
-  int getGender();
+    /**
+     * <code>string nickName = 3;</code>
+     *
+     * @return The bytes for nickName.
+     */
+    com.google.protobuf.ByteString
+    getNickNameBytes();
 
-  /**
-   * <code>string Signature = 5;</code>
-   * @return The signature.
-   */
-  java.lang.String getSignature();
-  /**
-   * <code>string Signature = 5;</code>
-   * @return The bytes for signature.
-   */
-  com.google.protobuf.ByteString
-      getSignatureBytes();
+    /**
+     * <code>uint32 gender = 4;</code>
+     *
+     * @return The gender.
+     */
+    int getGender();
 
-  /**
-   * <code>uint32 Level = 6;</code>
-   * @return The level.
-   */
-  int getLevel();
+    /**
+     * <code>string Signature = 5;</code>
+     *
+     * @return The signature.
+     */
+    java.lang.String getSignature();
 
-  /**
-   * <code>uint64 Birthday = 7;</code>
-   * @return The birthday.
-   */
-  long getBirthday();
+    /**
+     * <code>string Signature = 5;</code>
+     *
+     * @return The bytes for signature.
+     */
+    com.google.protobuf.ByteString
+    getSignatureBytes();
 
-  /**
-   * <code>string Telephone = 8;</code>
-   * @return The telephone.
-   */
-  java.lang.String getTelephone();
-  /**
-   * <code>string Telephone = 8;</code>
-   * @return The bytes for telephone.
-   */
-  com.google.protobuf.ByteString
-      getTelephoneBytes();
+    /**
+     * <code>uint32 Level = 6;</code>
+     *
+     * @return The level.
+     */
+    int getLevel();
 
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.Image AvatarThumb = 9;</code>
-   * @return Whether the avatarThumb field is set.
-   */
-  boolean hasAvatarThumb();
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.Image AvatarThumb = 9;</code>
-   * @return The avatarThumb.
-   */
-  cn.yscme.scrolling.auto.douyin.Image getAvatarThumb();
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.Image AvatarThumb = 9;</code>
-   */
-  cn.yscme.scrolling.auto.douyin.ImageOrBuilder getAvatarThumbOrBuilder();
+    /**
+     * <code>uint64 Birthday = 7;</code>
+     *
+     * @return The birthday.
+     */
+    long getBirthday();
 
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.Image AvatarMedium = 10;</code>
-   * @return Whether the avatarMedium field is set.
-   */
-  boolean hasAvatarMedium();
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.Image AvatarMedium = 10;</code>
-   * @return The avatarMedium.
-   */
-  cn.yscme.scrolling.auto.douyin.Image getAvatarMedium();
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.Image AvatarMedium = 10;</code>
-   */
-  cn.yscme.scrolling.auto.douyin.ImageOrBuilder getAvatarMediumOrBuilder();
+    /**
+     * <code>string Telephone = 8;</code>
+     *
+     * @return The telephone.
+     */
+    java.lang.String getTelephone();
 
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.Image AvatarLarge = 11;</code>
-   * @return Whether the avatarLarge field is set.
-   */
-  boolean hasAvatarLarge();
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.Image AvatarLarge = 11;</code>
-   * @return The avatarLarge.
-   */
-  cn.yscme.scrolling.auto.douyin.Image getAvatarLarge();
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.Image AvatarLarge = 11;</code>
-   */
-  cn.yscme.scrolling.auto.douyin.ImageOrBuilder getAvatarLargeOrBuilder();
+    /**
+     * <code>string Telephone = 8;</code>
+     *
+     * @return The bytes for telephone.
+     */
+    com.google.protobuf.ByteString
+    getTelephoneBytes();
 
-  /**
-   * <code>bool Verified = 12;</code>
-   * @return The verified.
-   */
-  boolean getVerified();
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.Image AvatarThumb = 9;</code>
+     *
+     * @return Whether the avatarThumb field is set.
+     */
+    boolean hasAvatarThumb();
 
-  /**
-   * <code>uint32 Experience = 13;</code>
-   * @return The experience.
-   */
-  int getExperience();
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.Image AvatarThumb = 9;</code>
+     *
+     * @return The avatarThumb.
+     */
+    cn.yscme.scrolling.auto.douyin.Image getAvatarThumb();
 
-  /**
-   * <code>string city = 14;</code>
-   * @return The city.
-   */
-  java.lang.String getCity();
-  /**
-   * <code>string city = 14;</code>
-   * @return The bytes for city.
-   */
-  com.google.protobuf.ByteString
-      getCityBytes();
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.Image AvatarThumb = 9;</code>
+     */
+    cn.yscme.scrolling.auto.douyin.ImageOrBuilder getAvatarThumbOrBuilder();
 
-  /**
-   * <code>int32 Status = 15;</code>
-   * @return The status.
-   */
-  int getStatus();
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.Image AvatarMedium = 10;</code>
+     *
+     * @return Whether the avatarMedium field is set.
+     */
+    boolean hasAvatarMedium();
 
-  /**
-   * <code>uint64 CreateTime = 16;</code>
-   * @return The createTime.
-   */
-  long getCreateTime();
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.Image AvatarMedium = 10;</code>
+     *
+     * @return The avatarMedium.
+     */
+    cn.yscme.scrolling.auto.douyin.Image getAvatarMedium();
 
-  /**
-   * <code>uint64 ModifyTime = 17;</code>
-   * @return The modifyTime.
-   */
-  long getModifyTime();
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.Image AvatarMedium = 10;</code>
+     */
+    cn.yscme.scrolling.auto.douyin.ImageOrBuilder getAvatarMediumOrBuilder();
 
-  /**
-   * <code>uint32 Secret = 18;</code>
-   * @return The secret.
-   */
-  int getSecret();
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.Image AvatarLarge = 11;</code>
+     *
+     * @return Whether the avatarLarge field is set.
+     */
+    boolean hasAvatarLarge();
 
-  /**
-   * <code>string ShareQrcodeUri = 19;</code>
-   * @return The shareQrcodeUri.
-   */
-  java.lang.String getShareQrcodeUri();
-  /**
-   * <code>string ShareQrcodeUri = 19;</code>
-   * @return The bytes for shareQrcodeUri.
-   */
-  com.google.protobuf.ByteString
-      getShareQrcodeUriBytes();
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.Image AvatarLarge = 11;</code>
+     *
+     * @return The avatarLarge.
+     */
+    cn.yscme.scrolling.auto.douyin.Image getAvatarLarge();
 
-  /**
-   * <code>uint32 IncomeSharePercent = 20;</code>
-   * @return The incomeSharePercent.
-   */
-  int getIncomeSharePercent();
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.Image AvatarLarge = 11;</code>
+     */
+    cn.yscme.scrolling.auto.douyin.ImageOrBuilder getAvatarLargeOrBuilder();
 
-  /**
-   * <code>repeated .cn.yscme.scrolling.auto.douyin.Image BadgeImageList = 21;</code>
-   */
-  java.util.List<cn.yscme.scrolling.auto.douyin.Image> 
-      getBadgeImageListList();
-  /**
-   * <code>repeated .cn.yscme.scrolling.auto.douyin.Image BadgeImageList = 21;</code>
-   */
-  cn.yscme.scrolling.auto.douyin.Image getBadgeImageList(int index);
-  /**
-   * <code>repeated .cn.yscme.scrolling.auto.douyin.Image BadgeImageList = 21;</code>
-   */
-  int getBadgeImageListCount();
-  /**
-   * <code>repeated .cn.yscme.scrolling.auto.douyin.Image BadgeImageList = 21;</code>
-   */
-  java.util.List<? extends cn.yscme.scrolling.auto.douyin.ImageOrBuilder> 
-      getBadgeImageListOrBuilderList();
-  /**
-   * <code>repeated .cn.yscme.scrolling.auto.douyin.Image BadgeImageList = 21;</code>
-   */
-  cn.yscme.scrolling.auto.douyin.ImageOrBuilder getBadgeImageListOrBuilder(
-      int index);
+    /**
+     * <code>bool Verified = 12;</code>
+     *
+     * @return The verified.
+     */
+    boolean getVerified();
 
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.FollowInfo FollowInfo = 22;</code>
-   * @return Whether the followInfo field is set.
-   */
-  boolean hasFollowInfo();
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.FollowInfo FollowInfo = 22;</code>
-   * @return The followInfo.
-   */
-  cn.yscme.scrolling.auto.douyin.FollowInfo getFollowInfo();
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.FollowInfo FollowInfo = 22;</code>
-   */
-  cn.yscme.scrolling.auto.douyin.FollowInfoOrBuilder getFollowInfoOrBuilder();
+    /**
+     * <code>uint32 Experience = 13;</code>
+     *
+     * @return The experience.
+     */
+    int getExperience();
 
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.PayGrade PayGrade = 23;</code>
-   * @return Whether the payGrade field is set.
-   */
-  boolean hasPayGrade();
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.PayGrade PayGrade = 23;</code>
-   * @return The payGrade.
-   */
-  cn.yscme.scrolling.auto.douyin.PayGrade getPayGrade();
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.PayGrade PayGrade = 23;</code>
-   */
-  cn.yscme.scrolling.auto.douyin.PayGradeOrBuilder getPayGradeOrBuilder();
+    /**
+     * <code>string city = 14;</code>
+     *
+     * @return The city.
+     */
+    java.lang.String getCity();
 
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.FansClub FansClub = 24;</code>
-   * @return Whether the fansClub field is set.
-   */
-  boolean hasFansClub();
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.FansClub FansClub = 24;</code>
-   * @return The fansClub.
-   */
-  cn.yscme.scrolling.auto.douyin.FansClub getFansClub();
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.FansClub FansClub = 24;</code>
-   */
-  cn.yscme.scrolling.auto.douyin.FansClubOrBuilder getFansClubOrBuilder();
+    /**
+     * <code>string city = 14;</code>
+     *
+     * @return The bytes for city.
+     */
+    com.google.protobuf.ByteString
+    getCityBytes();
 
-  /**
-   * <pre>
-   *  Border Border = 25;
-   * </pre>
-   *
-   * <code>string SpecialId = 26;</code>
-   * @return The specialId.
-   */
-  java.lang.String getSpecialId();
-  /**
-   * <pre>
-   *  Border Border = 25;
-   * </pre>
-   *
-   * <code>string SpecialId = 26;</code>
-   * @return The bytes for specialId.
-   */
-  com.google.protobuf.ByteString
-      getSpecialIdBytes();
+    /**
+     * <code>int32 Status = 15;</code>
+     *
+     * @return The status.
+     */
+    int getStatus();
 
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.Image AvatarBorder = 27;</code>
-   * @return Whether the avatarBorder field is set.
-   */
-  boolean hasAvatarBorder();
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.Image AvatarBorder = 27;</code>
-   * @return The avatarBorder.
-   */
-  cn.yscme.scrolling.auto.douyin.Image getAvatarBorder();
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.Image AvatarBorder = 27;</code>
-   */
-  cn.yscme.scrolling.auto.douyin.ImageOrBuilder getAvatarBorderOrBuilder();
+    /**
+     * <code>uint64 CreateTime = 16;</code>
+     *
+     * @return The createTime.
+     */
+    long getCreateTime();
 
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.Image Medal = 28;</code>
-   * @return Whether the medal field is set.
-   */
-  boolean hasMedal();
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.Image Medal = 28;</code>
-   * @return The medal.
-   */
-  cn.yscme.scrolling.auto.douyin.Image getMedal();
-  /**
-   * <code>.cn.yscme.scrolling.auto.douyin.Image Medal = 28;</code>
-   */
-  cn.yscme.scrolling.auto.douyin.ImageOrBuilder getMedalOrBuilder();
+    /**
+     * <code>uint64 ModifyTime = 17;</code>
+     *
+     * @return The modifyTime.
+     */
+    long getModifyTime();
 
-  /**
-   * <code>repeated .cn.yscme.scrolling.auto.douyin.Image RealTimeIconsList = 29;</code>
-   */
-  java.util.List<cn.yscme.scrolling.auto.douyin.Image> 
-      getRealTimeIconsListList();
-  /**
-   * <code>repeated .cn.yscme.scrolling.auto.douyin.Image RealTimeIconsList = 29;</code>
-   */
-  cn.yscme.scrolling.auto.douyin.Image getRealTimeIconsList(int index);
-  /**
-   * <code>repeated .cn.yscme.scrolling.auto.douyin.Image RealTimeIconsList = 29;</code>
-   */
-  int getRealTimeIconsListCount();
-  /**
-   * <code>repeated .cn.yscme.scrolling.auto.douyin.Image RealTimeIconsList = 29;</code>
-   */
-  java.util.List<? extends cn.yscme.scrolling.auto.douyin.ImageOrBuilder> 
-      getRealTimeIconsListOrBuilderList();
-  /**
-   * <code>repeated .cn.yscme.scrolling.auto.douyin.Image RealTimeIconsList = 29;</code>
-   */
-  cn.yscme.scrolling.auto.douyin.ImageOrBuilder getRealTimeIconsListOrBuilder(
-      int index);
+    /**
+     * <code>uint32 Secret = 18;</code>
+     *
+     * @return The secret.
+     */
+    int getSecret();
 
-  /**
-   * <code>string displayId = 38;</code>
-   * @return The displayId.
-   */
-  java.lang.String getDisplayId();
-  /**
-   * <code>string displayId = 38;</code>
-   * @return The bytes for displayId.
-   */
-  com.google.protobuf.ByteString
-      getDisplayIdBytes();
+    /**
+     * <code>string ShareQrcodeUri = 19;</code>
+     *
+     * @return The shareQrcodeUri.
+     */
+    java.lang.String getShareQrcodeUri();
 
-  /**
-   * <code>string secUid = 46;</code>
-   * @return The secUid.
-   */
-  java.lang.String getSecUid();
-  /**
-   * <code>string secUid = 46;</code>
-   * @return The bytes for secUid.
-   */
-  com.google.protobuf.ByteString
-      getSecUidBytes();
+    /**
+     * <code>string ShareQrcodeUri = 19;</code>
+     *
+     * @return The bytes for shareQrcodeUri.
+     */
+    com.google.protobuf.ByteString
+    getShareQrcodeUriBytes();
 
-  /**
-   * <code>uint64 fanTicketCount = 1022;</code>
-   * @return The fanTicketCount.
-   */
-  long getFanTicketCount();
+    /**
+     * <code>uint32 IncomeSharePercent = 20;</code>
+     *
+     * @return The incomeSharePercent.
+     */
+    int getIncomeSharePercent();
 
-  /**
-   * <code>string idStr = 1028;</code>
-   * @return The idStr.
-   */
-  java.lang.String getIdStr();
-  /**
-   * <code>string idStr = 1028;</code>
-   * @return The bytes for idStr.
-   */
-  com.google.protobuf.ByteString
-      getIdStrBytes();
+    /**
+     * <code>repeated .cn.yscme.scrolling.auto.douyin.Image BadgeImageList = 21;</code>
+     */
+    java.util.List<cn.yscme.scrolling.auto.douyin.Image>
+    getBadgeImageListList();
 
-  /**
-   * <code>uint32 ageRange = 1045;</code>
-   * @return The ageRange.
-   */
-  int getAgeRange();
+    /**
+     * <code>repeated .cn.yscme.scrolling.auto.douyin.Image BadgeImageList = 21;</code>
+     */
+    cn.yscme.scrolling.auto.douyin.Image getBadgeImageList(int index);
+
+    /**
+     * <code>repeated .cn.yscme.scrolling.auto.douyin.Image BadgeImageList = 21;</code>
+     */
+    int getBadgeImageListCount();
+
+    /**
+     * <code>repeated .cn.yscme.scrolling.auto.douyin.Image BadgeImageList = 21;</code>
+     */
+    java.util.List<? extends cn.yscme.scrolling.auto.douyin.ImageOrBuilder>
+    getBadgeImageListOrBuilderList();
+
+    /**
+     * <code>repeated .cn.yscme.scrolling.auto.douyin.Image BadgeImageList = 21;</code>
+     */
+    cn.yscme.scrolling.auto.douyin.ImageOrBuilder getBadgeImageListOrBuilder(
+            int index);
+
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.FollowInfo FollowInfo = 22;</code>
+     *
+     * @return Whether the followInfo field is set.
+     */
+    boolean hasFollowInfo();
+
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.FollowInfo FollowInfo = 22;</code>
+     *
+     * @return The followInfo.
+     */
+    cn.yscme.scrolling.auto.douyin.FollowInfo getFollowInfo();
+
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.FollowInfo FollowInfo = 22;</code>
+     */
+    cn.yscme.scrolling.auto.douyin.FollowInfoOrBuilder getFollowInfoOrBuilder();
+
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.PayGrade PayGrade = 23;</code>
+     *
+     * @return Whether the payGrade field is set.
+     */
+    boolean hasPayGrade();
+
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.PayGrade PayGrade = 23;</code>
+     *
+     * @return The payGrade.
+     */
+    cn.yscme.scrolling.auto.douyin.PayGrade getPayGrade();
+
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.PayGrade PayGrade = 23;</code>
+     */
+    cn.yscme.scrolling.auto.douyin.PayGradeOrBuilder getPayGradeOrBuilder();
+
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.FansClub FansClub = 24;</code>
+     *
+     * @return Whether the fansClub field is set.
+     */
+    boolean hasFansClub();
+
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.FansClub FansClub = 24;</code>
+     *
+     * @return The fansClub.
+     */
+    cn.yscme.scrolling.auto.douyin.FansClub getFansClub();
+
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.FansClub FansClub = 24;</code>
+     */
+    cn.yscme.scrolling.auto.douyin.FansClubOrBuilder getFansClubOrBuilder();
+
+    /**
+     * <pre>
+     *  Border Border = 25;
+     * </pre>
+     *
+     * <code>string SpecialId = 26;</code>
+     *
+     * @return The specialId.
+     */
+    java.lang.String getSpecialId();
+
+    /**
+     * <pre>
+     *  Border Border = 25;
+     * </pre>
+     *
+     * <code>string SpecialId = 26;</code>
+     *
+     * @return The bytes for specialId.
+     */
+    com.google.protobuf.ByteString
+    getSpecialIdBytes();
+
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.Image AvatarBorder = 27;</code>
+     *
+     * @return Whether the avatarBorder field is set.
+     */
+    boolean hasAvatarBorder();
+
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.Image AvatarBorder = 27;</code>
+     *
+     * @return The avatarBorder.
+     */
+    cn.yscme.scrolling.auto.douyin.Image getAvatarBorder();
+
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.Image AvatarBorder = 27;</code>
+     */
+    cn.yscme.scrolling.auto.douyin.ImageOrBuilder getAvatarBorderOrBuilder();
+
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.Image Medal = 28;</code>
+     *
+     * @return Whether the medal field is set.
+     */
+    boolean hasMedal();
+
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.Image Medal = 28;</code>
+     *
+     * @return The medal.
+     */
+    cn.yscme.scrolling.auto.douyin.Image getMedal();
+
+    /**
+     * <code>.cn.yscme.scrolling.auto.douyin.Image Medal = 28;</code>
+     */
+    cn.yscme.scrolling.auto.douyin.ImageOrBuilder getMedalOrBuilder();
+
+    /**
+     * <code>repeated .cn.yscme.scrolling.auto.douyin.Image RealTimeIconsList = 29;</code>
+     */
+    java.util.List<cn.yscme.scrolling.auto.douyin.Image>
+    getRealTimeIconsListList();
+
+    /**
+     * <code>repeated .cn.yscme.scrolling.auto.douyin.Image RealTimeIconsList = 29;</code>
+     */
+    cn.yscme.scrolling.auto.douyin.Image getRealTimeIconsList(int index);
+
+    /**
+     * <code>repeated .cn.yscme.scrolling.auto.douyin.Image RealTimeIconsList = 29;</code>
+     */
+    int getRealTimeIconsListCount();
+
+    /**
+     * <code>repeated .cn.yscme.scrolling.auto.douyin.Image RealTimeIconsList = 29;</code>
+     */
+    java.util.List<? extends cn.yscme.scrolling.auto.douyin.ImageOrBuilder>
+    getRealTimeIconsListOrBuilderList();
+
+    /**
+     * <code>repeated .cn.yscme.scrolling.auto.douyin.Image RealTimeIconsList = 29;</code>
+     */
+    cn.yscme.scrolling.auto.douyin.ImageOrBuilder getRealTimeIconsListOrBuilder(
+            int index);
+
+    /**
+     * <code>string displayId = 38;</code>
+     *
+     * @return The displayId.
+     */
+    java.lang.String getDisplayId();
+
+    /**
+     * <code>string displayId = 38;</code>
+     *
+     * @return The bytes for displayId.
+     */
+    com.google.protobuf.ByteString
+    getDisplayIdBytes();
+
+    /**
+     * <code>string secUid = 46;</code>
+     *
+     * @return The secUid.
+     */
+    java.lang.String getSecUid();
+
+    /**
+     * <code>string secUid = 46;</code>
+     *
+     * @return The bytes for secUid.
+     */
+    com.google.protobuf.ByteString
+    getSecUidBytes();
+
+    /**
+     * <code>uint64 fanTicketCount = 1022;</code>
+     *
+     * @return The fanTicketCount.
+     */
+    long getFanTicketCount();
+
+    /**
+     * <code>string idStr = 1028;</code>
+     *
+     * @return The idStr.
+     */
+    java.lang.String getIdStr();
+
+    /**
+     * <code>string idStr = 1028;</code>
+     *
+     * @return The bytes for idStr.
+     */
+    com.google.protobuf.ByteString
+    getIdStrBytes();
+
+    /**
+     * <code>uint32 ageRange = 1045;</code>
+     *
+     * @return The ageRange.
+     */
+    int getAgeRange();
 }

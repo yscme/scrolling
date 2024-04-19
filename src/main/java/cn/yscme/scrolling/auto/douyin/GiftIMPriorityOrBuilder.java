@@ -5,35 +5,42 @@
 package cn.yscme.scrolling.auto.douyin;
 
 public interface GiftIMPriorityOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:cn.yscme.scrolling.auto.douyin.GiftIMPriority)
-    com.google.protobuf.MessageOrBuilder {
+        // @@protoc_insertion_point(interface_extends:cn.yscme.scrolling.auto.douyin.GiftIMPriority)
+        com.google.protobuf.MessageOrBuilder {
 
-  /**
-   * <code>repeated uint64 queueSizesList = 1;</code>
-   * @return A list containing the queueSizesList.
-   */
-  java.util.List<java.lang.Long> getQueueSizesListList();
-  /**
-   * <code>repeated uint64 queueSizesList = 1;</code>
-   * @return The count of queueSizesList.
-   */
-  int getQueueSizesListCount();
-  /**
-   * <code>repeated uint64 queueSizesList = 1;</code>
-   * @param index The index of the element to return.
-   * @return The queueSizesList at the given index.
-   */
-  long getQueueSizesList(int index);
+    /**
+     * <code>repeated uint64 queueSizesList = 1;</code>
+     *
+     * @return A list containing the queueSizesList.
+     */
+    java.util.List<java.lang.Long> getQueueSizesListList();
 
-  /**
-   * <code>uint64 selfQueuePriority = 2;</code>
-   * @return The selfQueuePriority.
-   */
-  long getSelfQueuePriority();
+    /**
+     * <code>repeated uint64 queueSizesList = 1;</code>
+     *
+     * @return The count of queueSizesList.
+     */
+    int getQueueSizesListCount();
 
-  /**
-   * <code>uint64 priority = 3;</code>
-   * @return The priority.
-   */
-  long getPriority();
+    /**
+     * <code>repeated uint64 queueSizesList = 1;</code>
+     *
+     * @param index The index of the element to return.
+     * @return The queueSizesList at the given index.
+     */
+    long getQueueSizesList(int index);
+
+    /**
+     * <code>uint64 selfQueuePriority = 2;</code>
+     *
+     * @return The selfQueuePriority.
+     */
+    long getSelfQueuePriority();
+
+    /**
+     * <code>uint64 priority = 3;</code>
+     *
+     * @return The priority.
+     */
+    long getPriority();
 }
