@@ -1,17 +1,12 @@
 package cn.yscme.scrolling.auto;
-
 import cn.yscme.scrolling.auto.douyin.*;
 import com.google.protobuf.ByteString;
 import com.google.protobuf.InvalidProtocolBufferException;
-
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 import java.util.zip.GZIPInputStream;
-
 import com.microsoft.playwright.*;
 import cn.yscme.scrolling.auto.douyin.Response;
 import com.microsoft.playwright.options.LoadState;
@@ -23,11 +18,10 @@ import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
-import javafx.scene.control.TextArea;
 import javafx.util.Duration;
 
 public class DouyinUtil {
-
+    private boolean status=true;
     public void start(long room_id, Label timerLabel, Label peopleLabel, ObservableList<String> chatMessages, ObservableList<String> giftMessages, ObservableList<String> otherMessages,
                       ListView<String> chatListView, ListView<String> giftListView, ListView<String> otherListView) {
         try (Playwright playwright = Playwright.create()) {
@@ -43,7 +37,6 @@ public class DouyinUtil {
                 // 创建一个 Timeline 对象，指定时间间隔为 1 秒
                 Timeline timeline = new Timeline(new KeyFrame(Duration.seconds(1), new EventHandler<ActionEvent>() {
                     int timeSeconds = 0;
-
                     @Override
                     public void handle(ActionEvent event) {
                         // 每次时间间隔执行的任务
@@ -69,7 +62,7 @@ public class DouyinUtil {
             // 在页面中注入 JavaScript
             String script = "const a=new KeyboardEvent('keydown',{key:'Virtual_Alt',keyCode:18,bubbles:!0,cancelable:!0}),b=document.documentElement;setInterval(()=>{b.dispatchEvent(a)},6e4),b.addEventListener('keydown',c=>{'Virtual_Alt'===c.key&&console.log('[防挂机处理] 按下了',c.key)}),WebSocket.prototype.close=function(){},function(){function a(a){let b=new RegExp(\"(^|&)\"+a+\"=([^&]*)(&|$)\"),c=window.location.search.substr(1).match(b);return null!==c?unescape(c[2]):null}if(\"true\"===a(\"pause\")){let b=setInterval(()=>{let c=document.querySelector(\".xgplayer-play\");if(c){let a=c.getAttribute(\"data-state\");\"play\"===a&&(c.click(),clearInterval(b),console.log(\"已自动暂停播放\"))}},500)}}()";
             page.evaluate(script);
-            while (true) {
+            while (status) {
                 try {
                     page.content();
                     Thread.sleep(1000);
@@ -78,7 +71,7 @@ public class DouyinUtil {
                 }
             }
         } catch (Exception e) {
-            e.printStackTrace();
+            System.err.println("浏览器出错:"+e.getMessage());
         }
     }
 
@@ -86,7 +79,11 @@ public class DouyinUtil {
                       ListView<String> chatListView, ListView<String> giftListView, ListView<String> otherListView) {
         try {
             PushFrameOrBuilder pushFrame = PushFrame.parseFrom(message);
-            Response response = Response.parseFrom(uncompress(pushFrame.getPayload()));
+            byte[] bytes= uncompress(pushFrame.getPayload());
+            if(bytes==null){
+                return;
+            }
+            Response response = Response.parseFrom(bytes);
             // 返回直播间服务器链接存活确认消息，便于持续获取数据
 //            if (response.getNeedAck()) {
 //                PushFrame.newBuilder()
@@ -140,11 +137,11 @@ public class DouyinUtil {
                             break;
                     }
                 } catch (Exception e) {
-                    e.printStackTrace();
+                    System.err.println("消息解析失败:"+e.getMessage());
                 }
             }
         } catch (InvalidProtocolBufferException e) {
-            e.printStackTrace();
+            System.err.println("消息解析失败:"+e.getMessage());
         }
     }
 
@@ -279,9 +276,8 @@ public class DouyinUtil {
 
     public void parseControlMsg(ByteString byteString, ObservableList<String> otherMessages, ListView<String> otherListView) throws InvalidProtocolBufferException {
         ControlMessage message = ControlMessage.parseFrom(byteString);
-        System.err.println(message);
-
         if (message.getStatus() == 3) {
+            status=false;
             Platform.runLater(() -> {
                 otherMessages.add("【直播间已结束】");
                 otherListView.scrollTo(otherMessages.size());
@@ -303,7 +299,8 @@ public class DouyinUtil {
                 out.write(buffer, 0, n);
             }
         } catch (IOException e) {
-            e.printStackTrace();
+            System.err.println("解压出错："+e.getMessage());
+            return null;
         }
         return out.toByteArray();
     }
