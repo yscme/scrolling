@@ -10,15 +10,10 @@ import java.util.zip.GZIPInputStream;
 import com.microsoft.playwright.*;
 import cn.yscme.scrolling.auto.douyin.Response;
 import com.microsoft.playwright.options.LoadState;
-import javafx.animation.KeyFrame;
-import javafx.animation.Timeline;
 import javafx.application.Platform;
 import javafx.collections.ObservableList;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
-import javafx.util.Duration;
 
 public class DouyinUtil {
     private boolean status=true;
@@ -215,7 +210,7 @@ public class DouyinUtil {
     //表情包消息
     public void parseEmojiChatMsg(ByteString byteString, ObservableList<String> chatMessages, ListView<String> chatListView) throws InvalidProtocolBufferException {
         EmojiChatMessage message = EmojiChatMessage.parseFrom(byteString);
-        Long emoji_id = message.getEmojiId();
+        long emoji_id = message.getEmojiId();
         String user_name = message.getUser().getNickName();
         Common common = message.getCommon();
         String default_content = message.getDefaultContent();

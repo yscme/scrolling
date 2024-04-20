@@ -25,7 +25,6 @@ public class MainController {
     private ObservableList<String> giftMessages = FXCollections.observableArrayList();
     private ObservableList<String> otherMessages = FXCollections.observableArrayList();
 
-
     @FXML
     protected void onHelloButtonClick() {
         chatListView.setItems(chatMessages);
@@ -51,7 +50,6 @@ public class MainController {
                 }));
                 timeline.setCycleCount(Timeline.INDEFINITE);
                 timeline.play();
-
                 douyinUtil.start(Long.parseLong(roomidTextFieid.getText()), peopleLabel, chatMessages, giftMessages, otherMessages, chatListView, giftListView, otherListView);
                 return null;
             }

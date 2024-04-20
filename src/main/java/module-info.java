@@ -5,6 +5,9 @@ module cn.yscme.scrolling {
     requires protobuf.java;
     requires driver.bundle;
     requires playwright;
+    requires okhttp3;
+    requires org.java_websocket;
+    requires protobuf.java.util;
     opens cn.yscme.scrolling to javafx.fxml;
     exports cn.yscme.scrolling;
     exports cn.yscme.scrolling.auto.douyin to protobuf.java;
